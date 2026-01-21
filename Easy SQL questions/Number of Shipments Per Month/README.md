@@ -15,3 +15,16 @@ Write a query that will calculate the number of shipments per month. The unique 
 | 105         | 1      | 20     | 2021-09-02    |
 
 
+# RESPUESTA
+
+```sql
+
+SELECT
+    TO_CHAR(shipment_date, 'YYYY-MM') AS Año_mes,
+    COUNT( shipment_id + sub_id) AS total_shipments
+FROM amazon_shipment
+GROUP BY
+    TO_CHAR(shipment_date, 'YYYY-MM')
+    
+
+```
