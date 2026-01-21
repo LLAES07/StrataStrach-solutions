@@ -71,3 +71,20 @@ Write a query that returns the number of unique users per client for each month.
 | 63  | 2020-03-07 | 4190-MFLUW | Electric Gravity | desktop   | message sent         | 3        |
 | 64  | 2020-03-05 | 4190-MFLUW | Connectix        | desktop   | file sent            | 1        |
 | 65  | 2020-02-06 | 3668-QPYBK | Sendit           | desktop   | video call received  | 7        |
+
+
+# Respuesta
+
+
+```sql
+
+SELECT
+    EXTRACT(MONTH FROM time_id) AS month,
+    client_id,
+    COUNT( DISTINCT user_id) AS total_usuarios
+FROM fact_events
+GROUP BY 
+    EXTRACT(MONTH FROM time_id),
+    client_id
+
+```
