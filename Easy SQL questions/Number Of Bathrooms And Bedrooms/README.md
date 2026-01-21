@@ -74,3 +74,19 @@ Find the average number of bathrooms and bedrooms for each city’s property typ
 
 
 
+# Respuesta
+
+```sql
+
+
+SELECT
+    city,
+    property_type,
+    AVG(bathrooms) AS promedio_baños,
+    AVG(bedrooms) AS promedio_piezas
+
+FROM airbnb_search_details
+GROUP BY
+    city,
+    property_type
+```
