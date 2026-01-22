@@ -13,3 +13,18 @@ Count the number of user events performed by MacBookPro users.Output the result 
 | 2670    | 2014-05-10 10:03:34 | engagement  | like_message | United States | nexus 7                |
 
 # Respuesta
+
+```sql
+
+SELECT
+    event_name,
+    COUNT(event_name) AS event_count
+FROM playbook_events
+WHERE 
+    LOWER(device) ~ '^macbook\s?pro'
+GROUP BY 
+    event_name
+ORDER BY 
+    event_count DESC;
+
+```
