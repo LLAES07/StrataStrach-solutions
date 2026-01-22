@@ -122,8 +122,9 @@ SELECT
     continent
 FROM forbes_global_2010_2014 
 WHERE
+    -- filtro por financials para evitar que el profit pueda ser igual en otro sector y asi dar con el valor requerido
     LOWER(sector) = 'financials'
-    AND profits = ( 
+    AND profits = ( -- Toma el valor máximo del profit para financials
                     SELECT
                         MAX(profits)
                    FROM forbes_global_2010_2014   
