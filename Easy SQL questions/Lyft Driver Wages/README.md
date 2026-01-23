@@ -20,6 +20,12 @@ lyft_drivers
 # RESPUESTA
 
 ```sql
-
+SELECT
+    *
+FROM lyft_drivers
+WHERE
+    -- Condición de filtro
+    yearly_salary <= 30000 OR 
+    yearly_salary > 70000
 
 ```
