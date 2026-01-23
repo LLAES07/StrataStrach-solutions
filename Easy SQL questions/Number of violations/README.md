@@ -21,11 +21,14 @@ sf_restaurant_health_violations
 
 SELECT
     EXTRACT(YEAR FROM inspection_date) AS year,
+    -- Contando la cantidad de inpecciones
     COUNT(inspection_id)
 FROM sf_restaurant_health_violations
 WHERE
+    -- Filtrando para tener los casos de roxanne cafe
     business_name = 'Roxanne Cafe'
 GROUP BY
+    -- Agrupando por año
     EXTRACT(YEAR FROM inspection_date)
 ORDER BY 1 ASC 
 
