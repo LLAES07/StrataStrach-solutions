@@ -21,4 +21,17 @@ fact_events
 
 ```sql
 
+
+SELECT
+    EXTRACT(MONTH FROM time_id),
+    client_id,
+    COUNT(DISTINCT user_id) AS total
+    
+FROM
+    fact_events
+GROUP BY
+    EXTRACT(MONTH FROM time_id),
+    client_id
+
+
 ```
