@@ -34,5 +34,19 @@ Management wants to analyze only employees with official job titles. Find the jo
 
 
 ```sql
+WITH ct1 AS (
+    SELECT
+        *,
+        DENSE_RANK() OVER(ORDER BY salary DESC) AS rk
+    FROM worker w
+    INNER JOIN title t
+        ON w.worker_id = t.worker_ref_id
+)
 
+SELECT
+    DISTINCT worker_title
+FROM
+    ct1
+WHERE
+    rk =1
 ```
