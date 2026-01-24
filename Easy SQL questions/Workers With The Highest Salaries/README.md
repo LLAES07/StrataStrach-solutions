@@ -35,6 +35,7 @@ Management wants to analyze only employees with official job titles. Find the jo
 
 ```sql
 WITH ct1 AS (
+    -- Une ambas tablas y usa dense rank para rankear por salaria si hay salarios con el mismo valor comparten el mismo ranking
     SELECT
         *,
         DENSE_RANK() OVER(ORDER BY salary DESC) AS rk
@@ -43,10 +44,10 @@ WITH ct1 AS (
         ON w.worker_id = t.worker_ref_id
 )
 
+-- Query final que filtra por el ranking 1
 SELECT
     DISTINCT worker_title
-FROM
-    ct1
+FROM ct1
 WHERE
     rk =1
 ```
