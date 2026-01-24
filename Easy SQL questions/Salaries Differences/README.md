@@ -31,5 +31,15 @@ Calculates the difference between the highest salaries in the marketing and engi
 
 ```sql
 
+SELECT
+    MAX(CASE
+            WHEN d.department = 'marketing' THEN salary ELSE 0 END) - 
+        
+    MAX(CASE
+            WHEN d.department = 'engineering' THEN salary ELSE 0 END) AS diferencia
+FROM db_employee e
+INNER JOIN db_dept d
+    ON e.department_id = d.id
+
 
 ```
