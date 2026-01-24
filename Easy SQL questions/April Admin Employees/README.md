@@ -21,5 +21,10 @@ Find the number of employees working in the Admin department that joined in Apri
 
 ```sql
 
-
+SELECT 
+    COUNT(DISTINCT worker_id) AS total_admin_workers
+FROM worker
+WHERE
+    EXTRACT(MONTH FROM joining_date) >= 4 AND
+    department LIKE 'Admin'
 ```
