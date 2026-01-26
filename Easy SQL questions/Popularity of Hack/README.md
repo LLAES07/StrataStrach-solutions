@@ -36,4 +36,13 @@ Output the location along with the average popularity.
 ```sql
 
 
+SELECT
+    location,
+    AVG(popularity) AS promedio
+FROM facebook_employees e
+INNER JOIN facebook_hack_survey h
+    ON e.id = h.employee_id
+GROUP BY
+    location
+
 ```
