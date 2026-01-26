@@ -18,6 +18,11 @@ Find the last time each bike was in use. Output both the bike number and the dat
 ```sql
 
 
+-- FILTER: LAST TIME EACH BIKE WAS USE IT 
+-- SELECT bike_number, and date time last use
+-- ORDER bt bikes last used
+
+--1. Encontrar la ultima vez que cada bicicleta fue usada
 
 SELECT
     bike_number,
