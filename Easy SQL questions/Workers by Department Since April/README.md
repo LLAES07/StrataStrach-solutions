@@ -21,3 +21,20 @@ Sort the results based on the number of workers in descending order.
 | 8         | Geetika    | Chauhan   | 90000  | 2014-04-11   | Admin      |
 | 9         | Agepi      | Argon     | 90000  | 2015-04-10   | Admin      |
 
+```sql
+
+-- OBJ1: n° of workers
+-- FILTER1: workers by department
+-- FILTER: joined in or after april
+SELECT
+    department,
+    COUNT( DISTINCT worker_id) AS total_workers
+
+FROM worker
+WHERE
+    joining_date >= '2014-04-01'
+GROUP BY
+    department
+ORDER BY total_workers DESC
+
+```
