@@ -16,3 +16,22 @@ We have a table with employees and their salaries, however, some of the records 
 | 5   | Sherry     | Golden    | 44101  | 1002          |
 | 6   | Natasha    | Swanson   | 79632  | 1005          |
 | 6   | Natasha    | Swanson   | 90000  | 1005          |
+
+# RESPUESTA
+
+```SQL
+
+SELECT
+    a.id,
+    a.first_name,
+    a.last_name,
+    a.department_id,
+    (SELECT MAX(b.salary) FROM ms_employee_salary b WHERE a.id = b.id )
+
+FROM 
+    ms_employee_salary a
+GROUP BY a.id, a.first_name, a.last_name,a.department_id
+ORDER BY id ASC;
+
+
+```
