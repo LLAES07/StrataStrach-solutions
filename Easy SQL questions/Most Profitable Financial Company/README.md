@@ -130,5 +130,5 @@ WHERE
                    FROM forbes_global_2010_2014   
                    WHERE
                         LOWER(sector) = 'financials' 
-                   )
+                   );
 ```
