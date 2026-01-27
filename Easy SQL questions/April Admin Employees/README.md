@@ -26,5 +26,5 @@ SELECT
 FROM worker
 WHERE
     EXTRACT(MONTH FROM joining_date) >= 4 AND
-    department LIKE 'Admin'
+    department LIKE 'Admin';
 ```
