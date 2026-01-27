@@ -49,7 +49,7 @@ SELECT
 FROM customers c
 LEFT JOIN orders o ON c.id = o.cust_id
 ORDER BY 
-    first_name ASC, order_details ASC
+    first_name ASC, order_details ASC;
 
 
 ```
