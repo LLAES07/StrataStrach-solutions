@@ -20,5 +20,13 @@ Output the department, first name, and salary of employees along with the averag
 
 ```sql
 
+SELECT
+    department,
+    first_name,
+    salary,
+    AVG(salary) OVER(partition by department) AS avg_salary
+
+FROM 
+    employee;
 
 ```
