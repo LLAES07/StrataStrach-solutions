@@ -32,7 +32,7 @@ FROM dc_bikeshare_q1_2012
 GROUP BY
     bike_number
 ORDER BY
-    last_time_used DESC
+    last_time_used DESC;
     
 
 ```
