@@ -22,4 +22,12 @@ Calculate the percentage of users who are both from the US and have an 'open' st
 ```SQL
 
 
+SELECT
+    COUNT(*)*100.0/ (SELECT COUNT(*)
+                    FROM fb_active_users    ) AS porcentaje
+
+FROM fb_active_users
+WHERE
+    country = 'USA' AND status ='open'
+
 ```
