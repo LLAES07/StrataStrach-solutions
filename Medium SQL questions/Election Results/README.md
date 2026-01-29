@@ -43,6 +43,7 @@ WITH votos AS (
 
 SELECT
     candidate
+    -- Genera un join entre voting_results y votos para que al lado de cada votante salga su ponderación por voto segun cuanto voto
 FROM voting_results v
 INNER JOIN votos v2
     ON v.voter = v2.voter
@@ -51,6 +52,7 @@ WHERE
 GROUP BY
     candidate
 ORDER BY
+    -- Suma la cantidad de votos y los ordena de mayor a menor
     ROUND(SUM(ratio_votos), 3) DESC
 LIMIT 1;
 
