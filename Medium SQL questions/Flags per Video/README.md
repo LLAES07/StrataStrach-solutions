@@ -24,3 +24,18 @@ For each video, find how many unique users flagged it. A unique user can be iden
 |Mark|Johnson|y6120QOlsfU|bl40qw|
 
 
+
+# RESPUESTA
+
+```sql
+
+SELECT
+    video_id,
+    COUNT(DISTINCT(CONCAT(COALESCE(user_firstname, ''), ' ', COALESCE(user_lastname, '')))) AS unique_user_count
+FROM
+    user_flags
+WHERE
+    flag_id IS NOT NULL
+GROUP BY
+    video_id;
+```
