@@ -41,4 +41,39 @@ Which user flagged the most distinct videos that ended up approved by YouTube? O
 
 ```sql
 
+
+WITH data AS (
+    SELECT
+        CONCAT(user_firstname, ' ', user_lastname) AS nombre_completo,
+        COUNT(DISTINCT u.video_id) AS total
+    FROM user_flags u
+    INNER JOIN flag_review f
+        ON u.flag_id = f.flag_id
+    WHERE
+        f.reviewed_outcome ='APPROVED' AND
+        f.reviewed_by_yt ='TRUE'
+    GROUP BY
+        CONCAT(user_firstname, ' ', user_lastname)
+    ORDER BY 
+        COUNT(DISTINCT u.video_id)  DESC
+
+),
+
+rk_ AS (
+    SELECT
+        *,
+        DENSE_RANK() OVER(ORDER BY total DESC) as rk
+    FROM data
+)
+
+SELECT
+    nombre_completo
+FROM rk_
+WHERE
+    rk = 1;
+    
+
+
+
+
 ```
