@@ -43,6 +43,7 @@ Which user flagged the most distinct videos that ended up approved by YouTube? O
 
 
 WITH data AS (
+        -- Concatena los nombres y cuenta la cantidad de videos
     SELECT
         CONCAT(user_firstname, ' ', user_lastname) AS nombre_completo,
         COUNT(DISTINCT u.video_id) AS total
@@ -60,12 +61,14 @@ WITH data AS (
 ),
 
 rk_ AS (
+    -- Crea un ranking
     SELECT
         *,
         DENSE_RANK() OVER(ORDER BY total DESC) as rk
     FROM data
 )
 
+    -- Selecciona el ranking 1 para cada usuario
 SELECT
     nombre_completo
 FROM rk_
