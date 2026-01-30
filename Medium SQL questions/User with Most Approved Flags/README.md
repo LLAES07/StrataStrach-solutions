@@ -1,0 +1,44 @@
+Which user flagged the most distinct videos that ended up approved by YouTube? Output, in one column, their full name or names in case of a tie. In the user's full name, include a space between the first and the last name.
+
+# TABLA
+### user_flags
+| user_firstname | user_lastname | video_id    | flag_id |
+| -------------- | ------------- | ----------- | ------- |
+| Richard        | Hasson        | y6120QOlsfU | 0cazx3  |
+| Mark           | May           | Ct6BUPvE2sM | 1cn76u  |
+| Gina           | Korman        | dQw4w9WgXcQ | 1i43zk  |
+| Mark           | May           | Ct6BUPvE2sM | 1n0vef  |
+| Mark           | May           | jNQXAC9IVRw | 1sv6ib  |
+| Gina           | Korman        | dQw4w9WgXcQ | 20xekb  |
+| Mark           | May           | 5qap5aO4i9A | 4cvwuv  |
+| Daniel         | Bell          | 5qap5aO4i9A | 4sd6dv  |
+| Richard        | Hasson        | y6120QOlsfU | 6jjkvn  |
+| Pauline        | Wilks         | jNQXAC9IVRw | 7ks264  |
+
+
+### flag_review
+
+
+|flag_id|reviewed_by_yt|reviewed_date|reviewed_outcome|
+|---|---|---|---|
+|0cazx3|FALSE|||
+|1cn76u|TRUE|2022-03-15|REMOVED|
+|1i43zk|TRUE|2022-03-15|REMOVED|
+|1n0vef|TRUE|2022-03-15|REMOVED|
+|1sv6ib|TRUE|2022-03-15|APPROVED|
+|20xekb|TRUE|2022-03-17|REMOVED|
+|4cvwuv|TRUE|2022-03-15|APPROVED|
+|4l1tk7|FALSE|||
+|4sd6dv|TRUE|2022-03-14|REMOVED|
+|6jjkvn|TRUE|2022-03-16|APPROVED|
+|7ks264|TRUE|2022-03-15|APPROVED|
+|8946nx|FALSE|||
+|8wwg0l|FALSE|||
+|arydfd|TRUE|2022-03-15|APPROVED|
+|bl40qw|TRUE|2022-03-16|REMOVED|
+
+# RESPUESTA
+
+```sql
+
+```
