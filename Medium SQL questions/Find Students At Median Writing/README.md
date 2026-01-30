@@ -17,3 +17,14 @@ Identify the IDs of students who scored exactly at the median for the SAT writin
 | Washington HS | Frederickson | 8          | 314         | 503        | 341      | 174         | 8   | 314         |      |
 | Washington HS | Frederickson | 9          | 401         | 630        | 666      | 111         | 9   | 401         |      |
 | Washington HS | Frederickson | 10         | 532         | 683        | 316      | 134         | 10  | 532         |      |
+
+
+# RESPUESTA
+
+```sql
+SELECT 
+    sat_writing
+FROM sat_scores
+ORDER BY sat_writing
+LIMIT 2 OFFSET (SELECT FLOOR((COUNT(*) - 1) / 2) FROM sat_scores)
+```
