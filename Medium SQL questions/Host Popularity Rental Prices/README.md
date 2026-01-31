@@ -26,6 +26,29 @@ Output host popularity rating and their minimum, average and maximum rental pric
 # RESPUESTA
 
 ```sql
+WITH data AS (
+    SELECT
+        *,
+        CASE
+            WHEN number_of_reviews = 0 THEN 'New'
+            WHEN number_of_reviews BETWEEN 1 AND 5 THEN 'Rising'
+            WHEN number_of_reviews BETWEEN 6 AND 15 THEN 'Trending Up'
+            WHEN number_of_reviews BETWEEN 16 AND 40 THEN 'Popular'
+            WHEN number_of_reviews > 40 THEN 'Hot'
+            ELSE 'Unknown' 
+        END AS review_category
+    FROM airbnb_host_searches
+)
 
+SELECT
+    review_category,
+    MIN(price) AS min_price,
+    AVG(price) AS avg_price,
+    MAX(price) AS max_price
+FROM data
+GROUP BY
+    review_category
+ORDER BY
+    min_price
 
 ```
