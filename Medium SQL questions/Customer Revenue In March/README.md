@@ -50,12 +50,15 @@ orders
 
 SELECT 
     cust_id,
+    -- Suma el total de la orden para cada cliente
     SUM(total_order_cost) AS total_revenue
 FROM orders
 WHERE
+    -- Filtra por año y por mes
     EXTRACT(YEAR FROM order_date) = '2019' AND
     EXTRACT(MONTH FROM order_date) = 03
 GROUP BY
+    -- Agrupa por cliente
     cust_id
 ORDER BY total_revenue DESC;
 
