@@ -16,6 +16,8 @@ titanic
 ```sql
 SELECT
     survived, 
+
+    -- Case para las condiciones indicadas
     SUM(CASE
             WHEN pclass = 1 THEN 1  END) 
     AS first_class,
