@@ -48,6 +48,16 @@ orders
 
 ```sql
 
+SELECT 
+    cust_id,
+    SUM(total_order_cost) AS total_revenue
+FROM orders
+WHERE
+    EXTRACT(YEAR FROM order_date) = '2019' AND
+    EXTRACT(MONTH FROM order_date) = 03
+GROUP BY
+    cust_id
+ORDER BY total_revenue DESC;
 
 
 ```
