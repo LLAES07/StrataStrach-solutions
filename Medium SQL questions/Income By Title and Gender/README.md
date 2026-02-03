@@ -59,6 +59,8 @@ sf_bonus
 
 ```sql
 WITH total_bonus_employee AS (
+
+    -- Total de bonus para cada empleado con bonus
     SELECT
         worker_ref_id,
         SUM(bonus) AS total_bonus
@@ -67,6 +69,7 @@ WITH total_bonus_employee AS (
 )
 
 SELECT
+    -- Query final genera un inner join para tener los empleados que tienen bonos y sacar el promedio de salario y bonus
     employee_title,
     sex,
     AVG(salary + total_bonus)
