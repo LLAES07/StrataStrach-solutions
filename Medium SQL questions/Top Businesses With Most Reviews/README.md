@@ -30,13 +30,14 @@ yelp_business
 -- SELECT buisiness name, # rewiees
 -- ORDER total_reviews DESC
 WITH CT1 AS (
+        -- Usando rank para ajustarse al requisito de saltarse valores
     SELECT 
         name,
         review_count,
         RANK() OVER(ORDER BY review_count DESC)
     FROM yelp_business
 )
-
+-- Consulta final ordenada por el ranking
 SELECT
     name, 
     review_count
