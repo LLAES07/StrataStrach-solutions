@@ -24,6 +24,20 @@ yelp_business
 # RESPUESTA
 
 ```sql
+WITH ct1 AS (
+    SELECT
+        UNNEST(string_to_array(categories, ';')) AS cat,
+        review_count
+    FROM yelp_business
+)
 
+SELECT
+    cat,
+    SUM(review_count) AS total_count
+FROM
+    ct1
+GROUP BY    
+    cat
+ORDER BY total_count DESC
 
 ```
