@@ -25,7 +25,24 @@ yelp_business
 # RESPUESTA
 
 ```sql
+-- OBJ: TOP 5 BUSINESSES  >> reviews
+-- EACH ROW 1 business_id
+-- SELECT buisiness name, # rewiees
+-- ORDER total_reviews DESC
+WITH CT1 AS (
+    SELECT 
+        name,
+        review_count,
+        RANK() OVER(ORDER BY review_count DESC)
+    FROM yelp_business
+)
 
-    
+SELECT
+    name, 
+    review_count
+FROM ct1
+ORDER BY rank ASC
+LIMIT 5;
+
 
 ```
