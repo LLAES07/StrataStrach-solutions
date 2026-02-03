@@ -25,6 +25,7 @@ yelp_business
 
 ```sql
 WITH ct1 AS (
+    -- Primero transforma las categorias a lista y posteriormente hace un explode 
     SELECT
         UNNEST(string_to_array(categories, ';')) AS cat,
         review_count
@@ -32,6 +33,7 @@ WITH ct1 AS (
 )
 
 SELECT
+    -- Ordena el total de reviews por categoria
     cat,
     SUM(review_count) AS total_count
 FROM
