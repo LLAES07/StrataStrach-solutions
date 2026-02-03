@@ -58,6 +58,21 @@ sf_bonus
 # RESPUESTA
 
 ```sql
+WITH total_bonus_employee AS (
+    SELECT
+        worker_ref_id,
+        SUM(bonus) AS total_bonus
+    FROM sf_bonus
+    GROUP BY worker_ref_id
+)
 
+SELECT
+    employee_title,
+    sex,
+    AVG(salary + total_bonus)
+FROM sf_employee AS e
+INNER JOIN total_bonus_employee AS b
+    ON e.id = b.worker_ref_id
+GROUP BY employee_title, sex
 
 ```
