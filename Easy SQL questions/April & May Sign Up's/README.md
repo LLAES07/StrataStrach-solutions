@@ -36,6 +36,11 @@ transactions
 # RESPUESTA
 
 ```sql
-
+select 
+    DISTINCT
+        signup_id
+from transactions
+WHERE
+    EXTRACT(MONTH FROM transaction_start_date) IN (4,5)
 
 ```
