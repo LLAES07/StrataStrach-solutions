@@ -55,4 +55,12 @@ shopify_carriers
 
 ```sql
 
+SELECT
+    COUNT(shop_id) as total_orders_shipped
+FROM shopify_orders o
+INNER JOIN shopify_carriers c
+    ON o.carrier_id = c.id
+WHERE
+    c.name = 'Speedy Express';
+
 ```
