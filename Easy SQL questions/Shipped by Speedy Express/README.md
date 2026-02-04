@@ -56,11 +56,13 @@ shopify_carriers
 ```sql
 
 SELECT
-    COUNT(shop_id) as total_orders_shipped
+    -- Cuenta el total de ordenes que fueron enviadas por Speedy Express
+    COUNT(shop_id) as total_orders_shipped_speedy_express
 FROM shopify_orders o
-INNER JOIN shopify_carriers c
+INNER JOIN shopify_carriers c  -- Une las tablas shopify_orders y shopify_carriers 
     ON o.carrier_id = c.id
 WHERE
+    -- Filtra por la empresa requerida
     c.name = 'Speedy Express';
 
 ```
