@@ -22,6 +22,14 @@ airbnb_search_details
 
 ```sql
 
-
+SELECT
+    city,
+    review_scores_rating
+FROM airbnb_search_details
+WHERE
+    cancellation_policy = 'flexible'
+    AND LOWER(city) LIKE 'sf'
+ORDER BY
+    review_scores_rating DESC NULLS LAST;
 
 ```
