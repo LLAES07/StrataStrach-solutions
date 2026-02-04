@@ -37,10 +37,12 @@ transactions
 
 ```sql
 select 
+    -- Deja solo los valores únicos
     DISTINCT
         signup_id
 from transactions
 WHERE
+    -- Filtra por las transacciones entre abril y mayo
     EXTRACT(MONTH FROM transaction_start_date) IN (4,5)
 
 ```
