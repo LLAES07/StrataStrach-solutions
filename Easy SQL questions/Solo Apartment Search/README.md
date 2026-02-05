@@ -36,7 +36,11 @@ airbnb_search_details
 # RESPUESTA
 
 ```sql
-
+SELECT
+    *
+FROM airbnb_search_details
+WHERE 
+    property_type ='Apartment' AND accommodates = 1
 
 
 ```
