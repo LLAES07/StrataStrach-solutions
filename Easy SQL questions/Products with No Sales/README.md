@@ -50,4 +50,20 @@ dim_product
 
 ```sql
 
+
+
+SELECT
+    prod_sku_id,
+    prod_sku_name
+FROM dim_product
+
+WHERE prod_sku_id NOT IN (
+    -- Subquery genera las id de los productos vendidos
+    select
+        DISTINCT prod_sku_id
+    from fct_customer_sales
+)
+
+
+
 ```
