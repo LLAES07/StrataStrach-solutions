@@ -31,5 +31,10 @@
 
 ```sql
 
+SELECT DISTINCT 
+    worker_id
+FROM worker_logins
+WHERE login_timestamp >= '2021-12-13' 
+  AND login_timestamp < '2021-12-20';
 
 ```
