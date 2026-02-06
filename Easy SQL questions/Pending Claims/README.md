@@ -28,5 +28,12 @@ Count how many claims submitted in December 2021 are still pending. A claim is p
 
 ```sql
 
-
+SELECT
+    COUNT(claim_id) AS pending_claims
+FROM cvs_claims
+WHERE 
+    date_submitted >= '2021-12-01' AND
+    date_submitted <= '2021-12-31' AND
+    date_accepted IS NULL AND
+    date_rejected IS NULL
 ```
