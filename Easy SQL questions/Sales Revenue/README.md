@@ -23,6 +23,10 @@ amazon_sales
 # RESPUESTA
 
 ```sql
-
+SELECT
+    SUM(order_total) AS revenue_2021
+FROM amazon_sales
+WHERE
+    EXTRACT(YEAR FROM order_date)= '2021'
 
 ```
