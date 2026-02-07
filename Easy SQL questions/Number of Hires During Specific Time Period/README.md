@@ -13,6 +13,11 @@ employees
 
 ```sql
 
-
+SELECT
+    COUNT(id) AS total_employees_hired
+FROM employees
+WHERE
+    joining_date >= '2022-06-01' AND
+    joining_date >= '2022-07-31'
 
 ```
