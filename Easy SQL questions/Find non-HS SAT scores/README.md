@@ -22,5 +22,9 @@ sat_scores
 # RESPUESTA
 
 ```sql
-
+SELECT 
+    * 
+FROM sat_scores
+WHERE 
+    TRIM(school) NOT LIKE '%HS';
 ```
