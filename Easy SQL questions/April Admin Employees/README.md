@@ -1,4 +1,14 @@
+# April Admin Employees
+
+**[ENG]**
+
 Find the number of employees working in the Admin department that joined in April or later, in any year.
+
+
+**[ESP]**
+
+Encuentra el numero de empleados que trabaja en el departamento de administración y que se unieron en abril o posterior, en cualquier año.
+
 
 # Tabla
 
