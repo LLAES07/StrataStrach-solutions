@@ -1,6 +1,11 @@
 # Find all searches for accommodations with an equal number of bedrooms bathrooms
 
+**[ENG]**
 Find all searches for accommodations where the number of bedrooms is equal to the number of bathrooms.
+
+**[ESP]**
+
+Encuentra todas las busquedas de acomodación donde el numero de habitaciones sea igual al numero de baños.
 
 ### Table
 
