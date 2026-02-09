@@ -173,6 +173,11 @@ Find the search details for villas and houses with wireless internet access.
 # RESPUESTA
 
 ```sql
-
+SELECT 
+    *
+FROM airbnb_search_details
+WHERE 
+    property_type IN ('Villa', 'House') 
+    AND amenities LIKE '%Wireless Internet%';
 
 ```
