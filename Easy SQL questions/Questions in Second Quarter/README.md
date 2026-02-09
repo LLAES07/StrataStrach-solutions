@@ -33,6 +33,10 @@ fb_searches
 # RESPUESTA
 
 ```sql
-
+SELECT 
+    COUNT(*) AS total_busquedas
+FROM fb_searches 
+WHERE EXTRACT(QUARTER FROM date) = 2 
+  AND EXTRACT(YEAR FROM date) = 2021;
 
 ```
