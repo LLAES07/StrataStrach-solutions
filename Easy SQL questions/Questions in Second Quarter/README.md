@@ -34,9 +34,9 @@ fb_searches
 
 ```sql
 SELECT 
-    COUNT(*) AS total_busquedas
+    COUNT(*) AS total_busquedas -- cuenta el total de busquedas
 FROM fb_searches 
-WHERE EXTRACT(QUARTER FROM date) = 2 
-  AND EXTRACT(YEAR FROM date) = 2021;
+WHERE EXTRACT(QUARTER FROM date) = 2 -- Filtra por el segundo cuarto del año
+  AND EXTRACT(YEAR FROM date) = 2021; -- filtra por el año 2021
 
 ```
