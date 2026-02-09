@@ -1,4 +1,15 @@
+
+# Artist Appearance Count
+
+**[ENG]**
+
 Find how many times each artist appeared on the Spotify ranking list. Output the artist name along with the corresponding number of occurrences. Order records by the number of occurrences in descending order.
+
+**[ESP]**
+
+Encuentra la cantidad de veces que cada artista aparecio en la lista de rankings de spotify. Muesta el nombre del artista junto con el correspondiente numero de apariciones. Ordena los registros por el numero de apariciones en orden descendente.
+
+
 
 ### Table
 
