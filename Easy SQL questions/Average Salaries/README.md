@@ -1,5 +1,12 @@
+# Average Salaries
+
+**[ENG]**
 Compare each employee's salary with the average salary of the corresponding department.
 Output the department, first name, and salary of employees along with the average salary of that department.
+
+**[ESP]**
+
+Compara el salario de cada empleado con el salario promedio correspondiente a su departamento. Muestra el departamento, el nombre del empleado y el salario junto con el salario promedio de cada departamento.
 
 # TABLA
 
