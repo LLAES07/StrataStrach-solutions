@@ -1,0 +1,1 @@
+# Find all searches for accommodations with an equal number of bedrooms bathrooms
