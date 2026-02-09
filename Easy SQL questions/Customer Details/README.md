@@ -1,4 +1,12 @@
+
+# Customer Details
+
+**[ENG]**
 Find the details of each customer regardless of whether the customer made an order. Output the customer's first name, last name, and the city along with the order details. Sort records based on the customer's first name and the order details in ascending order.
+
+**[ESP]**
+Encuentra los detalles de cada cliente, independientemente de si el cliente realizó un pedido o no. Muestra el nombre, el apellido y la ciudad del cliente junto con los detalles del pedido. Ordena los registros según el nombre del cliente y los detalles del pedido en orden ascendente.
+
 
 ### Tables
 
