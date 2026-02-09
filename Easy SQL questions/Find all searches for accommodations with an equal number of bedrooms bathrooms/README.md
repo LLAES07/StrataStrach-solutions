@@ -174,6 +174,10 @@ airbnb_search_details
 # RESPUESTA
 
 ```sql
-
+SELECT
+    *
+FROM airbnb_search_details
+    WHERE
+        bedrooms = bathrooms;
 
 ```
