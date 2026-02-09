@@ -1,11 +1,19 @@
 # April & May Sign Up's
 
-
+**[ENG]**
 You have been asked to get a list of all the sign up IDs with transaction start dates in either April or May.
 
 Since a sign up ID can be used for multiple transactions only output the unique ID.
 
 Your output should contain a list of non duplicated sign-up IDs.
+
+**[ESP]**
+
+Se te ha solicitado obtener una lista de todos los ID de registro (sign-up IDs) cuyas fechas de inicio de transacción sean en abril o mayo.
+
+Dado que un mismo ID de registro puede utilizarse para múltiples transacciones, solo debes mostrar el ID único.
+
+Tu resultado debe contener una lista de IDs de registro sin duplicados.
 
 ### Table
 
