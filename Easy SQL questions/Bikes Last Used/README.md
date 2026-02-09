@@ -1,6 +1,15 @@
-Find the last time each bike was in use. Output both the bike number and the date-timestamp of the bike's last use (i.e., the date-time the bike was returned). Order the results by bikes that were most recently used.}
 
-# TABLA
+# Bikes Last Used
+
+**[ENG]**
+Find the last time each bike was in use. Output both the bike number and the date-timestamp of the bike's last use (i.e., the date-time the bike was returned). Order the results by bikes that were most recently used.
+
+**[ESP]**
+
+Encuentra la ultima vez que cada bicileta estuvo en uso. Muestra tanto el número de la bicicleta como la fecha-hora del ultimo uso.
+
+
+### TABLA
 ### dc_bikeshare_q1_2012
 
 |duration|duration_seconds|start_time|start_station|start_terminal|end_time|end_station|end_terminal|bike_number|rider_type|id|
