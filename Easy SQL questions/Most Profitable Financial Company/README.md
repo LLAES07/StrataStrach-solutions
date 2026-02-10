@@ -1,5 +1,14 @@
 
+# Most Profitable Financial Company
+
+**[ENG]**
+
 Find the most profitable company from the financial sector. Output the result along with the continent.
+
+**[ES]**
+
+Encuentra la empresa más rentable del sector financiero. Muestra el resultado junto con el continente.
+
 
 ## tabla
 forbes_global_2010_2014
