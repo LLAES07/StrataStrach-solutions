@@ -1,4 +1,16 @@
+
+# Number of Shipments Per Month
+
+**[ENG]**
+
 Write a query that will calculate the number of shipments per month. The unique key for one shipment is a combination of shipment_id and sub_id. Output the year_month in format YYYY-MM and the number of shipments in that month.
+
+**[ES]**
+
+Escribe una consulta que calcule el número de envíos por mes. La clave única de un envío es una combinación de shipment_id y sub_id. Salida el año_mes en formato YYYY-MM y el número de envíos en ese mes.
+
+
+### Table
 
 ## amazon_shipment
 
