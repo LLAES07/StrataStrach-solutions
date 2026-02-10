@@ -1,4 +1,13 @@
+# Number Of Bathrooms And Bedrooms
+
+**[ENG]**
+
 Find the average number of bathrooms and bedrooms for each city’s property types. Output the result along with the city name and the property type.
+
+**[ESP]**
+
+Encuentra el promedio de baños y habitaciones para cada tipo de propiedad en cada ciudad. Muestra el resultado junto con el nombre de la ciudad y el tipo de propiedad.
+
 
 ## airbnb_search_details
 
