@@ -1,6 +1,19 @@
+# Number of violations
+
+
+**[ENG]**
+
 You are given a dataset of health inspections that includes details about violations. Each row represents an inspection, and if an inspection resulted in a violation, the `violation_id` column will contain a value.
 
 Count the total number of violations that occurred at **'Roxanne Cafe'** for each year, based on the inspection date. Output the year and the corresponding number of violations in ascending order of the year.
+
+**[ES]**
+
+Te proporcionamos un conjunto de datos de inspecciones de salud que incluye detalles sobre las violaciones. Cada fila representa una inspección, y si una inspección resultó en una violacion, la columna `violation_id` tendrá un valor.
+
+Cuenta el total de violaciones ocurrida en el  **'Roxanne Cafe'** para cada año, basado en la fecha de inpección. Muestra el año y el numero correspondientes de violaciones en orden ascendente del año.
+
+
 
 ### Table
 sf_restaurant_health_violations
