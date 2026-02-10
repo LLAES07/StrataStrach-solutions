@@ -1,9 +1,17 @@
 # Number of Hires During Specific Time Period
 
+**[ENG]**
 
 You have been asked to find the number of employees hired between the months of January and July in the year 2022 **inclusive**.
 
 Your output should contain the number of employees hired in this given time frame.
+
+**[ES]**
+
+Te han pedido encontrar el numero de empleados contratados entre los meses de enero y julio inclusive en el año 2022. 
+Tu output debe contar con el número de empleados contratados en este tiempo.
+
+
 
 ### Table
 
