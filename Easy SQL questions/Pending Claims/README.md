@@ -1,7 +1,15 @@
 # Pending Claims
 
+**[ENG]**
 
 Count how many claims submitted in December 2021 are still pending. A claim is pending when it has neither an acceptance nor rejection date.
+
+**[ES]**
+
+Cuenta cuantos reclamos fueron enviados en diciembre de 2021 y todavía están pendientes. Un reclamo está pendiente cuando no tiene una fecha de aceptación ni de rechazo.
+
+
+
 
 ### Tabla
 | laim_id | account_id | date_submitted | date_accepted | date_rejected |
