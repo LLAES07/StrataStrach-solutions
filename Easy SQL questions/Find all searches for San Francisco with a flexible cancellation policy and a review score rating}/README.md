@@ -1,8 +1,12 @@
 # Find all searches for San Francisco with a flexible cancellation policy and a review score rating
 
-
+**[ENG]**
 Find all searches for San Francisco with a flexible cancellation policy and a review score rating. Sort the results by the review score in the descending order.
 	
+**[ESP]**
+Encuentra todas las búsquedas para San Francisco con una política de cancelación flexible y una calificación de puntuación de revisión. Ordena los resultados por la calificación de revisión en orden descendente.
+
+
 ### Table
 	
 airbnb_search_details
