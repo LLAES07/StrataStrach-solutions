@@ -1,4 +1,12 @@
+
+# MacBookPro User Event Count
+
+**[ENG]**
 Count the number of user events performed by MacBookPro users.Output the result along with the event name. Sort the result based on the event count in the descending order.
+
+**[ES]**
+Cuenta el número de eventos de usuario realizados por los usuarios de MacBookPro. Muestra el resultado junto con el nombre del evento. Ordena el resultado en orden descendiente.
+
 
 ## tabla
 | user_id | occurred_at         | event_type  | event_name   | location      | device                 |
