@@ -1,4 +1,14 @@
+# Lyft Driver Wages
+
+**[ENG]**
+
 Find all Lyft drivers who earn either equal to or less than 30k USD or equal to or more than 70k USD. Output all details related to retrieved records.
+
+**[ES]**
+
+Encuentra los conductores de Lyft que ganan ya sea igual o menor que o igual a 30k USD o más que 70k USD. Muestra todos los detalles relacionados con los registros recuperados.
+
+# TABLA
 
 ### Table
 
