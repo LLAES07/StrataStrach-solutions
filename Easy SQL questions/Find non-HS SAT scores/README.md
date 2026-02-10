@@ -1,6 +1,11 @@
 # Find non-HS SAT scores
 
+**[ENG]**
 Find SAT scores of students whose high school names do not end with 'HS'.
+
+**[ESP]**
+
+Encuentra los escores SAT de los estudiantes que tienen nombres de escuelas que no terminan en 'HS'.
 
 ### Table
 
