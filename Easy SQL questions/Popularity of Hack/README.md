@@ -1,6 +1,14 @@
+# Popularity of Hack
+
+**[ENG]**
+
 Meta/Facebook has developed a new programing language called Hack.To measure the popularity of Hack they ran a survey with their employees. The survey included data on previous programing familiarity as well as the number of years of experience, age, gender and most importantly satisfaction with Hack. Due to an error location data was not collected, but your supervisor demands a report showing average popularity of Hack by office location. Luckily the user IDs of employees completing the surveys were stored.
 Based on the above, find the average popularity of the Hack per office location.
 Output the location along with the average popularity.
+
+**[ESP]**
+
+Meta/Facebook ha desarrollado un nuevo lenguaje de programación llamado Hack. Para medir su popularidad, realizaron una encuesta entre sus empleados. La encuesta incluyó datos sobre familiaridad previa con lenguajes de programación, años de experiencia, edad, género y, lo más importante, su nivel de satisfacción con Hack. Debido a un error, no se recolectaron los datos de ubicación, pero tu supervisor exige un informe que muestre la popularidad promedio de Hack por oficina. Afortunadamente, se guardaron los IDs de usuario de los empleados que completaron las encuestas.
 
 # Tablas
 
