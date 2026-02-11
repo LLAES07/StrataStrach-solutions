@@ -1,7 +1,12 @@
 # Sales Revenue
 
+**[ENG]**
 
 Calculate the sales revenue for the year 2021.
+
+**[ESP]**
+
+Calcula el total de ventas para el año 2021
 
 ### Tabla
 
