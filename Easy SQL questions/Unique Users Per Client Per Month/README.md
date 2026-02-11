@@ -1,6 +1,15 @@
+# Unique Users Per Client Per Month
 
+**[ENG]**
 
 Write a query that returns the number of unique users per client for each month. Assume all events occur within the same year, so only month needs to be be in the output as a number from 1 to 12.
+
+**[ESP]**
+
+Escribe una consulta que devuelva el número de usuarios únicos por cliente para cada mes. Suponga que todos los eventos ocurren dentro del mismo año, por l oque solo necesitas el mes como numero desde 1 a 12.
+
+### Tabla
+
 
 ## fact_events
 
