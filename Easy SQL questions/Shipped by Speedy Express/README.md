@@ -1,7 +1,12 @@
 # Shipped by Speedy Express
 
+**[ENG]**
 
 How many orders were shipped by Speedy Express in total?
+
+**[ESP]**
+
+Cuantas ordenes fueron enviadas por Speedy Express?
 
 ### Tables
 
