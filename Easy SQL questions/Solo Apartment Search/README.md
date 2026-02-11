@@ -1,9 +1,15 @@
 # Solo Apartment Search
 
+**[ENG]**
 
 You have been tasked with finding the worker IDs of individuals who logged in between the 13th to the 19th inclusive of December 2021.
 
 In your output, provide the unique worker IDs for the dates requested.
+
+**[ESP]**
+
+Te han dado la tarea de encontrar los id de los trabajadores individuales que han logeado entre el 13 y 19 de diciembre de 2021.
+En tu consulta, muestra el id del trabajador para las fechas solicitadas.
 
 ### Table
 
