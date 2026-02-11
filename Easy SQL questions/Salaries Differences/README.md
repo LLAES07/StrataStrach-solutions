@@ -1,4 +1,13 @@
+# Salaries Differences
+
+
+**[ENG]**
+
 Calculates the difference between the highest salaries in the marketing and engineering departments. Output just the absolute difference in salaries.
+
+**[ES]**
+
+Calcula la diferencia entre los salarios mas altos de los departamentos de marketing e ingenieria. Muestra solo la diferencia absoluta de salarios.
 
 # TABLAS
 
