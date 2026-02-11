@@ -1,7 +1,14 @@
 # Products with No Sales
 
+**[ENG]**
 
 Write a query to get a list of products that have not had any sales. Output the ID and market name of these products.
+
+**[ESP]**
+
+Escribe una consulta para obtener la lista de producto que no tiene alguna benta. Muestra la ID y el nombre del mercado de estos productos.
+
+
 
 ### Tables
 fct_customer_sales
