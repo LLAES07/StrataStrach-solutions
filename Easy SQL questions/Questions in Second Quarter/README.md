@@ -1,10 +1,13 @@
 # Questions in Second Quarter
 
 
-
+**[ENG]**
 
 How many searches were there in the second quarter of 2021?
 
+**[ESP]**
+
+¿Cuántas búsquedas hubo en el segundo cuarto de 2021?
 
 
 ### TABLA
