@@ -1,4 +1,17 @@
-Management wants to analyze only employees with official job titles. Find the job titles of the employees with the highest salary. If multiple employees have the same highest salary, include all their job titles.
+# Workers With The Highest Salaries
+
+**[ENG]**
+
+
+Management wants to analyze only employees with official job titles. Find the job titles of the employees with the highest salary. If multiple employees have the same highest 
+salary, include all their job titles.
+
+
+**[ESP]**
+
+Recurso humandos quiere que analices solo los empleados con titulos oficiales. Encuentra el titulo del trabajo de los empleados con los salarios más altos. Si hay empleados que tienen el salario más alto, incluye todos sus títulos de trabajo.
+
+
 
 ## Tablas
 
