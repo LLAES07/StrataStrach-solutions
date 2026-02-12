@@ -1,8 +1,20 @@
 # Customer Revenue In March
 
+
+**[ENG]**
+
 Calculate the total revenue from each customer in March 2019. Include only customers who were active in March 2019. An active user is a customer who made at least one transaction in March 2019.
 
 Output the revenue along with the customer id and sort the results based on the revenue in descending order.
+
+
+**[ESP]**
+
+Calcula el total de ingresos de cada cliente para marzo de 2019. Incluye solamente clientes que fueron activos en marzo de 2019. Un usuario activo es un cliente que hizo al menos una transacción en marzo de 2019.
+
+Muestra el ingreso total junto al id del cliente y ordena los resultados según el ingreso en orden descendente.
+
+
 
 ### Table
 
