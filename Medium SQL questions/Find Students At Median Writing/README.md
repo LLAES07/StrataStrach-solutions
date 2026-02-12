@@ -1,4 +1,15 @@
+# Find Students At Median Writing
+
+
+**[ENG]**
+
 Identify the IDs of students who scored exactly at the median for the SAT writing section.
+
+**[ESP]**
+
+Identifica los ids de los estudiantes que han marcado exactamente la mediana de la seccion de writing del SAT.
+
+
 
 # TABLA
 
