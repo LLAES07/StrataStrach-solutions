@@ -1,7 +1,15 @@
 # Income By Title and Gender
 
+**[ENG]**
 
 Find the average total compensation based on employee titles and gender. Total compensation is calculated by adding both the salary and bonus of each employee. However, not every employee receives a bonus so disregard employees without bonuses in your calculation. Employee can receive more than one bonus. Output the employee title, gender (i.e., sex), along with the average total compensation.
+
+**[ESP]**
+
+Encuentra el promedio de compensación total basada en títulos de empleado y género. La compensación total se calcula agregando tanto el salario como el bonus de cada empleado. Sin embargo cada empleado recibe un bono por lo que descarta empleados sin bonus en tu cálculo. Un empleado puede recibir más de un bon. Muestra el titulo del empleado, genero, junto con el promedio de compensación total.
+
+
+
 
 ### Tables
 
