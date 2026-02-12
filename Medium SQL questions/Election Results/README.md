@@ -1,8 +1,20 @@
+
+# Election Results
+
+**[ENG]**
+
 The election is conducted in a city and everyone can vote for one or more candidates, or choose not to vote at all. Each person has 1 vote so if they vote for multiple candidates, their vote gets equally split across these candidates. For example, if a person votes for 2 candidates, these candidates receive an equivalent of 0.5 vote each. Some voters have chosen not to vote, which explains the blank entries in the dataset.
 
 
 Find out who got the most votes and won the election. Output the name of the candidate or multiple names in case of a tie.
 To avoid issues with a floating-point error you can round the number of votes received by a candidate to 3 decimal places.
+
+**[ESP]**
+
+La elección se lleva a cabo en una ciudad y cada persona puede votar por uno o más candidatos, o optar por no votar. Cada persona tiene un voto por lo que si votan por multiples candidatos, su voto se ve repartido entre estos candidatos. Por ejemplo, si una persona vota por dos candidatos, estos reciven el equivalente a un voto de 0.5 cada uno. Algunos votantes han escogido no votar, lo que explica las entradas en blanco del dataset.
+
+Encuentra quien obtuvo mas votos y ganó la elección. Muestra el nombre del candidato o varios nombres en caso de empate. Para evitar el problema del error por floating-point puedes redondear los votos recibidos por el candidato a 3 decimales.
+
 
 # TABLA
 ### voting_results
