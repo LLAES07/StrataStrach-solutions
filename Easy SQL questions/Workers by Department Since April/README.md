@@ -1,3 +1,7 @@
+# Workers by Department Since April
+
+**[ENG]**
+
 Find the number of workers by department who joined on or after April 1, 2014.
 
 
@@ -5,6 +9,16 @@ Output the department name along with the corresponding number of workers.
 
 
 Sort the results based on the number of workers in descending order.
+
+
+**[ESP]**
+
+Encuentra el numero de trabajdores por departamento que se unieron el 1 de abril de 2024 o después.
+
+Muestra el nombre del departamento con el correspondiente numero de trabajadores.
+
+Ordena los resultados basado en el numero de trabajadores en orden descendente.
+
 
 # Tabla
 ### worker
