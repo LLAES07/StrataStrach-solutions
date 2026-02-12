@@ -1,3 +1,8 @@
+# Host Popularity Rental Prices
+
+**[ENG]**
+
+
 You are given a table named `airbnb_host_searches` that contains listings shown to users during Airbnb property searches. Each record represents a property listing (not the user's search query). Determine the minimum, average, and maximum rental prices for each host popularity rating based on the property's `number_of_reviews`.
 
 The host’s popularity rating is defined as below: • 0 reviews: "New" • 1 to 5 reviews: "Rising" • 6 to 15 reviews: "Trending Up" • 16 to 40 reviews: "Popular" • More than 40 reviews: "Hot"
@@ -5,6 +10,18 @@ The host’s popularity rating is defined as below: • 0 reviews: "New" • 1 t
 Tip: The `id` column in the table refers to the listing ID.
 
 Output host popularity rating and their minimum, average and maximum rental prices. Order the solution by the minimum price.
+
+
+**[ESP]**
+
+
+Se te da una tabla llamada `airbnb_host_searches' que contiene listas mostrada a los usuarios durante las búsquedas de Airbnb de propiedades. Cada registro representa una lista de propiedades (no la consulta del usuario). Determina el minimo, promedio y maximos precios de renta para cada nivel de popularidad de los hots basado en el numero de reviews de la propiedad.
+
+El score de popularidad es definido como • 0 reviews: "New" • 1 to 5 reviews: "Rising" • 6 to 15 reviews: "Trending Up" • 16 to 40 reviews: "Popular" • More than 40 reviews: "Hot"
+
+Pista: La columna id en la tabla se refiere a las ids listadas.
+
+Muestra el rating de popularidad del host y su minimo, promedio y maximas precios de rente. Ordena la solución por el precio menor.
 
 ### Table
 
