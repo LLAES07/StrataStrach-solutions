@@ -1,4 +1,16 @@
+
+# Flags per Video
+
+
+**[ENG]**
+
 For each video, find how many unique users flagged it. A unique user can be identified using the combination of their first name and last name. Do not consider rows in which there is no flag ID.
+
+
+**[ESP]**
+
+Para cada video, encuentra cuantos usuarios unicos lo han flageo. Un usuario unico se puede identificar utilizando la combinacion de su nombre. No consideres las filas en que no hay flags id.
+
 # Tabla
 
 ### user_flags
