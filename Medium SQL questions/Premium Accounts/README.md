@@ -1,3 +1,8 @@
+# Premium Accounts
+
+**[ENG]**
+
+
 You have a dataset that records daily active users for each premium account. A premium account appears in the data every day as long as it remains premium. However, some premium accounts may be temporarily discounted, meaning they are not actively paying — this is indicated by a final_price of 0.
 
 
@@ -8,6 +13,21 @@ Output three columns:
 •   The date of initial calculation.
 •   The number of premium accounts that were actively paying on that day.
 •   The number of those accounts that remain premium and are still paying after 7 days.
+
+
+**[ESP]**
+
+
+Tiene un conjunto de datos que registra los usuarios activos diarios para cada cuenta premium. Una cuenta premium aparece en los datos todos los días mientras siga siendo premium. Sin embargo, algunas cuentas premium pueden tener un descuento temporal, lo que significa que no están pagando activamente; esto se indica con un precio_final de 0.
+
+
+Para cada fecha, cuente la cantidad de cuentas premium que estaban pagando activamente ese día. Luego, realice un seguimiento de cuántas de esas mismas cuentas siguen siendo premium y pagan activamente exactamente 7 días después, si esa fecha posterior existe en el conjunto de datos. Devuelve resultados para las primeras 7 fechas del conjunto de datos.
+
+
+Salida de tres columnas:
+• La fecha del cálculo inicial.
+• La cantidad de cuentas premium que estaban pagando activamente ese día.
+• El número de aquellas cuentas que siguen siendo premium y siguen pagando después de 7 días.
 
 # TABLA
 
