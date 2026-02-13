@@ -1,4 +1,18 @@
+# User with Most Approved Flags
+
+**[ENG]**
+
+
 Which user flagged the most distinct videos that ended up approved by YouTube? Output, in one column, their full name or names in case of a tie. In the user's full name, include a space between the first and the last name.
+
+
+**[ESP]**
+
+Cuales usuarios flagearon la mayor cantidad de videos que terminaron en un aprobado por youtube? Muestra en una columna ya sea el nombre completo o en el caso de empate el nombre. En el nombre completo del usuario incluye un espacio entre el primer y el último nombre.
+
+
+
+
 
 # TABLA
 ### user_flags
