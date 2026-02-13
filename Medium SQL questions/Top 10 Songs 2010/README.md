@@ -1,4 +1,16 @@
+
+# Top 10 Songs 2010
+
+**[ENG]**
+
 Find the top 10 ranked songs in 2010. Output the rank, group name, and song name, but do not show the same song twice. Sort the result based on the rank in ascending order.
+
+
+**[ESP]**
+
+Encuentre las 10 canciones más rankeadas en 2010. Muestre el rango, el nombre del grupo y el nombre de la canción, pero no muestre la misma canción dos veces. Ordene el resultado según el rango en orden ascendente.
+
+
 
 ### Table
 
