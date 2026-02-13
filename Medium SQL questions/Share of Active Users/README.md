@@ -1,4 +1,15 @@
+
+# Share of Active Users
+
+**[ENG]**
+
 Calculate the percentage of users who are both from the US and have an 'open' status, as indicated in the fb_active_users table.
+
+**[ESP]**
+
+Calcula el porcentaje de usuarios que son de US y tienen status 'open', como indicado en la tabla fb_active_users.
+
+
 
 # Tabla
 
