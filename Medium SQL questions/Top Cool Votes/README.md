@@ -1,5 +1,15 @@
+# Top Cool Votes
+
+**[ENG]**
+
 Find the review_text that received the highest number of  cool votes.
 Output the business name along with the review text with the highest number of cool votes.
+
+**[ESP]**
+
+Encuentra el review_text que recibió la mayor cantidad de votos cool.
+Muestra el nombre del negocio junto con el review_text con la mayor cantidad de votos cool.
+
 
 # Tabla
 
