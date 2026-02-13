@@ -1,7 +1,13 @@
 # Reviews of Categories
 
+**[ENG]**
 
 Calculate number of reviews for every business category. Output the category along with the total number of reviews. Order by total reviews in descending order.
+
+
+**[ESP]**
+
+Calcula el numero de reviews para cada negocio por categoria. Muestra la categoria junto con el total de reviews. Ordena según el total de reviews en order descendiente.
 
 ### Table
 
