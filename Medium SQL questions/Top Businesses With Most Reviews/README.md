@@ -1,8 +1,19 @@
 # Top Businesses With Most Reviews
 
+**[ENG]**
+
+
 Find the top 5 businesses with most reviews. Assume that each row has a unique business_id such that the total reviews for each business is listed on each row. Output the business name along with the total number of reviews and order your results by the total reviews in descending order.
 
 If there are ties in review counts, businesses with the same number of reviews receive the same rank, and subsequent ranks are skipped accordingly (e.g., if two businesses tie for rank 4, the next business receives rank 6, skipping rank 5).
+
+
+**[ESP]**
+
+Encuentra los 5 negocios principales con la mayor cantidad de reseñas. Supón que cada fila tiene un business_id único, de modo que el total de reseñas de cada negocio aparece en cada fila.
+
+Muestra el nombre del negocio junto con el número total de reseñas y ordena los resultados por el total de reseñas de forma descendente.
+
 
 ### Table
 
