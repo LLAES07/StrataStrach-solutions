@@ -45,5 +45,10 @@ google_salaries
 # RESPUESTA
 
 ```sql
+SELECT
+    department,
+    AVG(salary) as salario_promedio
+FROM google_salaries
+GROUP BY education;
 
 ```
