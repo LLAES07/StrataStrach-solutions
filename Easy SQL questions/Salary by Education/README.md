@@ -1,1 +1,14 @@
 # Salary by Education
+
+
+**[ENG]**
+
+Given the education levels and salaries of a group of individuals, find what is the average salary for each level of education.
+
+
+
+# RESPUESTA
+
+```sql
+
+```
