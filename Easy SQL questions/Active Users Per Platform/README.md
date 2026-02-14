@@ -37,9 +37,11 @@ user_sessions
 ```sql
 
 SELECT 
+    -- Muestra la plataforma y los usuarios unicos por plataforma
     platform, 
     COUNT(DISTINCT user_id) AS total_users
 FROM user_sessions
+-- Agrupa por plataforma
 GROUP BY platform;
 
 ```
