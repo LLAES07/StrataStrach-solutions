@@ -36,6 +36,10 @@ user_sessions
 
 ```sql
 
-
+SELECT 
+    platform, 
+    COUNT(DISTINCT user_id) AS total_users
+FROM user_sessions
+GROUP BY platform;
 
 ```
