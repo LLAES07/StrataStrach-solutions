@@ -52,3 +52,13 @@ WHERE
     inschool_total > 0
 
 ```
+
+### BONUS
+
+```sql
+-- Tomo los usuarios donde tengan Refinance y los intersecto con los que tengan InSchool y el resultado me deja el id que tenga ambos
+SELECT user_id FROM loans WHERE type = 'Refinance'
+INTERSECT
+SELECT user_id FROM loans WHERE type = 'InSchool';
+
+```
