@@ -5,6 +5,10 @@
 
 Write a query that returns the user ID of all users that have created at least one ‘Refinance’ submission and at least one ‘InSchool’ submission.
 
+**[ES]**
+
+Escriba una consulta que devuelva el ID de usuario de todos los usuarios que han creado al menos una 'Refinance' entrega y al menos una 'InSchool' entrega.
+
 
 
 ### TABLA
