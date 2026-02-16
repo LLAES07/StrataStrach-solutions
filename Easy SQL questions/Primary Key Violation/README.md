@@ -42,6 +42,12 @@ dim_customer
 # RESPUESTA
 
 ```sql
-
+SELECT 
+    cust_id, 
+    COUNT(*)  AS total_registros
+FROM dim_customer
+GROUP BY cust_id
+    -- Agrupamos por el id y contamos los registros mayores a 1 porque rompen el criterio de que deba existir un cliente unico con esa id
+HAVING COUNT(*) > 1;
 
 ```
