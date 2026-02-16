@@ -32,6 +32,23 @@ Escriba una consulta que devuelva el ID de usuario de todos los usuarios que han
 
 ```sql
 
+WITH totals AS (
 
+SELECT
+    user_id,
+    SUM(CASE WHEN type = 'Refinance' THEN 1 ELSE 0 END) AS refinance_total,
+    SUM(CASE WHEN type = 'InSchool' THEN 1 ELSE 0 END) AS inschool_total
+FROM loans
+GROUP BY user_id
+ORDER BY user_id
+
+)
+
+SELECT 
+    user_id
+FROM totals
+WHERE
+    refinance_total >0  AND
+    inschool_total > 0
 
 ```
