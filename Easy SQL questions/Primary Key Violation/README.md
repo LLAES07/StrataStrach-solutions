@@ -6,6 +6,12 @@
 Write a query to return all Customers (cust_id) who are violating primary key constraints in the Customer Dimension (dim_customer) i.e. those Customers who are present more than once in the Customer Dimension.
 For example if cust_id 'C123' is present thrice then the query should return two columns, value in first should be 'C123', while value in second should be 3
 
+**[ES]**
+
+Escriba una consulta para devolver todos los Clientes (cust_id) que violan las restricciones de clave principal en la Dimensión del Cliente (dim_customer), es decir, aquellos Clientes que están presentes más de una vez en la Dimensión del Cliente.
+Por ejemplo, si cust_id 'C123' está presente tres veces, la consulta debería devolver dos columnas, el valor de la primera debería ser 'C123', mientras que el valor de la segunda debería ser 3.
+
+
 ### TABLA
 
 dim_customer
