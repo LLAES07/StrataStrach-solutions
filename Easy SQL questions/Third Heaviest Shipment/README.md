@@ -31,6 +31,33 @@ amazon_shipment| shipment_id | sub_id | weight | shipment_date |
 
 ```sql
 
+WITH total AS (
+    -- Calcula el total de peso por id
+    SELECT
+        shipment_id,
+        SUM(weight) AS total_weight
+    FROM amazon_shipment
+    GROUP BY
+        shipment_id
+),
+
+ranking AS (
+
+    -- Genera un ranking en empates comparten el mismo rankinh
+    SELECT
+        *,
+        DENSE_RANK() OVER(ORDER BY total_weight DESC) as rk
+    FROM total
+    
+)
+
+SELECT
+    -- Query final
+    shipment_id,
+    total_weight
+FROM ranking
+WHERE rk = 3
+    
 
 
 ```
