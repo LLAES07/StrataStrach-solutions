@@ -4,6 +4,13 @@
 
 You are given a list of posts of a Facebook user. Find the average number of likes.
 
+
+**[ESP]**
+
+Tienes una lista de publicaciones de un usuario de Facebook. Encuentra el número promedio de likes.
+
+
+
 ### TABLA
 
 | post_id | post_date  | no_of_likes |
