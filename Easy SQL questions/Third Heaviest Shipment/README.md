@@ -6,6 +6,11 @@ You've been asked by Amazon to find the shipment_id and weight of the third heav
 Output the shipment_id, and total_weight for that shipment_id.
 In the event of a tie, do not skip ranks.
 
+**[ESP]**
+
+Te han pedido desde amazon encontrar el shipment_id y peso de el 3 cargamento más pesado. Muestra el shipment_id, and total_weiht para ese shipment_id.
+En el evento de empate no saltes los rankings
+
 ### TABLA
 
 amazon_shipment| shipment_id | sub_id | weight | shipment_date |
