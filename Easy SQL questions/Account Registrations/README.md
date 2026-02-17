@@ -42,5 +42,10 @@ Find the number of account registrations according to the signup date. Output th
 # RESPUESTA
 
 ```sql
-
+SELECT
+    CONCAT(EXTRACT(YEAR FROM started_at), '-', EXTRACT(MONTH FROM started_at)) AS mes_año,
+    COUNT(*) AS total
+FROM noom_signups
+GROUP BY 1 
+ORDER BY 1;
 ```
