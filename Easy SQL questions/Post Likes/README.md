@@ -42,6 +42,9 @@ Tienes una lista de publicaciones de un usuario de Facebook. Encuentra el númer
 
 ```sql
 
+SELECT
+    AVG(no_of_likes) as promedio_likes
+FROM fb_posts
 
 
 ```
