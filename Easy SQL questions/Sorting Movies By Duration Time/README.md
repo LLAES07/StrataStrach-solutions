@@ -9,6 +9,12 @@ You have been asked to sort movies according to their duration in descending ord
 Your output should contain all columns sorted by the movie duration in the given dataset.
 
 
+**[ES]**
+
+Te han solicitado ordenar las peliculas según su duración en orden descendente.
+
+Tu consulta debe mostrar todas las columnas ordenadas por la duración de la película.
+
 ### TABLA
 
 
