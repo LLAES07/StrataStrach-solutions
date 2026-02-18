@@ -5,6 +5,12 @@
 
 You've been asked to arrange a column of random IDs in ascending alphabetical order based on their second character.
 
+
+**[ESP]**
+
+Te han solicitado arreglar una columna de ids aleatoreos en orden alfabeitco basado en su segúndo carácter.
+
+
 ### tabla
 random_id
 
