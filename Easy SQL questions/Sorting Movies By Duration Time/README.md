@@ -75,6 +75,9 @@ Tu consulta debe mostrar todas las columnas ordenadas por la duración de la pel
 # RESPUESTA
 
 ```sql
-
+SELECT
+    *
+FROM movie_catalogue
+ORDER BY duration DESC  
 
 ```
