@@ -5,6 +5,12 @@
 
 Calculate the average session duration (in seconds) for each session type.
 
+**[ESP]**
+
+Calcula el promedio  de la duración de la sesión (en segundos) para cada tipo de sesión.
+
+
+
 ### TABLA
 
 twitch_sessions
