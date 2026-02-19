@@ -42,6 +42,12 @@ twitch_sessions
 # RESPUESTA
 
 ```sql
-
+SELECT 
+    session_type, 
+    AVG(EXTRACT(EPOCH FROM (session_end - session_start))) AS avg_dura
+FROM 
+    twitch_sessions
+GROUP BY 
+    session_type;
 
 ```
