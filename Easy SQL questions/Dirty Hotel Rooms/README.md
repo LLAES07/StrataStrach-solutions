@@ -25,4 +25,12 @@ hotel_reviews
 
 ```sql
 
+
+SELECT
+    *
+FROM hotel_reviews
+WHERE
+    reviewer_nationality = 'Netherlands'
+    AND
+    negative_review LIKE '%dirty%';
 ```
