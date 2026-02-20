@@ -68,6 +68,13 @@ sf_exchange_rate
 
 ```sql
 
-
+SELECT 
+    a1.source_currency,
+    (a2.exchange_rate - a1.exchange_rate) AS diferencia
+FROM sf_exchange_rate a1
+JOIN sf_exchange_rate a2 
+    ON a1.source_currency = a2.source_currency
+WHERE a1.date = '2020-01-01' 
+  AND a2.date = '2020-07-01';
 
 ```
