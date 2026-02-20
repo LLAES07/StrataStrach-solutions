@@ -4,6 +4,10 @@
 
 How many customers placed an order and what is the average order amount?
 
+**[ESP]**
+
+Cuantos clientes han puesto una orden y cual es el promedio de monto de la orden?
+
 
 ### TABLA
 
@@ -37,5 +41,8 @@ postmates_orders
 
 ```sql
 
-
+select 
+    COUNT(DISTINCT customer_id) AS total_clientes,
+    AVG(amount) AS cantidad_promedio
+from postmates_orders;
 ```
