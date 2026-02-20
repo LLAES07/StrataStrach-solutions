@@ -139,6 +139,16 @@ fb_comments_count
 # RESPUESTA
 
 ```sql
+SELECT
+    user_id,
+    SUM(number_of_comments) AS total_comentarios
+FROM
+    fb_comments_count
+WHERE
+    created_at BETWEEN '2020-02-10'::date - INTERVAL '30 days' 
+    AND '2020-02-10'::date
+GROUP BY
+    user_id
 
 
 ```
