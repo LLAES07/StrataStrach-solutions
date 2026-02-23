@@ -1,7 +1,12 @@
 # Users Activity Per Month Day
 
+**[ENG]**
+
 Return the total number of posts for each month, aggregated across all the years (i.e., posts in January 2019 and January 2020 are both combined into January). Output the month number (i.e., 1 for January, 2 for February) and the total number of posts in that month
 
+**[ESP]**
+
+Retorna el numero total de post por cada mes, agregado a travéz de los años (por ejemplo, los post de enero de 2019 y enero de 2020 se combinan en enero). Muestra el mes en formato numero y el total de numero de post de ese mes.
 
 ### TABLA
 
