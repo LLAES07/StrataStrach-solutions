@@ -3,6 +3,11 @@
 **[ENG]**
 What percentage of all products are both low fat and recyclable?
 
+**[ESP]**
+
+Que porcentaje del total de productos son tanto bajo en grasa como reciclaje?
+
+---
 
 ### TABLA
 
