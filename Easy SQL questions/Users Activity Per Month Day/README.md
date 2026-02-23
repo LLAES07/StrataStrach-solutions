@@ -27,7 +27,11 @@ facebook_posts
 
 ```sql
 
-
+select
+    EXTRACT(MONTH FROM post_date) AS mes,
+    COUNT(post_id)
+FROM facebook_posts
+GROUP BY EXTRACT(MONTH FROM post_date) 
 
 
 ```
