@@ -9,6 +9,16 @@ Particularly, they are interested in the promotion IDs from the `online_promotio
 
 Calculate the percentage of orders in the `online_orders`table that used a promotion from the `online_promotions` table.
 
+**[ESP]**
+
+El gerente de marketing quiere que evalues que tan bien la campañas anteriores de publicidad funcionan.
+
+Particularmente, estan interesados en los id de las promociones de la tabla `online_promotions`.
+
+Calcula el porcentaje de ordenes en la tabla `online_orders` que usaron una promoción de la tabla `online_promotions`.
+
+---
+
 ### Tables
 
 online_promotions
