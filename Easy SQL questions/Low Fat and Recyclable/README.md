@@ -32,6 +32,10 @@ facebook_products
 # REPSUESTA 
 
 ```sql
-
+SELECT
+    COUNT(*)*100.0 / (SELECT COUNT(*) FROM facebook_products) as pct_total
+FROM facebook_products
+WHERE is_low_fat LIKE'Y' AND
+      is_recyclable LIKE 'Y'
 
 ```
