@@ -43,6 +43,20 @@ online_orders
 # REPSUESTA
 
 ```sql
+-- propuesta 1
+SELECT
+    COUNT(*)*100.0 / (SELECT COUNT(*) FROM online_orders) AS pct
+FROM online_orders o
+INNER JOIN online_promotions p
+    ON o.promotion_id = p.promotion_id;
+    
+    
+-- propuesta 2
+SELECT
+    AVG( CASE WHEN p.promotion_id IS NOT NULL THEN 100.0 ELSE 0 END) AS pct
+FROM online_orders o
+LEFT JOIN online_promotions p
+    ON o.promotion_id = p.promotion_id;
 
 
 ```
