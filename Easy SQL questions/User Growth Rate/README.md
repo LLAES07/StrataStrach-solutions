@@ -5,6 +5,11 @@
 
 Find the growth rate of active users for Dec 2020 to Jan 2021 for each account. The growth rate is defined as the number of users in January 2021 divided by the number of users in Dec 2020. Output the account_id and growth rate.
 
+**[ESP]**
+
+Encuentra la tasa de crecimiento de usuarios activos para Dec 2020 a Jan 2021 para cada cuenta. La tasa de crecimiento se define como el número de usuarios en enero de 2021 dividido el numero de usarios en diciembre 2020. Muestra el account_id y el growth rate.
+
+
 
 ### TABLA
 
