@@ -44,4 +44,11 @@ players_logins
 
 ```sql
 
+SELECT
+    player_id,
+    MAX(login_date) AS fecha_ultimo_log
+
+FROM players_logins
+GROUP BY player_id
+
 ```
