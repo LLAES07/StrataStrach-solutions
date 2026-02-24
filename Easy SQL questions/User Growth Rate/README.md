@@ -49,4 +49,10 @@ sf_events
 ```sql
 
 
+SELECT
+    account_id,
+    SUM(CASE WHEN record_date >= '2021-01-01' AND record_date <= '2021-01-31' THEN 1 ELSE 0 END)*1.0 /
+    SUM(CASE WHEN record_date >= '2020-12-01' AND record_date <= '2020-12-31' THEN 1 ELSE 0 END) AS growth_rate 
+FROM sf_events
+GROUP BY account_id;
 ```
