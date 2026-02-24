@@ -4,6 +4,10 @@
 **[ENG]**
 For each video game player, find the latest date when they logged in.
 
+**[ESP]**
+
+Para cada jugador de video juegos, encuentra la ultima fecha que logearon.
+
 
 ### TABLA
 
