@@ -135,5 +135,13 @@ wfm_products
 
 
 ```sql
-
+SELECT
+    p.product_category,
+    COUNT(DISTINCT t.transaction_id) AS num_transactions,
+    SUM(t.sales) AS total_sales
+FROM wfm_transactions t
+JOIN wfm_products p ON t.product_id = p.product_id
+WHERE EXTRACT(YEAR FROM t.transaction_date) = 2017
+GROUP BY p.product_category
+ORDER BY total_sales DESC;
 ```
