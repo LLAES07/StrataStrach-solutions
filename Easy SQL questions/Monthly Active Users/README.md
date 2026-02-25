@@ -4,6 +4,11 @@
 **[ENG]**
 Find the monthly active users for January 2021 for each account. Your output should have account_id and the monthly count for that account.
 
+**[ESP]**
+
+Encuentra los usuarios activos mensualmente para enero del 2021 para cada cuenta. Muestra el account_id y el recuento mensual para esa cuenta.
+
+---
 
 ### TABLA
 
