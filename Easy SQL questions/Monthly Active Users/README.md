@@ -44,6 +44,11 @@ sf_events
 # RESPUESTA
 
 ```sql
-
+SELECT 
+    account_id,
+    COUNT(DISTINCT user_id) AS monthly_active_users
+FROM sf_events
+WHERE EXTRACT(YEAR FROM record_date) = 2021 AND EXTRACT(MONTH FROM record_date) = 1
+GROUP BY account_id;
 
 ```
