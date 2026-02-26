@@ -8,6 +8,7 @@ Return a list of users with status free who didn’t make any calls in Apr 2020.
 
 
 
+
 ### TABLA
 rc_calls
 
@@ -86,7 +87,20 @@ rc_users
 
 ```sql
 
+-- Usuarios free
+SELECT user_id 
+FROM rc_users 
+WHERE status = 'free'
 
+EXCEPT
+
+-- Usuarios que si hicieron una llamada en la fecha
+SELECT DISTINCT u.user_id 
+FROM rc_users u
+INNER JOIN rc_calls c ON u.user_id = c.user_id
+WHERE u.status = 'free'
+  AND EXTRACT(MONTH FROM c.call_date) = 4 
+  AND EXTRACT(YEAR FROM c.call_date) = 2020;
 
 
 ```
