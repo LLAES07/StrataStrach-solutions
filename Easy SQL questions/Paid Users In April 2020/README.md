@@ -5,7 +5,9 @@
 
 How many paid users had any calls in Apr 2020?
 
+**[ESP]**
 
+¿Cuántos usuarios pagados realizaron llamadas en Abril de 2020?
 
 ### TABLA
 rc_calls
