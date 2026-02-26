@@ -85,7 +85,14 @@ rc_users
 
 ```sql
 
-
+SELECT
+    COUNT(DISTINCT c.user_id) AS cuenta_usuarios_pago
+FROM rc_calls c
+JOIN rc_users u
+    ON c.user_id = u.user_id
+WHERE u.status = 'paid'
+  AND c.call_date >= '2020-04-01' 
+  AND c.call_date <= '2020-04-30';
 
 
 ```
