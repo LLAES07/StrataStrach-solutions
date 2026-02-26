@@ -1,6 +1,6 @@
 # Users with Many Searches
 
-# Paid Users In April 2020
+
 
 
 **[ENG]**
@@ -9,6 +9,9 @@ Count the number of users who made more than 5 searches in August 2021.
 
 
 **[ESP]**
+
+Cuenta el numero de usuarios que realizaron más de 5 búsquedas en agosto de 2021.
+
 
 
 ### TABLA
