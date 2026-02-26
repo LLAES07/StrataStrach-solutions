@@ -5,6 +5,9 @@
 
 Return a list of users with status free who didn’t make any calls in Apr 2020.
 
+**[ESP]**
+
+Muestra la lista de usuarios con status free que no han realizado ninguna llamada en Abril de 2020.
 
 
 
