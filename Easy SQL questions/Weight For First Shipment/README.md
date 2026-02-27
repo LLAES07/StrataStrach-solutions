@@ -15,8 +15,7 @@ Write a query to find the weight for each shipment's earliest shipment date. Out
 
 **[ESP]**
 
-
-
+Escriba una consulta para encontrar el peso de la fecha de envío más temprana de cada envío. Genere la identificación del envío junto con el peso.
 
 ### TABLA
 
