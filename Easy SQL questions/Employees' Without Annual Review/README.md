@@ -4,6 +4,9 @@
 
 Return all employees who have never had an annual review. Your output should include the employee's first name, last name, hiring date, and termination date. List the most recently hired employees first.
 
+**[ESP]**
+
+Devuelve todos los empleados que nunca han tenido una revisión anual. Tu salida debe incluir el nombre y apellido del empleado, la fecha de contratación y la fecha de terminación. Lista a los empleados más recientemente contratados primero.
 
 ### TABLA
 
