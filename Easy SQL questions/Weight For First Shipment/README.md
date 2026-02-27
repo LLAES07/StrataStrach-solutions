@@ -41,6 +41,20 @@ amazon_shipment
 
 ```sql
 
-
+WITH earliest_shipments AS (
+    SELECT 
+        shipment_id, 
+        MIN(shipment_date) as early_date
+    FROM amazon_shipment
+    GROUP BY shipment_id
+)
+SELECT 
+    s.shipment_id, 
+    SUM(s.weight) AS total_weight
+FROM amazon_shipment s
+JOIN earliest_shipments e 
+  ON s.shipment_id = e.shipment_id 
+  AND s.shipment_date = e.early_date
+GROUP BY s.shipment_id;
 
 ```
