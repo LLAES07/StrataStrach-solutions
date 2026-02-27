@@ -2,10 +2,6 @@
 
 
 
-# Users with Many Searches
-
-
-
 
 **[ENG]**
 
