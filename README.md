@@ -9,8 +9,7 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 
 [![Problemas resueltos](https://img.shields.io/badge/Problemas%20resueltos-57-brightgreen?style=for-the-badge)](https://github.com/LLAES07/StrataStrach-solutions)
 [![SQL](https://img.shields.io/badge/SQL-100%25-blue?style=for-the-badge&logo=postgresql)](https://platform.stratascratch.com/)
-[![StrataScratch](https://img.shields.io/badge/Plataforma-DataLemur-orange?style=for-the-badge)](https://platform.stratascratch.com/)
-
+[![StrataScratch](https://img.shields.io/badge/Plataforma-StrataScratch-orange?style=for-the-badge&logo=target)](https://platform.stratascratch.com/)
 
 # 🧠 Cómo usar este repositorio
 
@@ -132,6 +131,7 @@ También puedes seguirme en GitHub: [@LLAES07](https://github.com/LLAES07)
 
 
 ¡Gracias por visitar! 🚀
+
 
 
 
