@@ -57,7 +57,7 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 | 29 | Number of Hires During Specific Time Period |[Ver](./Easy%20SQL%20questions/Number%20of%20Hires%20During%20Specific%20Time%20Period/)|
 | 30 | Find non-HS SAT scores |[Ver](./Easy%20SQL%20questions/Find%20non-HS%20SAT%20scores/)|
 | 31 | Find the date with the highest opening stock price |[Ver](./Easy%20SQL%20questions/Find%20the%20date%20with%20the%20highest%20opening%20stock%20price/)|
-| 32 | Find all searches for accommodations with an equal number of bedrooms bathrooms |[Ver](./Easy%20SQL%20questions/Find%20all%searches%20for%20accommodations%20with%20an%20equal%20number%20of%20bedrooms%20bathrooms/)|
+| 32 | Find all searches for accommodations with an equal number of bedrooms bathrooms | [Ver](./Easy%20SQL%20questions/Find%20all%20searches%20for%20accommodations%20with%20an%20equal%20number%20of%20bedrooms%20bathrooms/) |
 | 33 | Find the search details for villas and houses with wireless internet access |[Ver](./Easy%20SQL%20questions/Find%20the%20search%20details%20for%20villas%20and%20houses%20with%20wireless%20internet%20access/)|
 | 34 | Questions in Second Quarter |[Ver](./Easy%20SQL%20questions/Questions%20in%20Second%20Quarter/)|
 | 35 | Active Users Per Platform |[Ver](./Easy%20SQL%20questions/Active%20Users%20Per%20Platform/)|
@@ -132,4 +132,5 @@ También puedes seguirme en GitHub: [@LLAES07](https://github.com/LLAES07)
 
 
 ¡Gracias por visitar! 🚀
+
 
