@@ -72,7 +72,7 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 | 44 | Change of Currency Exchange Rates |[Ver](./Easy%20SQL%20questions/Change%20of%20Currency%20Exchange%20Rates/)|
 | 45 | Number of Comments Per User in 30 days before 2020-02-10 |[Ver](./Easy%20SQL%20questions/Number%20of%20Comments%20Per%20User%20in%2030%20days%20before%202020-02-10/)|
 | 46 | Customer Average Orders |[Ver](./Easy%20SQL%20questions/Customer%20Average%20Orders/)|
-| 47 | Low Fat and Recyclable |[Ver](./Easy%20SQL%20questions/Low%Fat%and%Recyclable/)|
+| 47 | Low Fat and Recyclable | [Ver](./Easy%20SQL%20questions/Low%20Fat%20and%20Recyclable/) |
 | 48 | Sales with Valid Promotion |[Ver](./Easy%20SQL%20questions/Sales%20with%20Valid%20Promotion/)|
 | 49 | Latest Login Date |[Ver](./Easy%20SQL%20questions/Latest%20Login%20Date/)|
 | 50 | User Growth Rate |[Ver](./Easy%20SQL%20questions/User%20Growth%20Rate/)|
@@ -132,5 +132,6 @@ También puedes seguirme en GitHub: [@LLAES07](https://github.com/LLAES07)
 
 
 ¡Gracias por visitar! 🚀
+
 
 
