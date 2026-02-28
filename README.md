@@ -118,6 +118,14 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
   
 ---
 
+## 🛠️ Tecnologías y Herramientas
+
+**Lenguaje:** SQL (PostgreSQL / MySQL)
+
+**Plataforma:** StrataScratch
+
+Conceptos aplicados: JOINs complejos, Window Functions (RANK, DENSE_RANK), CTEs (Common Table Expressions), y agregaciones avanzadas.
+
 ## 📚 Fuente
 
 - Plataforma: **StrataScratch**
@@ -131,6 +139,7 @@ También puedes seguirme en GitHub: [@LLAES07](https://github.com/LLAES07)
 
 
 ¡Gracias por visitar! 🚀
+
 
 
 
