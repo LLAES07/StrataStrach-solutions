@@ -30,5 +30,9 @@ amazon_shipment
 
 ```sql
 
+SELECT
+    *,
+    SUM(weight) OVER(PARTITION BY shipment_id) AS total_weights
+FROM amazon_shipment;
 
 ```
