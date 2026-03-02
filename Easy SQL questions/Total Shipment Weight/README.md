@@ -6,6 +6,8 @@ Calculate the total weight for each shipment and add it as a new column. Your ou
 
 **[ESP]**
 
+Calcule el peso total para cada envío y agréguelo como una nueva columna. Tu consulta debe tener todas las filas y columnas existentes sumado a la nueva columna que mueste el peso total de cada envío. Un envío puede tener múltiples filas.
+
 
 
 ### TABLA
