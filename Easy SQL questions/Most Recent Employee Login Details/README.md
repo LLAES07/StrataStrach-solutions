@@ -12,7 +12,9 @@ The output should include all information related to each employee's most recent
 
 **[ESP]**
 
+El departamento de infromación tecnologica de amazon esta buscando la informacion de los logins mas recientes de sus empleados.
 
+Muestra todoa la información que sea del loging más reciente.
 
 ### TABLA
 
