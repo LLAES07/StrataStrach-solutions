@@ -83,6 +83,7 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 | 56 | Employees' Without Annual Review |[Ver](./Easy%20SQL%20questions/Employees'%20Without%20Annual%20Review/)|
 | 57 | Weight For First Shipment |[Ver](./Easy%20SQL%20questions/Weight%20For%20First%20Shipment/)|
 | 58 | Total Shipment Weight |[Ver](./Easy%20SQL%20questions/Total%20Shipment%20Weight/)|
+| 59 | Most Recent Employee Login Details |[Ver](./Easy%20SQL%20questions/Most%20Recent%20Employee%20Login%20Details/)|
 
 ---
 
