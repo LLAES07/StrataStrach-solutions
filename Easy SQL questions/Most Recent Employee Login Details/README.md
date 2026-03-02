@@ -47,6 +47,23 @@ worker_logins
 
 ```sql
 
+WITH ct1 as (
+    select
+        *,
+        ROW_NUMBER() OVER(PARTITION BY worker_id ORDER BY login_timestamp DESC) AS rk
+    from worker_logins 
+)
 
+SELECT
+    id,
+    worker_id,
+    login_timestamp,
+    ip_address,
+    country	,
+    region,
+    city,	
+    device_type
+FROM ct1
+WHERE rk = 1
 
 ```
