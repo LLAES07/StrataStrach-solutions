@@ -11,7 +11,9 @@ Calculate the total revenue generated from Oregon-based customers for April 2022
 
 **[ESP]**
 
+La division de ventas está investigando sus ventas en el mes de abril de 2022 en Oregon.
 
+Calcula el total generado de los clientes de la base oregon para abril de 2022.
 
 
 # TABLA
