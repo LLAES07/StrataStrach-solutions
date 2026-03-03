@@ -84,6 +84,7 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 | 57 | Weight For First Shipment |[Ver](./Easy%20SQL%20questions/Weight%20For%20First%20Shipment/)|
 | 58 | Total Shipment Weight |[Ver](./Easy%20SQL%20questions/Total%20Shipment%20Weight/)|
 | 59 | Most Recent Employee Login Details |[Ver](./Easy%20SQL%20questions/Most%20Recent%20Employee%20Login%20Details/)|
+| 60 | Users With Two Statuses |[Ver](./Easy%20SQL%20questions/Users%20With%20Two%20Statuses/)|
 
 ---
 
