@@ -41,6 +41,7 @@ twitch_sessions
 
 ```sql
 
+-- propuesta 1
 WITH ct1 AS (
     SELECT 
         user_id,
@@ -56,5 +57,15 @@ FROM ct1
 WHERE
     sesiones_como_streamer >= 1 AND
     sesiones_como_viewer >= 1
+
+
+-- Propuesta 2
+
+SELECT user_id
+FROM twitch_sessions
+GROUP BY user_id
+HAVING 
+    MAX(CASE WHEN session_type = 'streamer' THEN 1 END) = 1
+    AND MAX(CASE WHEN session_type = 'viewer' THEN 1 END) = 1;
 
 ```
