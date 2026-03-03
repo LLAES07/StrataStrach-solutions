@@ -68,4 +68,12 @@ HAVING
     MAX(CASE WHEN session_type = 'streamer' THEN 1 END) = 1
     AND MAX(CASE WHEN session_type = 'viewer' THEN 1 END) = 1;
 
+
+-- Propuesta 3
+
+SELECT
+    user
+FROM twitch_sessions
+GROUP BY user
+HAVING COUNT(DISTINCT session_type) = 2;
 ```
