@@ -76,7 +76,16 @@ online_customers
 ```sql
 
 
-    
+SELECT 
+    SUM(units_sold * cost_in_dollars) AS total_revenue_dollars
+FROM online_orders
+WHERE date_sold >= '2022-04-01'
+  AND date_sold <  '2022-05-01'
+  AND customer_id IN (
+      SELECT id 
+      FROM online_customers 
+      WHERE state = 'Oregon'
+  );
 
 
 ```
