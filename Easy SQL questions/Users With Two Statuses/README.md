@@ -8,6 +8,8 @@ Find users who are both a viewer and streamer.
 
 **[ESP]**
 
+Encuentra los usuarios que son viewers y streamer.
+
 
 ### TABLA
 
