@@ -86,6 +86,8 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 | 59 | Most Recent Employee Login Details |[Ver](./Easy%20SQL%20questions/Most%20Recent%20Employee%20Login%20Details/)|
 | 60 | Users With Two Statuses |[Ver](./Easy%20SQL%20questions/Users%20With%20Two%20Statuses/)|
 | 61 | Total Order Per Status Per Service |[Ver](./Easy%20SQL%20questions/Total%20Order%20Per%20Status%20Per%20Service/) |
+| 62 | BAKERY' Owned Facilities | [Ver](./Easy%20SQL%20questions/BAKERY'%20Owned%20Facilities/) |
+
 ---
 
 
