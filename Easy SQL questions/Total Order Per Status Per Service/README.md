@@ -9,6 +9,10 @@ Uber is interested in identifying gaps in their business. Calculate the count of
 
 **[ESP]**
 
+Uber está interesado en identificar los huecos en su negocio. Calcula el recuento de órdenes para cada estado de cada servicio. Tu salida debe incluir el nombre del servicio, el estado de la orden y el número de órdenes.
+
+
+
 
 
 
