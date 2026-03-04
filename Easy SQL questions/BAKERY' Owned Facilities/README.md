@@ -13,7 +13,7 @@ Find the owner_name and the pe_description of facilities owned by 'BAKERY' where
 
 **[ESP]**
 
-
+Encuentra el owner_name y la pe_description de las tiendas de propiedad por 'Bakery' donde los casos reportados sean de bajo riesgo.
 
 
 
