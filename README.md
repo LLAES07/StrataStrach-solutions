@@ -7,7 +7,7 @@ Cada ejercicio está resuelto en un archivo individual, con consultas corregidas
 El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un registro claro de las soluciones.
 
 
-[![Problemas resueltos](https://img.shields.io/badge/Problemas%20resueltos-60-brightgreen?style=for-the-badge)](https://github.com/LLAES07/StrataStrach-solutions)
+[![Problemas resueltos](https://img.shields.io/badge/Problemas%20resueltos-62-brightgreen?style=for-the-badge)](https://github.com/LLAES07/StrataStrach-solutions)
 [![SQL](https://img.shields.io/badge/SQL-100%25-blue?style=for-the-badge&logo=postgresql)](https://platform.stratascratch.com/)
 [![StrataScratch](https://img.shields.io/badge/Plataforma-StrataScratch-orange?style=for-the-badge&logo=target)](https://platform.stratascratch.com/)
 
