@@ -194,5 +194,9 @@ airbnb_search_details
 
 ```sql
 
-
+SELECT
+    city,
+    MIN (price) AS precio_menor
+FROM airbnb_search_details
+GROUP BY city
 ```
