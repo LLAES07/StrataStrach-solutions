@@ -45,4 +45,6 @@ airbnb_search_details
 
 ```sql
 
+SELECT DISTINCT neighbourhood FROM airbnb_search_details;
+
 ```
