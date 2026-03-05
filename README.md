@@ -88,6 +88,7 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 | 61 | Total Order Per Status Per Service |[Ver](./Easy%20SQL%20questions/Total%20Order%20Per%20Status%20Per%20Service/) |
 | 62 | BAKERY' Owned Facilities | [Ver](./Easy%20SQL%20questions/BAKERY'%20Owned%20Facilities/) |
 | 63 | Find all neighborhoods present in this dataset |[Ver](./Easy%20SQL%20questions/Find%20all%20neighborhoods%20present%20in%20this%20dataset/)|
+| 64 | Cheapest Properties |[Ver](./Easy%20SQL%20questions/Cheapest%20Properties/)|
 
 ---
 
