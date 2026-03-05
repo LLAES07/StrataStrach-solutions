@@ -12,6 +12,8 @@ Find the price of the cheapest property for every city.
 
 **[ESP]**
 
+Encuentra el precio más barato de cada ciudad.
+
 
 
 
