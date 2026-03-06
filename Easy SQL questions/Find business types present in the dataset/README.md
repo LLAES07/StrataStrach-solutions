@@ -13,6 +13,11 @@ Find business types present in the dataset.
 **[ESP]**
 
 
+Encuentra los tipos de negocios presentes en el conjunto de datos.
+
+
+
+
 
 
 
