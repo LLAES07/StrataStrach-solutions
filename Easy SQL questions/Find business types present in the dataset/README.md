@@ -1,6 +1,5 @@
 # Find business types present in the dataset
 
-# Total Order Per Status Per Service
 
 
 **[ENG]**
