@@ -22,16 +22,6 @@ Find business types present in the dataset.
 
 google_adwords_earnings
 
-
-
-
-# RESPUESTA
-
-```sql
-
-
-
-
 |business_type|business_name|n_employees|year|adwords_earnings|
 |---|---|---|---|---|
 |handyman|Golden Solutions|2|2018|81|
@@ -49,5 +39,15 @@ google_adwords_earnings
 |handyman|Happy Group|5|2018|130|
 |handyman|Red Solutions|10|2019|55|
 |handyman|Swift Labs|7|2020|182|
+
+
+# RESPUESTA
+
+```sql
+
+
+select DISTINCT business_type from google_adwords_earnings;
+
+
 
 ```
