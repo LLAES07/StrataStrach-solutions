@@ -90,7 +90,7 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 | 63 | Find all neighborhoods present in this dataset |[Ver](./Easy%20SQL%20questions/Find%20all%20neighborhoods%20present%20in%20this%20dataset/)|
 | 64 | Cheapest Properties |[Ver](./Easy%20SQL%20questions/Cheapest%20Properties/)|
 | 65 | Find business types present in the dataset |[Ver](./Easy%20SQL%20questions/Find%20business%20types%20present%20in%20the%20dataset/)|
-
+| 66 | Order all countries by the year they first participated in the Olympics |[Ver](./Easy%20SQL%20questions/Order%20all%20countries%20by%20the%20year%20they%20first%20participated%20in%20the%20Olympics/)|
 
 ---
 
