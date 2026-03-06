@@ -19,7 +19,11 @@ Sort records in ascending order by year, and alphabetically by NOC.
 **[ESP]**
 
 
+Ordena todos los países por el año en que participaron por primera vez en las olimpiadas.
 
+Muestra el nombre noc junto con el año deseado.
+
+Ordena los registros en orden ascendente por año y alfabéticamente por noc.
 
 
 
