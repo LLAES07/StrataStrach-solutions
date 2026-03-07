@@ -262,4 +262,23 @@ FROM playbook_users
 WHERE language IN ('english', 'german', 'french', 'spanish')
 WHERE cuenta >=1
 
+
+-- 2da opcion con cte
+
+WITH ct1 AS (
+
+select
+    user_id,
+    SUM(CASE WHEN language IN ('english', 'german', 'french', 'spanish') THEN 1 ELSE 0 END) AS cuenta
+from playbook_users
+GROUP BY 
+    user_id
+    
+)
+
+SELECT
+    COUNT(user_id) as cuenta
+FROM ct1
+WHERE cuenta >=1
+
 ```
