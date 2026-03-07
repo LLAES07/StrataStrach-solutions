@@ -15,6 +15,11 @@ Note: Users who speak more than one language are counted only once.
 
 
 
+Cuantos usuarios hablan inglés, alemán, francés o español?
+
+Nota: Usuarios que habland más de un idioma sólo se cuentan una vez.
+
+
 
 
 
