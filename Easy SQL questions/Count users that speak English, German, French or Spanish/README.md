@@ -255,5 +255,11 @@ playbook_users
 
 ```sql
 
+-- 1era opcion
+
+SELECT COUNT(DISTINCT user_id)
+FROM playbook_users
+WHERE language IN ('english', 'german', 'french', 'spanish')
+WHERE cuenta >=1
 
 ```
