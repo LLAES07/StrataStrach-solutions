@@ -10,6 +10,12 @@ What are the unique airport codes for all origin airports in the dataset? (e.g.,
 
 
 
+Cuales son los codigos unicos para todos los origenes de los aeropuertos en el dataset? (e.g., LAX, JFK, SFO)
+
+
+
+
+
 
 
 
