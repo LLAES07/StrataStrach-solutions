@@ -92,8 +92,9 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 | 65 | Find business types present in the dataset |[Ver](./Easy%20SQL%20questions/Find%20business%20types%20present%20in%20the%20dataset/)|
 | 66 | Order all countries by the year they first participated in the Olympics |[Ver](./Easy%20SQL%20questions/Order%20all%20countries%20by%20the%20year%20they%20first%20participated%20in%20the%20Olympics/)|
 | 67 | Count users that speak English, German, French or Spanish |[Ver](./Easy%20SQL%20questions/Count%20users%20that%20speak%20English,%20German,%20French%20or%20Spanish/)|
+| 68 | Find unique IATA codes | [Ver](./Easy%20SQL%20questions/Find%20unique%20IATA%20codes/) |
 
----
+--- 
 
 
 
