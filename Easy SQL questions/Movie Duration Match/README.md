@@ -13,7 +13,9 @@ The output should list suggested movies for the flight, including 'flight_id', '
 
 **[ESP]**
 
+Como científico de datos en Amazon Prime Video, tu tarea es mejorar la experiencia de entretenimiento a bordo para las aerolíneas socias de Amazon. El desafío consiste en desarrollar una funcionalidad que sugiera películas individuales de la base de datos de contenido de Amazon que se ajusten a la duración de un vuelo determinado. Para el vuelo 101, encuentra las películas cuya duración sea menor o igual a la duración del vuelo.
 
+La salida debe listar las películas sugeridas para el vuelo, incluyendo las columnas 'flight_id', 'movie_id' y 'movie_duration'.
 
 
 
