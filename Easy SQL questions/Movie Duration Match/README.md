@@ -63,7 +63,7 @@ SELECT
     ec.duration AS movie_duration
 FROM flight_schedule fs
 JOIN entertainment_catalog ec
-    ON ec.duration <= fs.duration          -- o fs.flight_duration
+    ON ec.duration <= fs.flight_duration         
 WHERE fs.flight_id = 101;
 
 ```
