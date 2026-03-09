@@ -11,7 +11,9 @@ Order results based on the total sales in descending order.
 **[ESP]**
 
 
-
+Encuentra los generos que generaron las mayores ventas.
+Muestra el genero al lado del total de ventas.
+Ordena los resultados basado en el total de ventas en orden descendente.
 
 
 
