@@ -1,5 +1,6 @@
 # Account Registrations
 
+## 📌 PROBLEMA
 
 **[ENG]**
 
@@ -39,7 +40,7 @@ Find the number of account registrations according to the signup date. Output th
 |S025|2020-01-02|101|
 
 
-# RESPUESTA
+# 💻 RESPUESTA
 
 ```sql
 SELECT
@@ -49,3 +50,5 @@ FROM noom_signups
 GROUP BY 1 
 ORDER BY 1;
 ```
+
+# 📊 Explicación
