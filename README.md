@@ -95,7 +95,7 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 | 68 | Find unique IATA codes | [Ver](./Easy%20SQL%20questions/Find%20unique%20IATA%20codes/) |
 | 69 | Movie Duration Match | [Ver](./Easy%20SQL%20questions/Movie%20Duration%20Match/) |
 | 70 | Find the genres that yielded the highest sales | [Ver](./Easy%20SQL%20questions/Find%20the%20genres%20that%20yielded%20the%20highest%20sales/) |
-
+| 71 | Old And Young Athletes | [Ver](./Easy%20SQL%20questions/Old%20And%20Young%20Athletes/)
 --- 
 
 
