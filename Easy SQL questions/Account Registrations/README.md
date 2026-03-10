@@ -56,3 +56,5 @@ ORDER BY 1;
 ```
 
 # 📊 Explicación
+
+Cada fila de la tabla corresponde a un registro correspondiente a un registro con su fecha y plan. Con esto en mente vemos que tenemos una fecha en formato yyyy-mm-dd por lo que necesitamos extraer tanto el año como el mes. Esto lo logramos utilizando extract en la columna `started_at`, envueltas en la funcion `CONCAT` para poder unir estas y ser la nueva columna por donde generar un group by y un order by. Con esto ya podemos contar los registros, otorgandonos lo solicitado
