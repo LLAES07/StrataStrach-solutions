@@ -12,7 +12,16 @@ Find the old-to-young player ratio for each Olympic games. 'Old' is defined as a
 **[ESP]**
 
 
+Encuentra la proporción de atletas viejos a jóvenes para cada edición de los Juegos Olímpicos.
+Se define como “viejos” a los atletas de 50 años o más, y como “jóvenes” a los atletas de 25 años o menos.
 
+El resultado debe mostrar:
+
+los Juegos Olímpicos (games)
+
+el número de atletas viejos
+
+el número de atletas jóvenes
 
 
 
