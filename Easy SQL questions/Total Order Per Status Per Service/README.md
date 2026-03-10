@@ -1,5 +1,7 @@
 # Total Order Per Status Per Service
 
+## 📌 PROBLEMA
+
 
 **[ENG]**
 
@@ -68,7 +70,7 @@ uber_orders
 
 
 
-# RESPUESTA
+# 💻 RESPUESTA
 
 ```sql
 
@@ -79,3 +81,7 @@ select
 from uber_orders
 GROUP BY service_name, status_of_order
 ```
+
+# 📊 Explicación
+
+Necesitamos conocer cada servicio con su orden de estatus por lo que primero agrupamos por estas dos y contamos.
