@@ -1,5 +1,6 @@
 # Find the genres that yielded the highest sales
 
+# 📌 PROBLEMA
 
 
 **[ENG]**
@@ -127,7 +128,7 @@ global_weekly_charts_2013_2014
 |3697|Mega Man Maverick Hunter X|PSP|Capcom|Platform|382|105|279230|2013-05-25|210032|
 
 
-# RESPUESTA
+# 💻 RESPUESTA
 
 ```sql
 
@@ -140,3 +141,7 @@ GROUP BY
 ORDER BY 2 DESC;
 
 ```
+
+# 📊 Explicación
+
+Nos piden los generos que generaron mayor cantidad de ventas por lo que necesitamos generar una agrupación por la columna genero y sumar la columna relacionada con las ventas que en este caso es `total` para conocer el total de ventas por genero. Por último ordenamos por el total de ventas calculado anteriormente.
