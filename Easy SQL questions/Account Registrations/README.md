@@ -7,6 +7,10 @@
 Find the number of account registrations according to the signup date. Output the year months (YYYY-MM) and their corresponding number of registrations.
 
 
+**[ESP]**
+
+Encuentra el numero de cuentas registradas según la fecha de registro. Muestra el año en formato yyyy-mm y su correpsondiente numero de registro.
+
 ### TABLA
 
 #### noom_signups
