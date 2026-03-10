@@ -106,3 +106,13 @@ GROUP BY games
 ORDER BY games;
 
 ```
+
+# 📊 Explicación
+
+Primero agrupamos por `games` así utilizaremos esta para agrupar todo lo demás y sacar el ratio.  
+Luego contamos los atletas de **50 años o más** (old) y los de **25 años o menos** (young) utilizando agregaciones condicionales.
+
+Calculamos el ratio entre atletas viejos y jóvenes.  
+Se utiliza `NULLIF` para evitar errores en caso de que no existan atletas jóvenes en algún juego.
+
+Por último, ordenamos el resultado por `games`.
