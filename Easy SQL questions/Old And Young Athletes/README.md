@@ -17,6 +17,7 @@ Find the old-to-young player ratio for each Olympic games. 'Old' is defined as a
 
 
 
+
 ### TABLA
 
 olympics_athletes_events
@@ -84,5 +85,14 @@ olympics_athletes_events
 
 ```sql
 
+SELECT
+    games,
+    COUNT(CASE WHEN age >= 50 THEN 1 END) AS old_athletes,
+    COUNT(CASE WHEN age <= 25 THEN 1 END) AS young_athletes,
+    COUNT(CASE WHEN age >= 50 THEN 1 END) * 1.0 /
+    NULLIF(COUNT(CASE WHEN age <= 25 THEN 1 END),0) AS old_to_young_ratio
+FROM olympics_athletes_events
+GROUP BY games
+ORDER BY games;
 
 ```
