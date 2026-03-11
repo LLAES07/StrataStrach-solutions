@@ -1,5 +1,8 @@
 # April & May Sign Up's
 
+## 📌 PROBLEMA
+
+
 **[ENG]**
 You have been asked to get a list of all the sign up IDs with transaction start dates in either April or May.
 
@@ -41,7 +44,7 @@ transactions
 | 18             | 109       | 2020-04-18             | 24.9  |
 | 19             | 109       | 2020-07-17             | 24.9  |
 
-# RESPUESTA
+# 💻 RESPUESTA
 
 ```sql
 select 
