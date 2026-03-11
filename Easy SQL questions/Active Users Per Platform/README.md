@@ -1,5 +1,6 @@
 # Active Users Per Platform
 
+## 📌 PROBLEMA
 
 **[ENG]**
 
@@ -30,7 +31,7 @@ user_sessions
 |10|U4|2020-01-01 08:12:00|2020-01-01 12:23:11|Windows|
 |11|U4|2020-01-01 21:54:03|2020-01-01 21:54:04|IPad|
 
-# RESPUESTA
+# 💻 RESPUESTA
 
 
 
