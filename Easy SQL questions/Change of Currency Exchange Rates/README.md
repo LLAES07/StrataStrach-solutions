@@ -1,5 +1,7 @@
 # Change of Currency Exchange Rates
 
+## 📌 PROBLEMA
+
 **[ENG]**
 
 You are given a list of exchange rates from various currencies to US Dollars (USD) in different months. Show how the exchange rate of all the currencies changed in the first half of 2020. Output the currency code and the difference between values of the exchange rate between July 1, 2020 and January 1, 2020.
@@ -64,7 +66,7 @@ sf_exchange_rate
 |INR|USD|0.01|2020-04-01|
 |AUD|USD|0.61|2020-04-01|
 
-# RESPUESTA
+# 💻 RESPUESTA
 
 ```sql
 
