@@ -1,5 +1,8 @@
 # Average Salaries
 
+
+## 📌 PROBLEMA
+
 **[ENG]**
 Compare each employee's salary with the average salary of the corresponding department.
 Output the department, first name, and salary of employees along with the average salary of that department.
@@ -23,7 +26,7 @@ Compara el salario de cada empleado con el salario promedio correspondiente a su
 | 18  | Laila      | Mark      | 26  | F   | Sales          | Sales      | 1000   | 200    | 150   | Laila@company.com    | Florida    | 3655 Spirit Drive    | 11         |
 | 20  | Sarrah     | Bicky     | 31  | F   | Senior Sales   | Sales      | 2000   | 200    | 150   | Sarrah@company.com   | Florida    | 1176 Tyler Avenue    | 19         |
 
-# REPSUESTA
+#  💻 REPSUESTA
 
 ```sql
 
