@@ -1,5 +1,9 @@
 # Churro Activity Date
 
+
+## 📌 PROBLEMA
+
+
 **[ENG]**
 
 Find the inspection date and risk category (pe_description) of facilities named 'STREET CHURROS' that received a score below 95.
@@ -21,7 +25,7 @@ Encuentra la fecha de inspección y la categoría de riesgo (pe_description)  de
 | DA2GQRJOS     | 2017-03-07    | LAS MOLENDERAS   | 97    | A     | 1            | ROUTINE INSPECTION  | EE0000997   | 2635 WHITTIER BLVD   | LOS ANGELES   | FA0160416   | CA             | 90023        | OW0125379 | MARISOL FEREGRINO     | RESTAURANT (0-30) SEATS HIGH RISK     | 1632               | LAS MOLENDERAS   | INACTIVE       | PR0148504 |
 | DAMQTA46T     | 2016-03-22    | SANDRA'S TAMALES | 93    | A     | 1            | ROUTINE INSPECTION  | EE0001049   | 5390 WHITTIER BLVD   | LOS ANGELES   | FA0171769   | CA             | 90022-4032   | OW0178828 | SANDRA'S TAMALES INC. | RESTAURANT (0-30) SEATS MODERATE RISK | 1631               | SANDRA'S TAMALES | ACTIVE         | PR0164225 |
 
-# RESPUESTA
+# 💻 RESPUESTA
 
 ```sql
 
