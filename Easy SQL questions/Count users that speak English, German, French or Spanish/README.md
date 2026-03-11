@@ -1,6 +1,6 @@
 # Count users that speak English, German, French or Spanish
 
-
+## 📌 PROBLEMA
 
 
 **[ENG]**
@@ -256,7 +256,7 @@ playbook_users
 
 
 
-# RESPUESTA
+# 💻 RESPUESTA
 
 ```sql
 
