@@ -12,6 +12,9 @@ Order records by the age in descending order.
 
 **[ESP]**
 
+Crea un ranking de los huespedes según sus edades.
+Muestra el id con su correspondiente ranking.
+Ordena los registros por la edad en orden descendente.
 
 
 # TABLA
