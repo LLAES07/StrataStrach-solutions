@@ -136,4 +136,5 @@ select COUNT(*) AS total_pizza_sellers from yelp_business WHERE lower(categories
 
 # 🧠 EXPLICACIÓN
 
-    
+
+En la columna categoria se incluye los serivicios del local por lo que si aparece pizza son buissness que venden este producto. Primero filtramos por todas las categorias que tengan pizza y contamos el total.
