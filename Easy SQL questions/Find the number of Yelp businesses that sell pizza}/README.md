@@ -14,6 +14,8 @@ Find the number of Yelp businesses that sell pizza.
 
 **[ESP]**
 
+Encuentra el número de negocios de Yelp que venden pizza.
+
 
 
 
