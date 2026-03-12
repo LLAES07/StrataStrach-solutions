@@ -37,5 +37,9 @@ airbnb_guests
 
 ```sql
 
-
+SELECT 
+    guest_id,
+    ROW_NUMBER() OVER (ORDER BY age DESC) AS rank
+FROM airbnb_guests
+ORDER BY age DESC;
 ```
