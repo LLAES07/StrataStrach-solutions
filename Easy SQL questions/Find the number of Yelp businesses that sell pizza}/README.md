@@ -131,8 +131,9 @@ yelp_business
 #  💻 REPSUESTA
 
 ```sql
-
+select COUNT(*) AS total_pizza_sellers from yelp_business WHERE lower(categories) LIKE '%pizza%';
 ```
 
 # 🧠 EXPLICACIÓN
 
+    
