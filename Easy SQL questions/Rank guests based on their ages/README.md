@@ -46,3 +46,7 @@ SELECT
 FROM airbnb_guests
 ORDER BY age DESC;
 ```
+
+# EXPLICACIÓN
+
+Necesitamos un raking de edad y como no nos dan restricciones voy a usar `ROW_NUMBER()` puesto que me gener aun ranking contando las filas (asumiendo que no hay duplicados). Con este ranking listo ordenamos por `age` en orden descendente.
