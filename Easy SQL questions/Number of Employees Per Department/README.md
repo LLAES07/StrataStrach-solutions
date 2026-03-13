@@ -12,6 +12,10 @@ Sort records based on the number of employees in descending order.
 
 **[ESP]**
 
+Encuentra el número de empleados en cada departamento.
+Muestra el nombre del departamento junto con el número de empleados correspondientes.
+Ordena los registros por el número de empleados en orden descendente.
+
 
 
 # TABLA
