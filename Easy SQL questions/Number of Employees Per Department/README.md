@@ -68,3 +68,5 @@ ORDER BY 2 DESC;
 ```
 
 # 🧠 EXPLICACIÓN
+
+Para obtener el numero de empleados por cada departamento, agrupamos por departamento y contamos las id que hay en cada departamento. Posteriormente se ordena por el numero de empleados en orden descendente.
