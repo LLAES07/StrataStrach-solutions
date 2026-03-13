@@ -66,3 +66,4 @@ WHERE manager_id !=1 ;
 
 # 🧠 EXPLICACIÓN
 
+Para encontrar los usuarios que no tienen el manager_id = 1, utilizamos un filtro para filtrar los que no sean iguales a 1.
