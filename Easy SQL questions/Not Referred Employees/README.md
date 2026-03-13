@@ -12,6 +12,9 @@ Output the first name of the employee.
 
 **[ESP]**
 
+Encuentra los empleados que no estan supervisados por manager id 1.
+Muestra el nombre del empleado.
+
 
 
 # TABLA
