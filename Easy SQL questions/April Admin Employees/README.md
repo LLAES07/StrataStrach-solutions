@@ -41,3 +41,9 @@ WHERE
     EXTRACT(MONTH FROM joining_date) >= 4 AND
     department LIKE 'Admin';
 ```
+
+# 📊 Explicación
+
+Lo primero es filtrar los empleados que se unieron en abril o posterior (`MONTH(joining_date) >= 4`) **y** que pertenezcan al departamento Admin.  
+Una vez filtrados, usamos `COUNT(DISTINCT worker_id)` para obtener el total sin duplicados.  
+¡Listo! 4 empleados cumplen la condición.
