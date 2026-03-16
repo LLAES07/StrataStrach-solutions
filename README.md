@@ -97,6 +97,7 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 | 70 | Find the genres that yielded the highest sales | [Ver](./Easy%20SQL%20questions/Find%20the%20genres%20that%20yielded%20the%20highest%20sales/) |
 | 71 | Rank guests based on their ages |[Ver](./Easy%20SQL%20questions/Rank%20guests%20based%20on%20their%20ages/)|
 | 72 | Number of Employees Per Department |[Ver](./Easy%20SQL%20questions/Number%20of%20Employees%20Per%20Department/)|
+| 73 | Find the average number of searches from each user |[Ver](./Easy%20SQL%20questions/Find%20the%20average%20number%20of%20searches%20from%20each%20user/)|
 
 --- 
 
