@@ -85,7 +85,12 @@ Find the average number of searches made by each user and present the result wit
 # Respuesta
 
 ```sql
-
+SELECT
+    id_user,
+    AVG(n_searches) AS promedio
+FROM airbnb_searches
+GROUP BY
+    id_user
 
 
 ```
