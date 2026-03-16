@@ -9,9 +9,9 @@ Find the average number of searches made by each user and present the result wit
 
 **[ESP]**
 
+Encuentra el promedio del numero de busquedas hechas por cada usuario y presenta el resultado con la id del usuario correspondiente.
 
 ## airbnb_searches
-
 
 
 
