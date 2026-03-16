@@ -135,3 +135,7 @@ GROUP BY
 ORDER BY 2 DESC;
 
 ```
+
+# 📊 Explicación
+
+Primeramente como nos preguntan la cantidad de veces que aparecio un artista necesitamos agrupamos por `artist` para de esta forma poder contar el numero de veces que el artista aparece en la tabla. Posterior seleccionamos el artista y la cuenta total de cada artista para ordenar de forma descendente por este.
