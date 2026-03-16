@@ -46,3 +46,8 @@ FROM user_sessions
 GROUP BY platform;
 
 ```
+
+# 📊 Explicación
+
+La pregunta nos solicita contar agrupado por plataforma. Una vez agrupados contamos por los usuarios distintos en cada plataforma.
+

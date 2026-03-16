@@ -57,3 +57,6 @@ WHERE
     EXTRACT(MONTH FROM transaction_start_date) IN (4,5)
 
 ```
+# 📊 Explicación
+
+El primer paso es filtrar nuestra tabla por abril y mayo paraa que solo tengamos como target estos registros. Una vez realizado el filtro dejamos solo las `singup_id` únicas.
