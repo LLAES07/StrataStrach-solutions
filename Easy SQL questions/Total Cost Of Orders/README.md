@@ -73,7 +73,17 @@ Find the total cost of each customer's orders. Output customer's id, first name,
 
 ```sql
 
-
+SELECT
+    c.id,
+    c.first_name,
+    COALESCE(SUM(o.total_order_cost), 0) AS costo_total_orden
+FROM customers c
+LEFT JOIN orders o
+ON c.id = o.cust_id
+GROUP BY 
+    c.id,
+    c.first_name
+ORDER BY 2 ASC;
 
 
 ```
