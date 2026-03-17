@@ -112,3 +112,4 @@ ORDER BY 2 DESC
 
 # 🧠 EXPLICACIÓN
 
+Para conocer la cantidad de citas que cada genero hizo necesitamos tomar la columna `appointmentid` ya que es única y representa 1 cita con un doctor. Conociendo esto agrupamos por genero y contamos esta columna para obtener el resultado de que el genero femenino con 58 vs 42 citas es el que más citas tomó.
