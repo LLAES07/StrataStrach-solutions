@@ -9,6 +9,9 @@ Find the total cost of each customer's orders. Output customer's id, first name,
 
 **[ESP]**
 
+Encuentra el costo total de cada orden de los clientes. Muestra la id del cliente, el primer nombre, y el costo total de la orden. Ordena los registros según el nombre del cliente alfabéticamente.
+
+
 
 # TABLA
 
