@@ -10,6 +10,8 @@ Output the gender along with the corresponding number of appointments.
 
 **[ESP]**
 
+Encuentra el genero que ha hecho el mayor numero de citas al doctor.
+Muestra el genero junto con el numero de citas.
 
 
 
