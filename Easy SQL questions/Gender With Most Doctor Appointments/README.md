@@ -98,7 +98,12 @@ Output the gender along with the corresponding number of appointments.
 
 ```sql
 
-
+SELECT
+    gender,
+    COUNT(appointmentid) AS total_appointments
+FROM medical_appointments
+GROUP BY gender
+ORDER BY 2 DESC
 
 
 ```
