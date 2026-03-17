@@ -99,6 +99,7 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 | 72 | Number of Employees Per Department |[Ver](./Easy%20SQL%20questions/Number%20of%20Employees%20Per%20Department/)|
 | 73 | Find the average number of searches from each user |[Ver](./Easy%20SQL%20questions/Find%20the%20average%20number%20of%20searches%20from%20each%20user/)|
 | 74 | Total Cost Of Orders |[Ver](./Easy%20SQL%20questions/Total%20Cost%20Of%20Orders/)|
+| 75 | Gender With Most Doctor Appointments |[Ver](./Easy%20SQL%20questions/Gender%20With%20Most%20Doctor%20Appointments/)|
 
 --- 
 
