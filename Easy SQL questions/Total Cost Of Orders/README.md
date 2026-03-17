@@ -89,3 +89,5 @@ ORDER BY 2 ASC;
 ```
 
 # 🧠 EXPLICACIÓN
+
+Necesitamos conocer el total de orden por ide cada usuario. Por esta razon generaremos un LEFT JOIN entre la tabla `customers` de esta manera tendrá todos los ususarios conectando esta con `orders` así traemos cada orden correspondiente a cada usuario. Posterior utilizamos GROUP BY para juntar todos los registros de cada usuario sumando la columna `total_order_cost` utilizanto `COALESCE` para incluir a los usuarios que no tengan ordenes.
