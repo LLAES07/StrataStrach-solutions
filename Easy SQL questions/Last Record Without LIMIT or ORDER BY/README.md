@@ -48,4 +48,9 @@ Note: The earliest records correspond to the earliest employee ID's.
 
 ```sql
 
+SELECT
+    *
+FROM worker
+WHERE joining_date = (SELECT MAX(joining_date) FROM worker)
+
 ```
