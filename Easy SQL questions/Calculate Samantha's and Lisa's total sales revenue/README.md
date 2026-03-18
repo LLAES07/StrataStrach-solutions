@@ -40,3 +40,5 @@ GROUP BY
 ```
 
 # 🧠 EXPLICACIÓN
+
+Necesitamos el total de revenue para dos personas en especifico. Con esto en mente primero filtramos por los nombres solicitados usando `lower` para normalizar los nombres pasados. Posterior a esto agrupamos por el nombre que en nuestro caso solo estarán los de las personas filtradas. Por ultimo sumamos los revenue.
