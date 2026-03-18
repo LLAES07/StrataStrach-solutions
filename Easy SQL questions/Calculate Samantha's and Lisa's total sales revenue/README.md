@@ -13,6 +13,10 @@ What is the total sales revenue of Samantha and Lisa?
 
 **[ESP]**
 
+Cual es el total de ventas de Samantha y Lisa?
+
+
+
 
 
 
