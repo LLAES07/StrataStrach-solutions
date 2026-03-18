@@ -337,3 +337,8 @@ WHERE owner_name ILIKE '%bakery%'
   AND pe_description ILIKE '%low risk%';
 
 ```
+
+
+# 🧠 EXPLICACIÓN
+
+Lo primero es que de la tabla que tenemos nos piden 2 condiciones en especifico que sean de propiedad `Bakery` y que ademas sean de bajo riesgo por lo que generamos primero un `WHERE` filtrando por ambas condiciones. Realizado esto seleccionamos las columnas `owner_name` y `pe_description`
