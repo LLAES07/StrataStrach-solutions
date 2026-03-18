@@ -24,7 +24,13 @@ What is the total sales revenue of Samantha and Lisa?
 
 ```sql
 
-
+SELECT
+    salesperson,
+    SUM(sales_revenue) AS total_revenue
+FROM sales_performance
+WHERE lower(salesperson) IN ('samantha', 'lisa')
+GROUP BY
+    salesperson
 
 
 ```
