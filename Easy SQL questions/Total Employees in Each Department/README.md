@@ -53,3 +53,6 @@ GROUP BY department
 ```
 
 # 🧠 EXPLICACIÓN
+
+
+Nos solicitan por cada departamento el numero total de empleados. Primero agrupamos por departamento y sumamos todos los registros que cada departamento tenga.
