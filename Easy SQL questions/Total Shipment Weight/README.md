@@ -38,3 +38,7 @@ SELECT
 FROM amazon_shipment;
 
 ```
+
+# 🧠 EXPLICACIÓN
+
+Debido a que necesitamos el precio total pero con la condición que se agregue a cada columna necesitamos una funcion de que sume por el `shipment_id` y sume `SUM(weight)` de manera que deje este resultado en las `n` columnas.
