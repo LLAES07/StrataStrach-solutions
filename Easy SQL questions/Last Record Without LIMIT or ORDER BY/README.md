@@ -17,12 +17,6 @@ Encuentra el ultimo registro del dataset sin usar LIMIT o ORDER BY
 
 
 
-
-
-
-
-
-
 ### TABLA
 
 **worker**
@@ -55,3 +49,7 @@ FROM worker
 WHERE joining_date = (SELECT MAX(joining_date) FROM worker)
 
 ```
+
+# 🧠 EXPLICACIÓN
+
+Debemos encontrar el ultimo registro con las restricciones mencionadas. Considerando que podemos utilizar subquery, realizamos subquery para encontrar la fecha más proxima que por ende es la mas nueva. Una vez realizado igualamos la fecha a este subquery para pdoer filtrar la tabla principal y nos devuelve el registro más nuevo.
