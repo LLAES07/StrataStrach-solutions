@@ -101,6 +101,7 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 | 74 | Total Cost Of Orders |[Ver](./Easy%20SQL%20questions/Total%20Cost%20Of%20Orders/)|
 | 75 | Gender With Most Doctor Appointments |[Ver](./Easy%20SQL%20questions/Gender%20With%20Most%20Doctor%20Appointments/)|
 | 76 | Calculate Samantha's and Lisa's total sales revenue |[Ver](./Easy%20SQL%20questions/Calculate%20Samantha's%20and%20Lisa's%20total%20sales%20revenue/)|
+| 77 | Total Employees in Each Department |[Ver](./Easy%20SQL%20questions/Total%20Employees%20in%20Each%20Department/)|
 
 --- 
 
