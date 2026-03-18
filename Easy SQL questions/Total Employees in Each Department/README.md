@@ -13,6 +13,11 @@ Output the department name along with the corresponding number of employees.
 
 **[ESP]**
 
+Encuentra el numero de empleados por cada departamento.
+
+Muestra el nombre del departamento junto con el numero de empleados.
+
+
 
 
 # TABLA
