@@ -12,6 +12,7 @@ Note: The earliest records correspond to the earliest employee ID's.
 
 **[ESP]**
 
+Encuentra el ultimo registro del dataset sin usar LIMIT o ORDER BY
 
 
 
