@@ -52,3 +52,8 @@ airbnb_search_details
 SELECT DISTINCT neighbourhood FROM airbnb_search_details;
 
 ```
+
+
+# 📊 Explicación
+
+Considerando que los barrios están todos en la columna `neighbourhood` el resultado es directo y tomamos todos los distintos.
