@@ -262,11 +262,10 @@ playbook_users
 
 -- 1era opcion
 
-SELECT COUNT(DISTINCT user_id)
+SELECT 
+    COUNT(DISTINCT user_id)
 FROM playbook_users
 WHERE language IN ('english', 'german', 'french', 'spanish')
-GROUP BY user_id
-HAVING  cuenta >=1
 
 
 -- 2da opcion con cte
@@ -297,4 +296,4 @@ Nota: Usuarios que hablan más de un idioma sólo se cuentan una vez.
 
 # 📊 Explicación
 
-Necesitamos encontrar los usuarios bilingues o más. Para esto primero filtramos 
+Necesitamos encontrar los usuarios que hablen alguno de estos idiomas. Debido a que el problema solo especifica que necesita hablar al menos 1, entonces usamos la clausula `IN` con un `WHERE` para poder tomar todos aquellos usuarios que hablan al menos 1 de los idiomas solicitados. Por ultimo con este filtro aplicado contamos los usuarios unicos para el total.
