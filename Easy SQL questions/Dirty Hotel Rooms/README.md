@@ -5,6 +5,10 @@
 
 Find hotels in the Netherlands that got complaints from guests about room dirtiness (word "dirty" in its negative review). Output all the columns in your results
 
+**[ES]**
+
+Encuentra los hoteles en holanda que tengan quejas de los huespedes acerca de la suciedad en las piezas ("dirty" en su review negativa). Muestra todas las columnas en tus resultados.
+
 ### Table
 
 hotel_reviews
@@ -34,3 +38,8 @@ WHERE
     AND
     negative_review LIKE '%dirty%';
 ```
+
+
+
+# 📊 Explicación
+
