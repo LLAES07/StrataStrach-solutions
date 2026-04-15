@@ -17,7 +17,7 @@ Note: Users who speak more than one language are counted only once.
 
 Cuantos usuarios hablan inglés, alemán, francés o español?
 
-Nota: Usuarios que habland más de un idioma sólo se cuentan una vez.
+Nota: Usuarios que hablan más de un idioma sólo se cuentan una vez.
 
 
 
@@ -265,7 +265,8 @@ playbook_users
 SELECT COUNT(DISTINCT user_id)
 FROM playbook_users
 WHERE language IN ('english', 'german', 'french', 'spanish')
-WHERE cuenta >=1
+GROUP BY user_id
+HAVING  cuenta >=1
 
 
 -- 2da opcion con cte
@@ -287,3 +288,13 @@ FROM ct1
 WHERE cuenta >=1
 
 ```
+
+
+
+Cuantos usuarios hablan inglés, alemán, francés o español?
+
+Nota: Usuarios que hablan más de un idioma sólo se cuentan una vez.
+
+# 📊 Explicación
+
+Necesitamos encontrar los usuarios bilingues o más. Para esto primero filtramos 
