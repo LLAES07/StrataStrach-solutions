@@ -80,3 +80,13 @@ ORDER BY e.hire_date DESC;
 
 
 ```
+
+# 📊 Explicación
+
+Para entender esta consulta de forma sencilla, imagina que tienes dos listas. En una están absolutamente todos los empleados de la empresa (`uber_employees`) y en la otra está el registro de todas las revisiones anuales que se han hecho (`uber_annual_review`).
+
+1. **El `LEFT JOIN`**: Lo que hacemos aquí es decirle a la base de datos "tráeme a todos los empleados de la primera lista y, si encuentras su nombre en la segunda, pégales al lado su revisión". Como estamos usando un `LEFT JOIN`, nos va a traer a todos los empleados sin excepción. Si un empleado no tiene ninguna revisión registrada, la base de datos no lo borra, simplemente deja esos espacios en blanco (les pone un valor `NULL`).
+2. **El `WHERE r.emp_id IS NULL`**: Aquí está el verdadero truco. Con esta línea filtramos toda la información y le decimos que nos deje únicamente a los empleados que se quedaron con esos "espacios en blanco", es decir, aquellos que *nunca* aparecieron en la lista de revisiones anuales.
+3. **El `ORDER BY e.hire_date DESC`**: Ya por último, la instrucción nos pide listar a los empleados contratados más recientemente primero. Para esto simplemente ordenamos la lista por la fecha de contratación (`hire_date`) de mayor a menor usando `DESC`, para que los más nuevos salgan hasta arriba.
+old_string:
+ORDER BY e.hire_date DESC;
