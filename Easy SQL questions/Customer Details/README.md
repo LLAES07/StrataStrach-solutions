@@ -44,9 +44,6 @@ orders
 
 ```sql
 
--- DETAILS EVERY CUSTOMER [LEFT JOIN]
--- SELECT customer firstname, last and city. + order details
--- ORDER BY customer fist name and the orde detais in asc order
 
 
 SELECT
