@@ -43,3 +43,5 @@ WHERE
 
 # 📊 Explicación
 
+
+Nos solicitan todos los datos para la nacionalidad `Netherlands` y con una review negativa que contiene dirty. Para esto usamos `WHERE` y  `LIKE` para lograr lo solicitado.
