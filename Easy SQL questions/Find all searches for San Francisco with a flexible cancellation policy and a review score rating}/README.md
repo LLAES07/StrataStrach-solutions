@@ -35,12 +35,15 @@ SELECT
 FROM airbnb_search_details
 WHERE
     cancellation_policy = 'flexible'
-    AND LOWER(city) LIKE 'sf'
+    AND city = 'San Francisco'  -- o ILIKE '%san francisco%'
+    AND review_scores_rating IS NOT NULL
 ORDER BY
-    review_scores_rating DESC NULLS LAST;
+    review_scores_rating DESC;
 
 ```
 
 ---
 
 # 📊 Explicación
+
+Lo primero que nos piden es filtrar por las busquedas de san fransisco y tenga dos condiciones: 1. Que la poliza de cancelación sea flexible y 2. Una score de review que no sea nulo.Por lo que utlizamos `WHERE` para filtrar la tabla primero con `cancellation_policy = 'flexible', LOWER(city) LIKE 'sf' y  `
