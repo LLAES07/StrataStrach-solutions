@@ -1,5 +1,9 @@
 # Find all searches for accommodations with an equal number of bedrooms bathrooms
 
+---
+
+
+
 **[ENG]**
 Find all searches for accommodations where the number of bedrooms is equal to the number of bathrooms.
 
@@ -174,6 +178,10 @@ airbnb_search_details
 | 18385413 | 409.43 | Apartment     | Entire home/apt | {TV,"Cable TV",Internet,"Wireless Internet","Air conditioning",Kitchen,Elevator,"Buzzer/wireless intercom",Heating,Essentials,Hangers,"Hair dryer",Iron}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 2            | 1         | Real Bed      | flexible            | FALSE        | NYC     | f                      |                    | 2014-06-04 | Harlem                       | 18                | 91                   | 10030   | 0        | 1    |
 | 9470528  | 477.91 | Apartment     | Entire home/apt | {TV,"Cable TV",Internet,"Wireless Internet","Air conditioning",Kitchen,Heating,"Smoke detector",Essentials}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | 2            | 1         | Real Bed      | moderate            | TRUE         | NYC     | t                      | 100%               | 2015-10-02 | Harlem                       | 5                 | 88                   | 10027   | 0        | 2    |
 
+---
+
+
+
 # RESPUESTA
 
 ```sql
@@ -186,8 +194,10 @@ FROM airbnb_search_details
 
 
 
+---
+
+
 
 # 📊 Explicación
-
 
 Según lo solicitado necesitamos filtrar, por lo tanto usar un `WHERE` con la condición donde el número de habitaciones sea igual al número de baños. Con esto filtrado seleccionamos todos los datos.
