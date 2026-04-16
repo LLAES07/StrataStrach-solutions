@@ -46,4 +46,4 @@ ORDER BY
 
 # 📊 Explicación
 
-Lo primero que nos piden es filtrar por las busquedas de san fransisco y tenga dos condiciones: 1. Que la poliza de cancelación sea flexible y 2. Una score de review que no sea nulo.Por lo que utlizamos `WHERE` para filtrar la tabla primero con `cancellation_policy = 'flexible', LOWER(city) LIKE 'sf' y  `
+Lo primero que nos piden es filtrar por las busquedas de san fransisco y tenga dos condiciones: 1. Que la poliza de cancelación sea flexible y 2. Una score de review que no sea nulo.Por lo que utlizamos `WHERE` para filtrar la tabla primero con `cancellation_policy = 'flexible', LOWER(city) LIKE 'sf' y  review_scores_rating IS NOT NULL`. Con la tabla filtrada por estas condiciones podemos ordenar por `review_scores_rating DESC` y seleccionar `city` y `review_scores_rating`.
