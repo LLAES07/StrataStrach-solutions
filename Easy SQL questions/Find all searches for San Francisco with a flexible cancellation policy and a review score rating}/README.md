@@ -1,14 +1,15 @@
 # Find all searches for San Francisco with a flexible cancellation policy and a review score rating
 
+---
+
 **[ENG]**
 Find all searches for San Francisco with a flexible cancellation policy and a review score rating. Sort the results by the review score in the descending order.
-	
-**[ESP]**
-Encuentra todas las búsquedas para San Francisco con una política de cancelación flexible y una calificación de puntuación de revisión. Ordena los resultados por la calificación de revisión en orden descendente.
 
+**[ESP]**
+Encuentra todas las búsquedas para San Francisco con una política de cancelación flexible y con una calificación de puntuación de revisión. Ordena los resultados por la calificación de revisión en orden descendente.
 
 ### Table
-	
+
 airbnb_search_details
 
 | id       | price  | property_type | room_type       | amenities                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -21,6 +22,8 @@ airbnb_search_details
 | 20515889 | 720.79 | Villa         | Entire home/apt | {TV,"Cable TV",Internet,"Wireless Internet",Kitchen,"Free parking on premises","Pets allowed","Elevator in building","Hot tub","Indoor fireplace",Heating,"Family/kid friendly","Suitable for events",Washer,Dryer,"Smoke detector","Carbon monoxide detector","First aid kit","Safety card","Fire extinguisher",Essentials,Shampoo}                                                                                                                                                               |
 | 13783491 | 516.48 | Villa         | Private room    | {TV,"Cable TV",Internet,"Wireless Internet","Air conditioning",Pool,Kitchen,"Free parking on premises","Pets allowed","Hot tub","Indoor fireplace",Heating,"Family/kid friendly",Washer,Dryer,"Smoke detector","Carbon monoxide detector","Fire extinguisher",Essentials,Shampoo,"Lock on bedroom door","24-hour check-in",Hangers,"Hair dryer",Iron,"Laptop friendly workspace"}                                                                                                                  |
 | 6591755  | 529.33 | Villa         | Entire home/apt | {TV,"Cable TV",Internet,"Wireless Internet",Kitchen,"Pets allowed","Pets live on this property","Buzzer/wireless intercom",Heating,"Family/kid friendly",Washer,Dryer,"Smoke detector","Carbon monoxide detector","Fire extinguisher",Essentials,Hangers,"Hair dryer",Iron,"Laptop friendly workspace"}                                                                                                                                                                                            |
+
+---
 
 # RESPUESTA
 
@@ -37,3 +40,7 @@ ORDER BY
     review_scores_rating DESC NULLS LAST;
 
 ```
+
+---
+
+# 📊 Explicación
