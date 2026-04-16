@@ -36,3 +36,9 @@ FROM sat_scores
 WHERE 
     TRIM(school) NOT LIKE '%HS';
 ```
+
+---
+
+# 📊 Explicación
+
+La pregunta nos pide las escuelas que no tengan el patron `HS` en el término del nombre de la escuela. Por lo tanto es una condición de filtro ya que imponemos una condición `NOT LIKE '%HS'`. Usamos `TRIM` para asegurarnos que no hay espacios principalmente a la derecha de la palabra para tener una coincidencia en caso que temrine en HS.
