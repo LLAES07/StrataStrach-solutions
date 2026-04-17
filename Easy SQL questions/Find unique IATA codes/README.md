@@ -52,3 +52,7 @@ us_flights
 select DISTINCT dest from us_flights;
 
 ```
+
+# 📊 Explicación
+
+El resultado es directo y usamos DISTINCT para conocer los códigos únicos del aeropueerto.
