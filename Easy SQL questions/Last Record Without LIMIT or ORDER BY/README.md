@@ -1,7 +1,7 @@
 # Last Record Without LIMIT or ORDER BY
 
 
-
+---
 
 **[ENG]**
 
@@ -15,7 +15,7 @@ Note: The earliest records correspond to the earliest employee ID's.
 Encuentra el ultimo registro del dataset sin usar LIMIT o ORDER BY
 
 
-
+---
 
 ### TABLA
 
@@ -38,6 +38,7 @@ Encuentra el ultimo registro del dataset sin usar LIMIT o ORDER BY
 |12|Jai|Patel|85000|2014-03-21|HR|
 |13|Jura|Jomun|980000|2013-05-20|HR|
 
+---
 
 # RESPUESTA
 
