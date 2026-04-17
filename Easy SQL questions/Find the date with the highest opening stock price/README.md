@@ -1,11 +1,20 @@
 # Find the date with the highest opening stock price
 
+---
+
+**[ENG]**
+
 Find the date when Apple's opening stock price reached its maximum
+
+**[ESP]**
+
+Encuentra la fecha cuando el stock de precios de apple abrió en su máximo.
+
+---
 
 ### Table
 
 aapl_historical_stock_price
-
 
 | date       | year | month | open   | high  | low    | close  | volume   | id  |
 | ---------- | ---- | ----- | ------ | ----- | ------ | ------ | -------- | --- |
@@ -256,6 +265,8 @@ aapl_historical_stock_price
 | 2012-01-05 | 2012 | 1     | 414.95 | 506.5 | 412.67 | 418.03 | 9688115  | 520 |
 | 2012-01-04 | 2012 | 1     | 410    | 506.5 | 409.28 | 413.44 | 9294444  | 521 |
 | 2012-01-03 | 2012 | 1     | 409.4  | 506.5 | 409    | 411.23 | 10794957 | 522 |
+
+---
 
 # RESPUESTA
 
