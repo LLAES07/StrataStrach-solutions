@@ -44,3 +44,8 @@ ORDER BY id ASC;
 
 
 ```
+---
+
+# 📊 Explicación
+
+La consulta tiene como objetivo identificar los registros que han sido actualizados en la tabla. Esto se logra mediante el uso de la columna `last_updated` para comparar los registros y determinar cuáles han cambiado desde una fecha específica o desde el último registro. La consulta utiliza `SELECT` para recuperar los registros que cumplen con ciertas condiciones de actualización, lo que permite identificar los cambios realizados en la base de datos.
