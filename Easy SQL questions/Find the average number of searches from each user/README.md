@@ -162,3 +162,5 @@ GROUP BY
 
 
 # 📊 Explicación
+
+Nos solicitan el promedio de busquedas por usuario, por lo que el primer paso es agrupar por la `id_user` que es la columna que identifica a cada usuario y que además tiene que salir en nuestro `SELECT`. Una vez agrupado calculamos el `AVG(n_searches)` para obtener el promedio de busquedas de cada usuario.
