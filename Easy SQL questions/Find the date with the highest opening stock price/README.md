@@ -277,3 +277,11 @@ SELECT
 WHERE open = (SELECT
                 MAX(open) FROM aapl_historical_stock_price )
 ```
+
+# 📊 Explicación
+
+Para encontrar la fecha en la que el precio de apertura de Apple fue el más alto, la consulta busca primero el valor máximo en la columna `open` de la tabla. Luego, identifica la fecha que corresponde a ese valor.
+
+En este caso, el precio más alto de apertura fue **702.41**, y ocurrió el **20 de septiembre de 2012**. La consulta devuelve esa fecha porque es la única que coincide con el valor máximo encontrado.
+
+Si hubiera varias fechas con el mismo precio máximo, la consulta mostraría todas. Pero aquí, como solo hay una, el resultado es claro y directo.
