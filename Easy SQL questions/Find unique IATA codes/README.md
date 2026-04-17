@@ -1,6 +1,6 @@
 # Find unique IATA codes
 
-
+--- 
 **[ENG]**
 
 What are the unique airport codes for all origin airports in the dataset? (e.g., LAX, JFK, SFO)
@@ -12,8 +12,7 @@ What are the unique airport codes for all origin airports in the dataset? (e.g.,
 
 Cuales son los codigos unicos para todos los origenes de los aeropuertos en el dataset? (e.g., LAX, JFK, SFO)
 
-
-
+---
 
 
 
@@ -44,6 +43,7 @@ us_flights
 |2015-01-04|UA|1205|KOA|LAX|7|0|2504|||||320||
 |2015-01-15|AA|999|SEA|JFK|0|0|2176|||||||
 
+---
 
 
 # RESPUESTA
