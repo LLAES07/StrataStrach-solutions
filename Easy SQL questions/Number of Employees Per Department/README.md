@@ -74,3 +74,7 @@ ORDER BY 2 DESC;
 # 🧠 EXPLICACIÓN
 
 Para obtener el numero de empleados por cada departamento, agrupamos por departamento y contamos las id que hay en cada departamento. Posteriormente se ordena por el numero de empleados en orden descendente.
+
+## EXPLICACION
+
+`GROUP BY department` agrupa los empleados por area y `COUNT(id)` cuenta cuantas filas hay en cada grupo. El `ORDER BY 2 DESC` deja primero los departamentos con mas empleados.
