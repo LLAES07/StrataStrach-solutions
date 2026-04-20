@@ -45,3 +45,6 @@ WHERE
 
 
 Nos solicitan todos los datos para la nacionalidad `Netherlands` y con una review negativa que contiene dirty. Para esto usamos `WHERE` y  `LIKE` para lograr lo solicitado.
+## EXPLICACION
+
+La consulta solo necesita identificar las habitaciones marcadas como sucias. Por eso un filtro directo sobre la columna de estado resuelve el ejercicio.
