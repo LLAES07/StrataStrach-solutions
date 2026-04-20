@@ -70,3 +70,7 @@ WHERE manager_id !=1 ;
 # 🧠 EXPLICACIÓN
 
 Para encontrar los usuarios que no tienen el manager_id = 1, utilizamos un filtro para filtrar los que no sean iguales a 1.
+
+## EXPLICACION
+
+La consulta usa `manager_id != 1` para excluir a los empleados que si dependen del manager 1. Luego devuelve solo el nombre para cumplir con el enunciado.
