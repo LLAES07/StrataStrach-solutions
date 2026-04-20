@@ -56,3 +56,6 @@ GROUP BY department
 
 
 Nos solicitan por cada departamento el numero total de empleados. Primero agrupamos por departamento y sumamos todos los registros que cada departamento tenga.
+## EXPLICACION
+
+`GROUP BY department` crea un grupo por cada departamento y `COUNT(employee_id)` devuelve cuantos empleados hay en cada uno.
