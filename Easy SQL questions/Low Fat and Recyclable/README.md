@@ -39,3 +39,7 @@ WHERE is_low_fat LIKE'Y' AND
       is_recyclable LIKE 'Y'
 
 ```
+
+## EXPLICACION
+
+La idea es contar los productos que cumplen ambas condiciones y dividirlos entre el total de productos. Multiplicar por `100.0` asegura que el resultado sea un porcentaje decimal y no una division entera.
