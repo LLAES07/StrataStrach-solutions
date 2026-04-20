@@ -70,3 +70,7 @@ LEFT JOIN online_promotions p
 
 
 ```
+
+## EXPLICACION
+
+Las dos propuestas buscan medir el peso de las ventas con promocion valida. La primera calcula la proporcion sobre el total y la segunda usa un `LEFT JOIN` para promediar casos validos y no validos.
