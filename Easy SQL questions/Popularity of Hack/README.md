@@ -54,3 +54,6 @@ GROUP BY
     location
 
 ```
+## EXPLICACION
+
+La solucion consiste en agrupar por `hack_id` y sumar los votos o comentarios relacionados. Asi obtenemos una medida simple de popularidad por hack.
