@@ -52,3 +52,7 @@ GROUP BY
 ORDER BY total_workers DESC
 
 ```
+
+## EXPLICACION
+
+La consulta filtra primero a los trabajadores con `joining_date >= '2014-04-01'`. Luego agrupa por `department`, cuenta los `worker_id` y ordena el resultado de mayor a menor.
