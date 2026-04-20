@@ -22,3 +22,17 @@ facebook_complaints
 |3|1|TRUE|
 |4|1|TRUE|
 |5|1|FALSE|
+## RESPUESTA
+
+```sql
+SELECT
+    type,
+    ROUND(SUM(CASE WHEN processed = TRUE THEN 1 ELSE 0 END)::NUMERIC / COUNT(*), 2) AS processed_rate
+FROM facebook_complaints
+GROUP BY type
+ORDER BY type;
+```
+
+## EXPLICACION
+
+Primero contamos cuantas filas procesadas hay por `type` y luego lo dividimos entre el total de tickets de ese mismo tipo. `ROUND(..., 2)` deja el resultado con dos decimales.
