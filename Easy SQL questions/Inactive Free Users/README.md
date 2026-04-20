@@ -107,3 +107,11 @@ WHERE u.status = 'free'
 
 
 ```
+
+# 🧠 EXPLICACIÓN
+
+1. **Primera consulta**: Se obtienen todos los `user_id` de la tabla `rc_users` que tienen el estado `free`.
+2. **Operador `EXCEPT`**: Se utiliza para excluir los resultados de la segunda consulta de la primera. Es decir, nos quedamos con los usuarios `free` que **no** aparecen en la segunda consulta.
+3. **Segunda consulta**: Busca a los usuarios con estado `free` que **sí** realizaron alguna llamada en abril de 2020. Para esto, une las tablas `rc_users` y `rc_calls`, y filtra por el mes 4 y el año 2020 utilizando la función `EXTRACT()`.
+
+**Resultado**: Al restar los usuarios que sí llamaron en abril de 2020 de la lista total de usuarios `free`, obtenemos exactamente a los usuarios `free` inactivos en ese mes.

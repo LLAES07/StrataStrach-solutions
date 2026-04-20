@@ -11,7 +11,7 @@ El objetivo de este repo es **practicar SQL de forma sistemática** y dejar un r
 [![SQL](https://img.shields.io/badge/SQL-100%25-blue?style=for-the-badge&logo=postgresql)](https://platform.stratascratch.com/)
 [![StrataScratch](https://img.shields.io/badge/Plataforma-StrataScratch-orange?style=for-the-badge&logo=target)](https://platform.stratascratch.com/)
 
-# 🧠 Cómo usar este repositorio
+# 🧠 EXPLICACIÓN para **README.md**
 
 1. Entra a la carpeta 
 2. Selecciona el ejercicio que quieras revisar
