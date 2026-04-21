@@ -297,7 +297,4 @@ Nota: Usuarios que hablan más de un idioma sólo se cuentan una vez.
 # 📊 Explicación
 
 Necesitamos encontrar los usuarios que hablen alguno de estos idiomas. Debido a que el problema solo especifica que necesita hablar al menos 1, entonces usamos la clausula `IN` con un `WHERE` para poder tomar todos aquellos usuarios que hablan al menos 1 de los idiomas solicitados. Por ultimo con este filtro aplicado contamos los usuarios unicos para el total.
-# Explicacion adicional
-
-Como un usuario puede aparecer mas de una vez por idioma, COUNT(DISTINCT user_id) evita duplicados. El filtro IN reduce la tabla solo a los idiomas que interesan y el conteo final devuelve el total de usuarios distintos.
 
