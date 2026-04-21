@@ -47,3 +47,8 @@ WHERE
 Lo primero es filtrar los empleados que se unieron en abril o posterior (`MONTH(joining_date) >= 4`) **y** que pertenezcan al departamento Admin.  
 Una vez filtrados, usamos `COUNT(DISTINCT worker_id)` para obtener el total sin duplicados.  
 ¡Listo! 4 empleados cumplen la condición.
+
+# Explicacion adicional
+
+La clave esta en combinar ambas condiciones en el WHERE: fecha de ingreso desde abril y departamento Admin. Luego solo contamos los trabajadores que cumplen ambas reglas.
+
