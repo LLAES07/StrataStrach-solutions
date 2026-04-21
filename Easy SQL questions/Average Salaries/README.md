@@ -44,3 +44,8 @@ FROM
 # 📊 Explicación
 
 Para comparar cada salario de un empleado con el promedio de su departamento necesitamos por un lado tener los salarios promedio de cada departamento por cada fila correspondiente a cada persona que este en ese departamento. Que quiere decir eso que primero generamos una tabla con `department`, `first_name` y `salary` logrando con esto cada persona junto a su departamento con su salario e incluimos una ultima columna donde utilizamos una window function para poder calcular el promedio de los salarios del departamento tomando la columna de departamento. De esta forma podemos comparar cada sueldo de cada empleado ordenado con su departamento con su correspondiente promedio de departamento.
+
+# Explicacion adicional
+
+La window function AVG(salary) OVER(PARTITION BY department) calcula el promedio por departamento sin perder el detalle de cada empleado. Asi podemos ver cada salario individual junto con la referencia de su propio grupo.
+
