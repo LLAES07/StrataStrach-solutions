@@ -342,3 +342,7 @@ WHERE owner_name ILIKE '%bakery%'
 # 🧠 EXPLICACIÓN
 
 Lo primero es que de la tabla que tenemos nos piden 2 condiciones en especifico que sean de propiedad `Bakery` y que ademas sean de bajo riesgo por lo que generamos primero un `WHERE` filtrando por ambas condiciones. Realizado esto seleccionamos las columnas `owner_name` y `pe_description`
+# Explicacion adicional
+
+El filtro por ILIKE '%bakery%' nos deja solo los registros relacionados con Bakery y el segundo filtro asegura que la descripcion tenga low risk. Como solo piden esas dos columnas, el SELECT DISTINCT evita filas repetidas.
+
