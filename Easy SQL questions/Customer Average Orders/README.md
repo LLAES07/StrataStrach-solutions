@@ -49,7 +49,4 @@ from postmates_orders;
 # 📊 Explicación
 
 Como para cada fila representa un orden entonces cada `customer_id` presente en la tabla ha hecho al menos una orden. Por lo tanto contamos los `customer_id` distintos como `total_clientes` y para el promedio de orden utilizamos `AVG()` sobre la columna `amount`.
-# Explicacion adicional
-
-El COUNT(DISTINCT customer_id) responde cuantas personas ordenaron al menos una vez, mientras que AVG(amount) calcula el valor promedio de todas las compras registradas.
 
