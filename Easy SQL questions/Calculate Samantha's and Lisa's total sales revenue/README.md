@@ -42,7 +42,4 @@ GROUP BY
 # 🧠 EXPLICACIÓN
 
 Necesitamos el total de revenue para dos personas en especifico. Con esto en mente primero filtramos por los nombres solicitados usando `lower` para normalizar los nombres pasados. Posterior a esto agrupamos por el nombre que en nuestro caso solo estarán los de las personas filtradas. Por ultimo sumamos los revenue.
-# Explicacion adicional
-
-La normalizacion con lower() evita problemas de mayusculas o minusculas al filtrar. Luego SUM(sales_revenue) totaliza lo vendido por cada una de las dos personas solicitadas.
 
