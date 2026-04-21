@@ -49,7 +49,4 @@ ORDER BY
 # 🧠 EXPLICACIÓN
 
 Para encontrar la última vez que cada bicicleta fue usada, agrupamos los registros por el número de la bicicleta (`bike_number`). Luego, utilizamos la función de agregación `MAX()` sobre la columna `end_time` para obtener la fecha y hora más reciente de uso para cada grupo. Finalmente, ordenamos los resultados de manera descendente para mostrar las bicicletas usadas más recientemente primero.
-# Explicacion adicional
-
-Cada bicicleta puede aparecer muchas veces, pero MAX(end_time) nos devuelve solo la salida mas reciente de cada una. El orden descendente permite que el resultado quede priorizado por las mas usadas recientemente.
 
