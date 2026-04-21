@@ -52,7 +52,4 @@ GROUP BY platform;
 La pregunta nos solicita contar agrupado por plataforma. Una vez agrupados contamos por los usuarios distintos en cada plataforma.
 
 
-# Explicacion adicional
-
-Con esto identificamos cuantas personas usaron cada plataforma sin importar si tambien usaron otras. El COUNT(DISTINCT user_id) evita duplicados y GROUP BY platform deja un resultado por cada plataforma.
 
