@@ -61,7 +61,4 @@ WHERE
 
 El primer paso es filtrar nuestra tabla por abril y mayo paraa que solo tengamos como target estos registros. Una vez realizado el filtro dejamos solo las `singup_id` únicas.
 
-# Explicacion adicional
-
-Al usar EXTRACT(MONTH FROM transaction_start_date) aislamos el mes y luego con DISTINCT eliminamos repeticiones del mismo signup_id. Asi obtenemos solo los registros que aparecen en abril o mayo.
 
