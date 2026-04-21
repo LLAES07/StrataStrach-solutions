@@ -63,3 +63,7 @@ ORDER BY
 # 📊 Explicación
 
 Lo primero que solicitan es encontrar el detalle de todos los clientes aún cuando si no ha realizado una operación. Para esto necesitamos toda la tabla usuarios y hacer un `LEFT JOIN` con la tabla de pedidos.De esta forma tendremos a todos los usuarios aun cuando no hayan realizado una orden. Posteriormente al join realizamos el `ORDER BY` según lo solicitado y seleccionamos las columnas solicitadas.
+# Explicacion adicional
+
+El LEFT JOIN es la pieza clave porque conserva todos los clientes aunque no tengan pedidos. Si un cliente no tiene orden, las columnas de orders quedan vacias, pero el cliente sigue apareciendo en el resultado.
+
