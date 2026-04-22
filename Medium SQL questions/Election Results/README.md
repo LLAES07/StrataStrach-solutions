@@ -69,3 +69,7 @@ ORDER BY
 LIMIT 1;
 
 ```
+
+# EXPLICACION
+
+Primero calculamos cuanto pesa el voto de cada persona dividiendo 1 entre la cantidad de candidatos que eligio. Despues unimos ese peso con la tabla original para repartir correctamente el voto entre todos los candidatos marcados por cada votante. Al final agrupamos por candidato, sumamos los pesos y ordenamos para dejar al ganador al tope.
