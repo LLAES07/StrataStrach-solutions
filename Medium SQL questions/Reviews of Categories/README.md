@@ -49,3 +49,7 @@ GROUP BY
 ORDER BY total_count DESC
 
 ```
+
+# EXPLICACION
+
+Primero separamos la columna `categories` en valores individuales usando `string_to_array` y `UNNEST`, porque cada negocio puede pertenecer a mas de una categoria. Luego repetimos el `review_count` de cada negocio en todas sus categorias asociadas. Al final agrupamos por categoria y sumamos los reviews para saber cuales concentran mas actividad.
