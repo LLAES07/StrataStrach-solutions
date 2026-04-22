@@ -64,3 +64,7 @@ FROM ct1
 WHERE
     rk =1
 ```
+
+# EXPLICACION
+
+Primero combinamos `worker` con `title` para tener salario y puesto en la misma fila. Despues usamos `DENSE_RANK` ordenado por salario descendente para asignar el rango 1 a los empleados con el sueldo mas alto. Finalmente filtramos por ese rango y devolvemos los titulos de trabajo que corresponden al salario maximo.
