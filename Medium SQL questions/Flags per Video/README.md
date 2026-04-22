@@ -51,3 +51,7 @@ WHERE
 GROUP BY
     video_id;
 ```
+
+# EXPLICACION
+
+Primero filtramos las filas que no tienen `flag_id` porque esas no representan un flag valido. Luego construimos el nombre completo del usuario con `CONCAT` y `COALESCE` para evitar problemas con valores nulos. Al contar nombres distintos por `video_id` obtenemos cuantas personas unicas flagearon cada video.
