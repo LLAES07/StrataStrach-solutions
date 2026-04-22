@@ -71,3 +71,7 @@ WHERE
     c.name = 'Speedy Express';
 
 ```
+
+# EXPLICACION
+
+Primero unimos las ordenes con la tabla de transportistas para poder identificar cual carrier envio cada pedido. Despues filtramos solo las filas cuyo nombre de transportista es `Speedy Express`. Al contar las ordenes resultantes obtenemos el total de envios hechos por esa empresa.
