@@ -52,3 +52,7 @@ WHERE EXTRACT(YEAR FROM record_date) = 2021 AND EXTRACT(MONTH FROM record_date) 
 GROUP BY account_id;
 
 ```
+
+# EXPLICACION
+
+Primero filtramos los eventos de enero de 2021 para quedarnos solo con el mes pedido. Luego agrupamos por `account_id` y contamos usuarios distintos, porque un mismo usuario puede aparecer varias veces en el mes y no debe duplicarse. Asi obtenemos el total de usuarios activos mensuales por cuenta.
