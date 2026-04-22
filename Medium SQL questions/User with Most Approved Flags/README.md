@@ -94,3 +94,7 @@ WHERE
 
 
 ```
+
+# EXPLICACION
+
+Primero unimos `user_flags` con `flag_review` para quedarnos solo con los flags que fueron revisados por YouTube y terminaron en `APPROVED`. Despues contamos los videos distintos por usuario, porque lo que importa es cuantas publicaciones diferentes marco cada persona. Finalmente aplicamos `DENSE_RANK` para identificar al usuario o usuarios con el mayor numero de aprobados y devolver solo ese grupo.
