@@ -46,3 +46,7 @@ GROUP BY
     survived
 
 ```
+
+# EXPLICACION
+
+La idea es cruzar la columna `survived` con cada clase del pasajero y contar cuantas personas caen en cada categoria. Usamos `CASE` dentro de `SUM` para transformar cada clase en un contador independiente. Asi obtenemos una sola fila por estado de supervivencia con el total de pasajeros de primera, segunda y tercera clase.
