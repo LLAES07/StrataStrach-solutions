@@ -37,3 +37,7 @@ WHERE
 
 
 ```
+
+# EXPLICACION
+
+Primero buscamos el valor maximo de la columna `cool` en toda la tabla. Luego filtramos las reseñas que tengan exactamente ese valor para quedarnos con la o las publicaciones mas votadas. Como el enunciado pide devolver el negocio junto con el texto, seleccionamos ambas columnas en la consulta final.
