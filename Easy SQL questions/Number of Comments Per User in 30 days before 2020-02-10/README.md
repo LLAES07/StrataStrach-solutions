@@ -155,3 +155,7 @@ GROUP BY
 
 
 ```
+
+# EXPLICACION
+
+Primero se filtran los comentarios dentro de la ventana de 30 dias anterior a la fecha objetivo. Despues se agrupan por usuario para contar cuantas veces comentaron en ese intervalo. Asi se obtiene un total por persona sin incluir actividad fuera del periodo indicado.
