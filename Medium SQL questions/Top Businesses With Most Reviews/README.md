@@ -58,3 +58,7 @@ LIMIT 5;
 
 
 ```
+
+# EXPLICACION
+
+Primero se toma la cantidad de reviews por negocio, porque ese es el valor que define el ranking. Luego se ordenan los negocios de mayor a menor para identificar los que concentran mas opiniones. Si hay empates, la logica de ranking o el ordenamiento permite devolver todos los negocios que comparten la misma posicion.
