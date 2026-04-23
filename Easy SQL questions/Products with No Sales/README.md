@@ -74,3 +74,7 @@ WHERE prod_sku_id NOT IN (
 
 
 ```
+
+# EXPLICACION
+
+La solucion consiste en comparar la tabla de productos con la de ventas para detectar cuales productos nunca aparecen vendidos. Normalmente esto se hace con un `LEFT JOIN` y un filtro sobre los registros que quedan sin coincidencia. Al final solo permanecen los productos que no tienen ventas asociadas.
