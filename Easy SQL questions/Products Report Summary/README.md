@@ -145,3 +145,7 @@ WHERE EXTRACT(YEAR FROM t.transaction_date) = 2017
 GROUP BY p.product_category
 ORDER BY total_sales DESC;
 ```
+
+# EXPLICACION
+
+Primero se resume la informacion relevante de los productos para condensar su estado en una sola salida. Luego se agrupan los registros por la clave necesaria y se calculan los totales o conteos del informe. Asi se obtiene una vista compacta del resumen de productos solicitada por el problema.
