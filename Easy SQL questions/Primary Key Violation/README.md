@@ -51,3 +51,7 @@ GROUP BY cust_id
 HAVING COUNT(*) > 1;
 
 ```
+
+# EXPLICACION
+
+La consulta busca detectar filas duplicadas o valores repetidos en la columna que deberia funcionar como clave primaria. Para eso se agrupa por el identificador y se revisa si aparece mas de una vez. Cualquier registro con repeticion representa una violacion de la primary key.
