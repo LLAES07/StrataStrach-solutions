@@ -99,3 +99,7 @@ GROUP BY
     city,
     property_type
 ```
+
+# EXPLICACION
+
+La idea es trabajar con las columnas de bathrooms y bedrooms y comparar sus valores por registro. Si el enunciado pide contarlas o filtrarlas, basta con aplicar la condicion correspondiente sobre ambas columnas. Con eso se obtiene el subconjunto de propiedades que cumple la combinacion pedida.
