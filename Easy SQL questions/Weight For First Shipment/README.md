@@ -53,3 +53,7 @@ JOIN earliest_shipments e
 GROUP BY s.shipment_id;
 
 ```
+
+# EXPLICACION
+
+Primero se identifica el primer envio de cada conjunto o periodo segun la logica del problema. Luego se calcula el peso asociado a ese primer envio para separarlo de los demas registros. De esa forma la consulta devuelve solo el valor que corresponde al envio inicial.
