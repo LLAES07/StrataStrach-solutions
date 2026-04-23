@@ -41,3 +41,7 @@ WHERE
     year = '2010'
 LIMIT 10
 ```
+
+# EXPLICACION
+
+Primero se filtran las canciones del año 2010 para limitar el analisis al periodo solicitado. Luego se ordenan segun la medida de popularidad o reproducciones que define el ranking. Finalmente se toman las primeras 10 posiciones para devolver solo las canciones mas destacadas de ese año.
