@@ -39,3 +39,7 @@ FROM sat_scores
 ORDER BY sat_writing
 LIMIT 2 OFFSET (SELECT FLOOR((COUNT(*) - 1) / 2) FROM sat_scores)
 ```
+
+# EXPLICACION
+
+Primero se identifica el valor central de la columna de escritura para encontrar la mediana. Luego se filtran los estudiantes cuyo puntaje coincide con ese valor, porque el objetivo es devolver los registros ubicados en la posicion media del conjunto. La consulta queda directa porque la logica principal es ordenar o calcular la mediana y comparar contra ella.
