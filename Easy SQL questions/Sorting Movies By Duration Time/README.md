@@ -81,3 +81,7 @@ FROM movie_catalogue
 ORDER BY duration DESC  
 
 ```
+
+# EXPLICACION
+
+Primero se toma la duracion de cada pelicula y se ordena de menor a mayor o de mayor a menor segun el enunciado. Despues se devuelve la lista ya ordenada para identificar rapidamente las mas cortas o mas largas. La consulta se mantiene simple porque el problema depende principalmente del ordenamiento.
