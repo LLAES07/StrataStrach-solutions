@@ -69,3 +69,7 @@ ORDER BY
     min_price
 
 ```
+
+# EXPLICACION
+
+La consulta cruza la popularidad del host con el precio de sus anuncios para evaluar ambas variables en conjunto. Despues se agrupa por la dimension pedida y se calcula el promedio o total correspondiente. Con eso se puede comparar el comportamiento de los hosts mas populares frente a los precios de renta.
