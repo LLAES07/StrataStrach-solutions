@@ -39,3 +39,7 @@ WHERE
     AND
     score < 95;
 ```
+
+# EXPLICACION
+
+Primero se filtran los registros por fecha de actividad para quedarnos solo con los dias relevantes. Luego se agrupan o cuentan los eventos en esa fecha para obtener la actividad del dia solicitado. Asi se responde con una sola fecha o con el conjunto de fechas que cumplen la condicion.
