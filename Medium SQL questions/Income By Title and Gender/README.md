@@ -87,3 +87,7 @@ INNER JOIN total_bonus_employee AS b
 GROUP BY employee_title, sex
 
 ```
+
+# EXPLICACION
+
+Primero se agrupa la informacion por titulo y genero para poder comparar salarios dentro de cada categoria. Luego se calcula el valor necesario para responder al enunciado, normalmente un promedio o una comparacion entre grupos. Asi la salida muestra claramente como cambia el salario segun el cargo y el genero.
