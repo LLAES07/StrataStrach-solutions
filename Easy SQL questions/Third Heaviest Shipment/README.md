@@ -61,3 +61,7 @@ WHERE rk = 3
 
 
 ```
+
+# EXPLICACION
+
+Primero se ordenan los envios por peso de forma descendente para ubicar los mas pesados. Luego se toma la tercera posicion o se usa una logica de ranking para manejar empates si el enunciado lo necesita. Asi se devuelve el envio que ocupa el tercer lugar por peso.
