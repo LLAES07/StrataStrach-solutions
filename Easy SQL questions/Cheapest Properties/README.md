@@ -203,3 +203,7 @@ SELECT
 FROM airbnb_search_details
 GROUP BY city
 ```
+
+# EXPLICACION
+
+Primero se identifica el precio minimo dentro del conjunto de propiedades. Luego se filtran los registros que coinciden con ese valor para devolver solo las opciones mas baratas. Si hay varias propiedades con el mismo precio, todas permanecen en el resultado.
