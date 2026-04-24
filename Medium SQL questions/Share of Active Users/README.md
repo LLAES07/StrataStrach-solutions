@@ -42,3 +42,7 @@ WHERE
     country = 'USA' AND status ='open'
 
 ```
+
+# EXPLICACION
+
+Primero se identifica a los usuarios activos segun la condicion del problema y luego se comparan con el total de usuarios disponibles. Despues se calcula la proporción que representan dentro del conjunto para obtener su participacion. Asi la salida refleja la cuota de usuarios activos sobre el total.
