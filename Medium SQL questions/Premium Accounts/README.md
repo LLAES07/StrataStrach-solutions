@@ -60,3 +60,7 @@ ORDER BY a.entry_date
 LIMIT 7
 
 ```
+
+# EXPLICACION
+
+Primero se filtran las filas donde la cuenta realmente estaba pagando, porque los registros con precio cero no deben contarse como pagos activos. Luego se relaciona cada fecha con la fecha posterior de 7 dias para verificar que cuentas siguen activas. El resultado muestra cuantas cuentas pagaban al inicio y cuantas continuaban pagando una semana despues.
