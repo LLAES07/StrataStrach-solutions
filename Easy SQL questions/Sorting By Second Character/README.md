@@ -49,3 +49,7 @@ FROM random_id
 ORDER BY substring(id,2,1)  ASC
 
 ```
+
+# EXPLICACION
+
+La logica consiste en extraer el segundo caracter de cada cadena y usarlo como criterio de ordenamiento. Una vez aplicada esa transformacion, las filas se ordenan alfabéticamente segun ese valor. Esto permite comparar palabras que comparten el mismo primer caracter.
