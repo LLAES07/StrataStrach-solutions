@@ -38,3 +38,7 @@ ORDER BY
     event_count DESC;
 
 ```
+
+# EXPLICACION
+
+La consulta cuenta cuantas veces aparecen eventos vinculados a usuarios de MacBookPro o a un tipo de dispositivo especifico. Primero se filtra el evento o producto correcto y luego se agrupa por usuario para obtener su total. Asi se responde cuantas interacciones tuvo cada usuario con ese equipo.
