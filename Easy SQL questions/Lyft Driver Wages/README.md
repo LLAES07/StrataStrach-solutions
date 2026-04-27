@@ -39,3 +39,7 @@ WHERE
     yearly_salary > 70000;
 
 ```
+
+# EXPLICACION
+
+Primero se identifican los viajes o registros del conductor para calcular su ingreso total. Luego se agregan los montos necesarios, ya sea por conductor o por periodo, segun el enunciado. Con eso se obtiene el pago asociado al trabajo del driver.
