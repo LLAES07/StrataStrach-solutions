@@ -52,3 +52,7 @@ FROM google_salaries
 GROUP BY education;
 
 ```
+
+# EXPLICACION
+
+La idea es agrupar los empleados por nivel de educacion y calcular el salario correspondiente para cada grupo. Normalmente se usa un promedio o una suma dependiendo del enunciado. Con eso se puede comparar cuanto gana cada nivel educativo.
