@@ -69,3 +69,7 @@ FROM ct1
 WHERE rk = 1
 
 ```
+
+# EXPLICACION
+
+Primero se ordenan los registros por fecha de inicio de sesion para encontrar el acceso mas reciente de cada empleado. Luego se filtran o agrupan los datos para quedarnos con la ultima entrada por usuario. De esa manera se obtiene el detalle de login mas actual.
