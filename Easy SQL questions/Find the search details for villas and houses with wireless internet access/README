@@ -185,3 +185,7 @@ WHERE
     AND amenities LIKE '%Wireless Internet%';
 
 ```
+
+# EXPLICACION
+
+Primero se filtran las busquedas de tipo villa o house y ademas se exige que tengan wireless internet access. Despues se seleccionan los campos de detalle que pide el ejercicio para mostrar solo las coincidencias relevantes. Asi se reduce el conjunto a los registros que cumplen ambas condiciones.
