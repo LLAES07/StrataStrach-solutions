@@ -141,3 +141,7 @@ WHERE
                         LOWER(sector) = 'financials' 
                    );
 ```
+
+# EXPLICACION
+
+Primero se calcula la ganancia o medida financiera relevante por compania. Luego se ordenan los resultados de mayor a menor para identificar la empresa mas rentable. Si el problema pide solo una, se deja la primera; si hay empates, se conservan las companias que compartan el mayor valor.
