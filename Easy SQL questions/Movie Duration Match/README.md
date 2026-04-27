@@ -69,3 +69,7 @@ JOIN entertainment_catalog ec
 WHERE fs.flight_id = 101;
 
 ```
+
+# EXPLICACION
+
+Primero se compara la duracion de las peliculas contra el valor que indica el enunciado para identificar las que coinciden exactamente. Luego se devuelven solo los titulos que cumplen esa condicion. Asi la consulta responde con las peliculas que tienen la duracion solicitada.
