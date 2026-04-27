@@ -35,3 +35,7 @@ WHERE
     EXTRACT(YEAR FROM order_date)= '2021'
 
 ```
+
+# EXPLICACION
+
+Primero se suman las ventas relevantes para construir el revenue total. Si el enunciado pide un corte por fecha, producto o cliente, se aplica ese agrupamiento antes de sumar. Asi la consulta devuelve el ingreso consolidado solicitado.
