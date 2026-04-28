@@ -51,3 +51,7 @@ GROUP BY
     session_type;
 
 ```
+
+# EXPLICACION
+
+La duracion de cada sesion se obtiene restando `session_start` a `session_end`. Con `EXTRACT(EPOCH FROM ...)` esa diferencia se transforma a segundos, y luego `AVG` calcula el promedio de duracion para cada `session_type` gracias al `GROUP BY`.
