@@ -45,3 +45,7 @@ WHERE
     date_accepted IS NULL AND
     date_rejected IS NULL
 ```
+
+# EXPLICACION
+
+El `WHERE` limita los reclamos a los enviados durante diciembre de 2021. Ademas, las condiciones `date_accepted IS NULL` y `date_rejected IS NULL` aseguran que solo se cuenten reclamos que todavia no fueron aceptados ni rechazados, y `COUNT(claim_id)` entrega el total de pendientes.
