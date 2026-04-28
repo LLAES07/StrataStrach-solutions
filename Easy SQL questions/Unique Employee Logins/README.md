@@ -38,3 +38,7 @@ WHERE login_timestamp >= '2021-12-13'
   AND login_timestamp < '2021-12-20';
 
 ```
+
+# EXPLICACION
+
+La consulta filtra los logins dentro del rango de fechas solicitado usando `login_timestamp`. Como un mismo trabajador puede tener mas de un login en ese periodo, `SELECT DISTINCT worker_id` elimina duplicados y devuelve cada empleado una sola vez.
