@@ -42,3 +42,7 @@ GROUP BY
     
 
 ```
+
+# EXPLICACION
+
+La consulta convierte `shipment_date` al formato `YYYY-MM` usando `TO_CHAR`, de forma que todas las filas del mismo mes queden bajo la misma etiqueta. Despues agrupa por ese mes y cuenta los envios registrados para obtener el total mensual solicitado.
