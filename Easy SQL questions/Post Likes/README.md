@@ -48,3 +48,7 @@ FROM fb_posts
 
 
 ```
+
+# EXPLICACION
+
+Como el problema pide el promedio de likes de todas las publicaciones, no necesitamos agrupar por post ni por fecha. La funcion `AVG(no_of_likes)` toma todos los valores de likes de la tabla `fb_posts` y calcula el promedio general, dejando el resultado en la columna `promedio_likes`.
