@@ -29,3 +29,7 @@ WHERE
     joining_date >= '2022-07-31'
 
 ```
+
+# EXPLICACION
+
+La consulta cuenta los empleados que cumplen con el rango de fechas indicado en el `WHERE`. La idea es filtrar la tabla `employees` para quedarse solo con las contrataciones dentro del periodo solicitado y luego usar `COUNT(id)` para devolver un unico total con la cantidad de empleados contratados.
