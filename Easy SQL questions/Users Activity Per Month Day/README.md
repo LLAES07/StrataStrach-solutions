@@ -35,3 +35,7 @@ GROUP BY EXTRACT(MONTH FROM post_date)
 
 
 ```
+
+# EXPLICACION
+
+Primero se extrae el numero de mes desde `post_date` con `EXTRACT(MONTH FROM post_date)`. Luego se agrupa por ese mismo valor para juntar los posts de un mismo mes aunque pertenezcan a distintos anios, y finalmente `COUNT(post_id)` calcula el total de publicaciones para cada mes.
