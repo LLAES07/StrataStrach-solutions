@@ -37,3 +37,7 @@ ORDER BY
 LIMIT 10
 
  ```
+
+# EXPLICACION
+
+Primero se filtran los registros del anio 2010 con `WHERE year = 2010`. Luego `DISTINCT` evita repetir la misma combinacion de cancion, ranking y grupo, el `ORDER BY year_rank ASC` deja las canciones ordenadas desde el mejor ranking, y `LIMIT 10` conserva solo las diez primeras.
