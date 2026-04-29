@@ -91,3 +91,7 @@ WHERE date_sold >= '2022-04-01'
 
 
 ```
+
+# EXPLICACION
+
+Primero se toman solo las ventas realizadas durante abril de 2022 usando el rango de fechas que va desde `2022-04-01` hasta antes de `2022-05-01`. Despues se filtran los pedidos para conservar unicamente aquellos cuyo `customer_id` pertenece a clientes del estado de Oregon. Con ese conjunto ya limpio, se multiplica `units_sold` por `cost_in_dollars` en cada fila y luego se suma todo para obtener el ingreso total del mes.
