@@ -46,3 +46,7 @@ GROUP BY
 ORDER BY 1 ASC 
 
 ```
+
+# EXPLICACION
+
+La consulta se enfoca solo en las inspecciones de `Roxanne Cafe`, por eso el primer filtro se hace con `business_name`. Luego se extrae el año desde `inspection_date` para poder resumir la informacion por periodo anual. Al agrupar por ese año y contar las inspecciones registradas, obtenemos cuantas violaciones quedaron asociadas al restaurante en cada año y finalmente se muestran en orden ascendente.
