@@ -406,3 +406,7 @@ ORDER BY first_year ASC, noc ASC;
 
 
 ```
+
+# EXPLICACION
+
+Como un mismo pais aparece muchas veces en la tabla por atleta, deporte y edicion, primero se agrupan todos los registros por `noc`. Dentro de cada grupo se usa `MIN(year)` para encontrar el primer año en que ese comite olimpico nacional participo en los juegos. Finalmente se ordena por ese primer año de forma ascendente y, en caso de empate, alfabeticamente por el codigo `noc`.
