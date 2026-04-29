@@ -56,3 +56,7 @@ GROUP BY player_id
 # EXPLICACION
 
 Primero se revisan las fechas de login de cada usuario para ubicar la mas reciente. Luego se usa un maximo o un ordenamiento descendente para conservar solo la ultima fecha por usuario. El resultado muestra el acceso mas nuevo de cada cuenta.
+
+## EXPLICACION ADICIONAL
+
+El `GROUP BY player_id` arma un grupo por jugador y permite que `MAX(login_date)` encuentre la fecha mayor dentro de cada conjunto. Eso evita revisar manualmente cada fila y resume la informacion en una sola salida por usuario. Asi la respuesta final conserva exactamente el ultimo acceso registrado para cada jugador.
