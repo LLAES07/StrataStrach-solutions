@@ -97,3 +97,7 @@ GROUP BY
     client_id
 
 ```
+
+# EXPLICACION
+
+La consulta busca saber cuantos usuarios distintos tuvo cada cliente en cada mes, por eso primero extrae el mes desde `time_id`. Luego agrupa por ese mes y por `client_id` para separar correctamente cada combinacion cliente-mes. Finalmente `COUNT(DISTINCT user_id)` evita contar varias veces al mismo usuario dentro del mismo grupo y devuelve el total unico pedido.
