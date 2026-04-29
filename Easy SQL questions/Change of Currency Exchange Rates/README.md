@@ -80,3 +80,7 @@ WHERE a1.date = '2020-01-01'
   AND a2.date = '2020-07-01';
 
 ```
+
+# EXPLICACION
+
+La consulta compara cada moneda consigo misma en dos fechas distintas, por eso se hace un auto `JOIN` usando `source_currency` como punto de union. Una fila representa el valor del 1 de enero de 2020 y la otra el valor del 1 de julio de 2020 para esa misma moneda. Luego se resta la tasa inicial a la tasa final para obtener el cambio acumulado durante la primera mitad del año.
