@@ -64,3 +64,7 @@ GROUP BY  user_id
 HAVING COUNT(*)> 5
 
 ```
+
+# EXPLICACION
+
+Primero se filtran los registros para quedarnos solo con las busquedas hechas durante agosto de 2021. Despues se agrupan esas filas por `user_id` para contar cuantas busquedas hizo cada usuario en ese periodo. Finalmente `HAVING COUNT(*) > 5` deja unicamente a los usuarios que superaron las cinco busquedas solicitadas por el enunciado.
