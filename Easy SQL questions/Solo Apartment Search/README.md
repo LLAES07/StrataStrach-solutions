@@ -50,3 +50,7 @@ WHERE
 
 
 ```
+
+# EXPLICACION
+
+En este ejercicio solo interesan los alojamientos que cumplan dos condiciones al mismo tiempo. Por eso el `WHERE` filtra primero por `property_type = 'Apartment'` y despues exige `accommodates = 1` para dejar unicamente los espacios pensados para una sola persona. Como el problema pide los detalles de la busqueda, se usa `SELECT *` para devolver todas las columnas de las filas que cumplen ese criterio.
