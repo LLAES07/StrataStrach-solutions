@@ -79,3 +79,7 @@ FROM twitch_sessions
 GROUP BY user
 HAVING COUNT(DISTINCT session_type) = 2;
 ```
+
+# EXPLICACION
+
+La idea en las tres propuestas es comprobar que cada `user_id` tenga por lo menos una sesion como `streamer` y otra como `viewer`. En las primeras dos opciones se transforma cada tipo de sesion en un indicador y luego se agrupa por usuario para validar ambas condiciones. En la tercera version se resume todavia mas el problema contando los tipos de sesion distintos por usuario, de modo que si el total es 2 significa que esa persona aparece en los dos roles pedidos.
