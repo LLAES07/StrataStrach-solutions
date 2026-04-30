@@ -1,4 +1,3 @@
-
 # Processed Ticket Rate By Type
 
 **[ENG]**
@@ -7,8 +6,7 @@ Find the processed rate of tickets for each `type`. The processed rate is define
 
 **[ESP]**
 
-Encuentra la tasa procesada de tickets para cada `type`. La tasa procesada se define como el número de tickets procesados dividido por el total de tickets para ese tipo. Redondea este resultado a dos decimales.
-
+Encuentra la tasa procesada de tickets para cada `type`. La tasa procesada se define como el numero de tickets procesados dividido por el total de tickets para ese tipo. Redondea este resultado a dos decimales.
 
 ### Table
 
@@ -22,6 +20,7 @@ facebook_complaints
 |3|1|TRUE|
 |4|1|TRUE|
 |5|1|FALSE|
+
 ## RESPUESTA
 
 ```sql
@@ -35,4 +34,6 @@ ORDER BY type;
 
 ## EXPLICACION
 
-Primero contamos cuantas filas procesadas hay por `type` y luego lo dividimos entre el total de tickets de ese mismo tipo. `ROUND(..., 2)` deja el resultado con dos decimales.
+El calculo de la tasa requiere dos cantidades por cada `type`: cuantos tickets fueron procesados y cuantos tickets existen en total. Para eso se agrupa por `type`, y dentro de cada grupo el `CASE WHEN` convierte los `TRUE` en `1` y los demas valores en `0`, de modo que `SUM(...)` cuenta solo los procesados.
+
+Despues `COUNT(*)` obtiene el total de tickets del mismo grupo, y la division entre ambos valores produce la tasa procesada. Finalmente, `ROUND(..., 2)` deja el resultado con dos decimales, tal como lo pide el enunciado.
