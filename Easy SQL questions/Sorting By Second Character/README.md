@@ -1,19 +1,15 @@
 # Sorting By Second Character
 
-
 **[ENG]**
 
 You've been asked to arrange a column of random IDs in ascending alphabetical order based on their second character.
 
-
 **[ESP]**
 
-Te han solicitado arreglar una columna de ids aleatoreos en orden alfabeitco basado en su segúndo carácter.
-
+Te han solicitado arreglar una columna de ids aleatoreos en orden alfabeitco basado en su segundo caracter.
 
 ### tabla
 random_id
-
 
 |id|
 |---|
@@ -38,18 +34,17 @@ random_id
 |5MQS2|
 |5ZQS3|
 
-
 # RESPUESTA
 
 ```sql
-
 SELECT
   id
 FROM random_id
 ORDER BY substring(id,2,1)  ASC
-
 ```
 
 # EXPLICACION
 
-La logica consiste en extraer el segundo caracter de cada cadena y usarlo como criterio de ordenamiento. Una vez aplicada esa transformacion, las filas se ordenan alfabéticamente segun ese valor. Esto permite comparar palabras que comparten el mismo primer caracter.
+La clave de este ejercicio es que no se ordena por el valor completo de `id`, sino solo por su segundo caracter. Para extraer exactamente esa posicion se usa `substring(id, 2, 1)`, que toma un caracter comenzando en la segunda posicion de cada cadena.
+
+Una vez obtenido ese valor auxiliar, `ORDER BY` lo usa como criterio de ordenamiento ascendente. De esa forma los ids quedan acomodados alfabeticamente segun su segundo caracter, incluso si el primero o el resto del texto son diferentes.
