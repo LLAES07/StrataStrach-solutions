@@ -2,18 +2,15 @@
 
 **[ENG]**
 
-Calculate the total weight for each shipment and add it as a new column. Your output needs to have all the existing rows and columns in addition to the  new column that shows the total weight for each shipment. One shipment can have multiple rows.
+Calculate the total weight for each shipment and add it as a new column. Your output needs to have all the existing rows and columns in addition to the new column that shows the total weight for each shipment. One shipment can have multiple rows.
 
 **[ESP]**
 
-Calcule el peso total para cada envío y agréguelo como una nueva columna. Tu consulta debe tener todas las filas y columnas existentes sumado a la nueva columna que mueste el peso total de cada envío. Un envío puede tener múltiples filas.
-
-
+Calcule el peso total para cada envio y agreguelo como una nueva columna. Tu consulta debe tener todas las filas y columnas existentes sumado a la nueva columna que muestre el peso total de cada envio. Un envio puede tener multiples filas.
 
 ### TABLA
 
 amazon_shipment
-
 
 |shipment_id|sub_id|weight|shipment_date|
 |---|---|---|---|
@@ -27,18 +24,17 @@ amazon_shipment
 |104|2|10|2021-08-26|
 |105|1|20|2021-09-02|
 
-
 ### RESPUESTA
 
 ```sql
-
 SELECT
     *,
     SUM(weight) OVER(PARTITION BY shipment_id) AS total_weights
 FROM amazon_shipment;
-
 ```
 
-# 🧠 EXPLICACIÓN
+# EXPLICACION
 
-Debido a que necesitamos el precio total pero con la condición que se agregue a cada columna necesitamos una funcion de que sume por el `shipment_id` y sume `SUM(weight)` de manera que deje este resultado en las `n` columnas.
+Aqui no basta con agrupar y devolver un solo registro por envio, porque el resultado debe conservar todas las filas originales. Por eso se usa una funcion de ventana: `SUM(weight) OVER (PARTITION BY shipment_id)` suma el peso de todas las filas que pertenecen al mismo `shipment_id`, pero mantiene cada registro individual en la salida.
+
+El efecto practico es que cada fila sigue mostrando su `sub_id`, `weight` y `shipment_date`, y ademas recibe una columna nueva con el peso total del envio completo. Esa es justamente la ventaja de usar una ventana en lugar de un `GROUP BY`.
