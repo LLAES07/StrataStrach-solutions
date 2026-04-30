@@ -6,7 +6,7 @@ Calculate the sales revenue for the year 2021.
 
 **[ESP]**
 
-Calcula el total de ventas para el año 2021
+Calcula el total de ventas para el ano 2021
 
 ### Tabla
 
@@ -33,9 +33,10 @@ SELECT
 FROM amazon_sales
 WHERE
     EXTRACT(YEAR FROM order_date)= '2021'
-
 ```
 
 # EXPLICACION
 
-Primero se suman las ventas relevantes para construir el revenue total. Si el enunciado pide un corte por fecha, producto o cliente, se aplica ese agrupamiento antes de sumar. Asi la consulta devuelve el ingreso consolidado solicitado.
+Para resolverlo solo hace falta sumar el valor de los pedidos que pertenecen al ano 2021. El filtro `EXTRACT(YEAR FROM order_date) = '2021'` deja fuera cualquier orden de 2020 u otros anos, de manera que la suma trabaje unicamente con el periodo solicitado.
+
+Una vez filtradas esas filas, `SUM(order_total)` acumula el importe de cada pedido y devuelve un solo resultado llamado `revenue_2021`. No se necesita `GROUP BY` porque el ejercicio pide el total general del ano, no un desglose por mes o por cliente.
