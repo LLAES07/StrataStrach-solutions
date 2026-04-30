@@ -1,33 +1,20 @@
 # Calculate Samantha's and Lisa's total sales revenue
 
-
-
-
-# 📌 PROBLEMA
+# ðŸ“Œ PROBLEMA
 
 **[ENG]**
 
 What is the total sales revenue of Samantha and Lisa?
 
-
-
 **[ESP]**
 
 Cual es el total de ventas de Samantha y Lisa?
 
-
-
-
-
-
 # TABLA
 
-
-
-# 💻 REPSUESTA
+# ðŸ’» REPSUESTA
 
 ```sql
-
 SELECT
     salesperson,
     SUM(sales_revenue) AS total_revenue
@@ -35,11 +22,10 @@ FROM sales_performance
 WHERE lower(salesperson) IN ('samantha', 'lisa')
 GROUP BY
     salesperson
-
-
 ```
 
-# 🧠 EXPLICACIÓN
+# ðŸ§  EXPLICACIÃ“N
 
-Necesitamos el total de revenue para dos personas en especifico. Con esto en mente primero filtramos por los nombres solicitados usando `lower` para normalizar los nombres pasados. Posterior a esto agrupamos por el nombre que en nuestro caso solo estarán los de las personas filtradas. Por ultimo sumamos los revenue.
+Necesitamos obtener el total de ventas de dos personas especificas, asi que el primer paso es filtrar la tabla para quedarnos solo con `Samantha` y `Lisa`. Para hacer ese filtro de forma mas segura se usa `LOWER(salesperson)`, lo que permite comparar los nombres aunque en la tabla aparezcan con una combinacion distinta de mayusculas y minusculas.
 
+Despues se agrupa por `salesperson` porque el resultado esperado es un total por cada vendedora, no un solo acumulado general. Finalmente, `SUM(sales_revenue)` suma todos los ingresos de cada una y devuelve el revenue total correspondiente a Samantha y Lisa.
