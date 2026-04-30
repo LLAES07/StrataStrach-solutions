@@ -1,9 +1,6 @@
 # Rank guests based on their ages
 
-
-
-
-## 📌 PROBLEMA
+## ðŸ“Œ PROBLEMA
 
 **[ENG]**
 Rank guests based on their ages.
@@ -12,10 +9,9 @@ Order records by the age in descending order.
 
 **[ESP]**
 
-Crea un ranking de los huespedes según sus edades.
+Crea un ranking de los huespedes segun sus edades.
 Muestra el id con su correspondiente ranking.
 Ordena los registros por la edad en orden descendente.
-
 
 # TABLA
 
@@ -36,10 +32,9 @@ airbnb_guests
 |10|Luxembourg|F|28|
 |11|Brazil|F|24|
 
-#  💻 REPSUESTA
+# ðŸ’» REPSUESTA
 
 ```sql
-
 SELECT 
     guest_id,
     ROW_NUMBER() OVER (ORDER BY age DESC) AS rank
@@ -47,10 +42,8 @@ FROM airbnb_guests
 ORDER BY age DESC;
 ```
 
-# 🧠 EXPLICACIÓN
+# EXPLICACION
 
-Necesitamos un raking de edad y como no nos dan restricciones voy a usar `ROW_NUMBER()` puesto que me gener aun ranking contando las filas (asumiendo que no hay duplicados). Con este ranking listo ordenamos por `age` en orden descendente.
+Para construir el ranking se usa `ROW_NUMBER()`, una funcion de ventana que asigna un numero consecutivo a cada fila segun el orden definido dentro de `OVER (...)`. Como el enunciado pide ordenar por edad de mayor a menor, el criterio utilizado es `ORDER BY age DESC`.
 
-## EXPLICACION
-
-Se usa `ROW_NUMBER()` para asignar un ranking a cada invitado segun su edad. Como el enunciado solo pide el orden por edad descendente, esta funcion es suficiente y mantiene la consulta simple.
+El resultado es que el huesped con mayor edad recibe el rango `1`, el siguiente recibe `2`, y asi sucesivamente. Luego se repite ese mismo orden en la consulta principal para que las filas salgan mostradas exactamente en el mismo orden del ranking generado.
