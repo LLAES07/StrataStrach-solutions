@@ -6,7 +6,7 @@ Find all Lyft drivers who earn either equal to or less than 30k USD or equal to 
 
 **[ES]**
 
-Encuentra los conductores de Lyft que ganan ya sea igual o menor que o igual a 30k USD o más que 70k USD. Muestra todos los detalles relacionados con los registros recuperados.
+Encuentra los conductores de Lyft que ganan ya sea igual o menor que 30k USD o igual o mayor que 70k USD. Muestra todos los detalles relacionados con los registros recuperados.
 
 # TABLA
 
@@ -26,7 +26,6 @@ lyft_drivers
 |7|2015-09-29|2018-07-20|46974|
 |8|2015-09-15|2019-04-30|54316|
 
-
 # RESPUESTA
 
 ```sql
@@ -34,12 +33,12 @@ SELECT
     *
 FROM lyft_drivers
 WHERE
-    -- Condición de filtro
     yearly_salary <= 30000 OR 
     yearly_salary > 70000;
-
 ```
 
 # EXPLICACION
 
-Primero se identifican los viajes o registros del conductor para calcular su ingreso total. Luego se agregan los montos necesarios, ya sea por conductor o por periodo, segun el enunciado. Con eso se obtiene el pago asociado al trabajo del driver.
+El enunciado pide recuperar todos los registros cuyo `yearly_salary` este fuera del rango intermedio. Por eso el `WHERE` usa dos condiciones unidas con `OR`: una para salarios menores o iguales a `30000` y otra para salarios mayores a `70000`.
+
+Como la salida debe mostrar todos los detalles del conductor, se utiliza `SELECT *` en lugar de elegir columnas puntuales. Asi la consulta devuelve exactamente los registros extremos de salario junto con toda su informacion disponible.
