@@ -1,18 +1,16 @@
 # Salary by Education
 
-
 **[ENG]**
 
 Given the education levels and salaries of a group of individuals, find what is the average salary for each level of education.
 
 **[ES]**
 
-Dado los niveles de educación y salarios de un grupo de individuos, encuentra cuál es el salario promedio para cada nivel de educación.
+Dado los niveles de educacion y salarios de un grupo de individuos, encuentra cual es el salario promedio para cada nivel de educacion.
 
 ### TABLA
 
 google_salaries
-
 
 |id|first_name|last_name|department|education|salary|
 |---|---|---|---|---|---|
@@ -39,9 +37,6 @@ google_salaries
 |396|Erika|Fuller|Legal|Master|53391|
 |397|Guadalupe|Shaw|Legal|Doctorate|62994|
 
-
-
-
 # RESPUESTA
 
 ```sql
@@ -50,9 +45,10 @@ SELECT
     AVG(salary) as salario_promedio
 FROM google_salaries
 GROUP BY education;
-
 ```
 
 # EXPLICACION
 
-La idea es agrupar los empleados por nivel de educacion y calcular el salario correspondiente para cada grupo. Normalmente se usa un promedio o una suma dependiendo del enunciado. Con eso se puede comparar cuanto gana cada nivel educativo.
+El objetivo del ejercicio es comparar salarios promedio segun el nivel educativo, asi que la logica correcta consiste en formar grupos por `education`. Una vez creados esos grupos, `AVG(salary)` calcula el salario medio dentro de cada nivel de estudios.
+
+En otras palabras, todas las filas con `Bachelor` se promedian juntas, las de `Master` en otro grupo, y asi con cada categoria educativa. El resultado final permite ver como varia el ingreso promedio dependiendo de la formacion academica registrada en la tabla.
