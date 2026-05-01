@@ -28,7 +28,6 @@ facebook_products
 |11|FURNITURE|American Home|N|Y|3|GADGET|
 |12|ELECTRONICS|American Home|N|Y|3|ACCESSORY|
 
-
 # REPSUESTA 
 
 ```sql
@@ -37,9 +36,10 @@ SELECT
 FROM facebook_products
 WHERE is_low_fat LIKE'Y' AND
       is_recyclable LIKE 'Y'
-
 ```
 
 ## EXPLICACION
 
-La idea es contar los productos que cumplen ambas condiciones y dividirlos entre el total de productos. Multiplicar por `100.0` asegura que el resultado sea un porcentaje decimal y no una division entera.
+La consulta compara dos cantidades: el numero de productos que cumplen ambas condiciones y el total de productos de la tabla. El `WHERE` deja solo las filas donde `is_low_fat = 'Y'` y `is_recyclable = 'Y'`, es decir, los productos que son bajos en grasa y reciclables al mismo tiempo.
+
+Despues, `COUNT(*)` cuenta esas filas filtradas y lo divide entre otro `COUNT(*)` calculado sobre toda la tabla mediante la subconsulta. Multiplicar por `100.0` convierte el resultado en porcentaje y evita una division entera, por lo que la salida final expresa correctamente la proporcion del total.
