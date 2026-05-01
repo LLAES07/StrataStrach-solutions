@@ -1,22 +1,16 @@
 # Weight For First Shipment
 
-
-
-
 **[ENG]**
 
 Write a query to find the weight for each shipment's earliest shipment date. Output the shipment id along with the weight.
 
-
-
 **[ESP]**
 
-Escriba una consulta para encontrar el peso de la fecha de envío más temprana de cada envío. Genere la identificación del envío junto con el peso.
+Escriba una consulta para encontrar el peso de la fecha de envio mas temprana de cada envio. Genere la identificacion del envio junto con el peso.
 
 ### TABLA
 
 amazon_shipment
-
 
 |shipment_id|sub_id|weight|shipment_date|
 |---|---|---|---|
@@ -30,12 +24,9 @@ amazon_shipment
 |104|2|10|2021-08-26|
 |105|1|20|2021-09-02|
 
-
 # RESPUESTA
 
-
 ```sql
-
 WITH earliest_shipments AS (
     SELECT 
         shipment_id, 
@@ -51,9 +42,10 @@ JOIN earliest_shipments e
   ON s.shipment_id = e.shipment_id 
   AND s.shipment_date = e.early_date
 GROUP BY s.shipment_id;
-
 ```
 
 # EXPLICACION
 
-Primero se identifica el primer envio de cada conjunto o periodo segun la logica del problema. Luego se calcula el peso asociado a ese primer envio para separarlo de los demas registros. De esa forma la consulta devuelve solo el valor que corresponde al envio inicial.
+La CTE `earliest_shipments` obtiene la fecha minima de envio para cada `shipment_id`, lo que permite identificar cual fue el primer registro de cada envio. Ese paso separa claramente la busqueda de la fecha inicial del calculo final del peso.
+
+Luego la tabla original se une con esa CTE por `shipment_id` y por la fecha minima encontrada. Asi solo permanecen las filas que corresponden al primer envio de cada grupo. Finalmente, `SUM(s.weight)` devuelve el peso asociado a esa fecha inicial, lo cual resulta util si para un mismo envio hubiera mas de una fila en la fecha mas temprana.
