@@ -1,4 +1,3 @@
-
 # Monthly Active Users
 
 **[ENG]**
@@ -40,7 +39,6 @@ sf_events
 |2021-02-01|A2|U5|
 |2020-12-05|A1|U8|
 
-
 # RESPUESTA
 
 ```sql
@@ -50,9 +48,10 @@ SELECT
 FROM sf_events
 WHERE EXTRACT(YEAR FROM record_date) = 2021 AND EXTRACT(MONTH FROM record_date) = 1
 GROUP BY account_id;
-
 ```
 
 # EXPLICACION
 
-Primero filtramos los eventos de enero de 2021 para quedarnos solo con el mes pedido. Luego agrupamos por `account_id` y contamos usuarios distintos, porque un mismo usuario puede aparecer varias veces en el mes y no debe duplicarse. Asi obtenemos el total de usuarios activos mensuales por cuenta.
+El primer paso es filtrar la tabla para conservar solamente los eventos de enero de 2021. Eso se logra con `EXTRACT(YEAR FROM record_date)` y `EXTRACT(MONTH FROM record_date)`, que separan el ano y el mes de cada fecha y permiten quedarnos exactamente con el periodo solicitado.
+
+Despues la consulta agrupa por `account_id` porque el resultado debe mostrarse por cuenta. Dentro de cada grupo se usa `COUNT(DISTINCT user_id)` para contar usuarios activos sin duplicar a quienes hayan tenido varios eventos durante el mismo mes. Asi se obtiene el numero real de usuarios activos mensuales por cuenta.
