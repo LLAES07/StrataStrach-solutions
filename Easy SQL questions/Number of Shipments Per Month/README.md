@@ -1,4 +1,3 @@
-
 # Number of Shipments Per Month
 
 **[ENG]**
@@ -7,8 +6,7 @@ Write a query that will calculate the number of shipments per month. The unique 
 
 **[ES]**
 
-Escribe una consulta que calcule el número de envíos por mes. La clave única de un envío es una combinación de shipment_id y sub_id. Salida el año_mes en formato YYYY-MM y el número de envíos en ese mes.
-
+Escribe una consulta que calcule el numero de envios por mes. La clave unica de un envio es una combinacion de shipment_id y sub_id. Salida el ano_mes en formato YYYY-MM y el numero de envios en ese mes.
 
 ### Table
 
@@ -26,23 +24,19 @@ Escribe una consulta que calcule el número de envíos por mes. La clave única 
 | 104         | 2      | 10     | 2021-08-26    |
 | 105         | 1      | 20     | 2021-09-02    |
 
-
 # RESPUESTA
 
 ```sql
-
 SELECT
-    TO_CHAR(shipment_date, 'YYYY-MM') AS Año_mes,
-    -- Contando por shipment_id + sub_id
-    COUNT( shipment_id + sub_id) AS total_shipments
+    TO_CHAR(shipment_date, 'YYYY-MM') AS Ano_mes,
+    COUNT(shipment_id + sub_id) AS total_shipments
 FROM amazon_shipment
 GROUP BY
-    -- Agrupando por mes
     TO_CHAR(shipment_date, 'YYYY-MM')
-    
-
 ```
 
 # EXPLICACION
 
-La consulta convierte `shipment_date` al formato `YYYY-MM` usando `TO_CHAR`, de forma que todas las filas del mismo mes queden bajo la misma etiqueta. Despues agrupa por ese mes y cuenta los envios registrados para obtener el total mensual solicitado.
+La consulta primero transforma `shipment_date` al formato `YYYY-MM` con `TO_CHAR`, ya que el resultado debe mostrarse por mes y ano en ese formato exacto. Eso hace que todas las filas del mismo periodo mensual compartan una misma etiqueta como `2021-08` o `2021-09`.
+
+Una vez creada esa clave mensual, el `GROUP BY` junta los registros de cada mes y `COUNT(...)` calcula cuantas filas de envio hay en cada grupo. Como el enunciado aclara que la unicidad depende de `shipment_id` y `sub_id`, la idea es contar las ocurrencias de cada combinacion dentro del mes correspondiente para obtener el total mensual.
