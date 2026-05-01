@@ -4,12 +4,9 @@
 
 You are given a list of posts of a Facebook user. Find the average number of likes.
 
-
 **[ESP]**
 
-Tienes una lista de publicaciones de un usuario de Facebook. Encuentra el número promedio de likes.
-
-
+Tienes una lista de publicaciones de un usuario de Facebook. Encuentra el numero promedio de likes.
 
 ### TABLA
 
@@ -36,19 +33,16 @@ Tienes una lista de publicaciones de un usuario de Facebook. Encuentra el númer
 | P019    | 2002-06-19 | 49          |
 | P020    | 2002-06-20 | 60          |
 
-
 # RESPUESTA
 
-
 ```sql
-
 SELECT
     AVG(no_of_likes) as promedio_likes
 FROM fb_posts
-
-
 ```
 
 # EXPLICACION
 
-Como el problema pide el promedio de likes de todas las publicaciones, no necesitamos agrupar por post ni por fecha. La funcion `AVG(no_of_likes)` toma todos los valores de likes de la tabla `fb_posts` y calcula el promedio general, dejando el resultado en la columna `promedio_likes`.
+Como el enunciado pide el promedio global de likes, no hace falta agrupar por publicacion, fecha ni por ningun otro campo. La consulta toma directamente todos los valores de `no_of_likes` presentes en la tabla y calcula su media aritmetica.
+
+La funcion `AVG(no_of_likes)` se encarga de sumar internamente todos los likes y dividirlos por la cantidad de filas disponibles. El resultado final aparece en una sola columna llamada `promedio_likes`, que representa el promedio general de interacciones por post.
