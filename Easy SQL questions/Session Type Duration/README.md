@@ -1,20 +1,16 @@
 # Session Type Duration
 
-
 **[ENG]**
 
 Calculate the average session duration (in seconds) for each session type.
 
 **[ESP]**
 
-Calcula el promedio  de la duración de la sesión (en segundos) para cada tipo de sesión.
-
-
+Calcula el promedio de la duracion de la sesion (en segundos) para cada tipo de sesion.
 
 ### TABLA
 
 twitch_sessions
-
 
 |user_id|session_start|session_end|session_id|session_type|
 |---|---|---|---|---|
@@ -38,7 +34,6 @@ twitch_sessions
 |7|2020-08-14 05:50:45|2020-08-14 06:27:45|645|streamer|
 |7|2020-08-11 15:32:19|2020-08-11 16:22:19|817|viewer|
 
-
 # RESPUESTA
 
 ```sql
@@ -49,9 +44,10 @@ FROM
     twitch_sessions
 GROUP BY 
     session_type;
-
 ```
 
 # EXPLICACION
 
-La duracion de cada sesion se obtiene restando `session_start` a `session_end`. Con `EXTRACT(EPOCH FROM ...)` esa diferencia se transforma a segundos, y luego `AVG` calcula el promedio de duracion para cada `session_type` gracias al `GROUP BY`.
+La duracion de cada sesion se obtiene restando `session_start` a `session_end`, lo que genera un intervalo de tiempo por fila. Como el enunciado pide el promedio en segundos, `EXTRACT(EPOCH FROM ...)` convierte ese intervalo a un valor numerico medido en segundos.
+
+Despues la consulta agrupa por `session_type` para separar, por ejemplo, las sesiones de `viewer` y las de `streamer`. Finalmente, `AVG(...)` calcula el tiempo promedio dentro de cada grupo y entrega una duracion media por tipo de sesion.
