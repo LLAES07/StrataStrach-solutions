@@ -146,6 +146,7 @@ GROUP BY p.product_category
 ORDER BY total_sales DESC;
 ```
 
-# EXPLICACION
+# 📊 Explicación
 
-Primero se resume la informacion relevante de los productos para condensar su estado en una sola salida. Luego se agrupan los registros por la clave necesaria y se calculan los totales o conteos del informe. Asi se obtiene una vista compacta del resumen de productos solicitada por el problema.
+El objetivo es resumir las transacciones del año 2017 por categoría de producto. Para ello, unimos las tablas `wfm_transactions` (donde están las ventas) y `wfm_products` (donde están las categorías). Filtramos los registros del año 2017 y agrupamos por `product_category`. En la salida, calculamos el total de transacciones únicas usando `COUNT(DISTINCT transaction_id)` y el total de ventas sumando la columna `sales`. Finalmente, ordenamos los resultados de mayor a menor según el volumen de ventas.
+
