@@ -100,6 +100,7 @@ GROUP BY
     property_type
 ```
 
-# EXPLICACION
+# 📊 Explicación
 
-La idea es trabajar con las columnas de bathrooms y bedrooms y comparar sus valores por registro. Si el enunciado pide contarlas o filtrarlas, basta con aplicar la condicion correspondiente sobre ambas columnas. Con eso se obtiene el subconjunto de propiedades que cumple la combinacion pedida.
+Para obtener el promedio de baños y habitaciones por ciudad y tipo de propiedad, agrupamos los datos utilizando las columnas `city` y `property_type`. Sobre este agrupamiento, aplicamos la función agregada `AVG()` tanto para la columna `bathrooms` como para `bedrooms`. Esto nos devuelve una lista detallada donde podemos ver las características promedio de las viviendas en cada zona y categoría de inmueble.
+
