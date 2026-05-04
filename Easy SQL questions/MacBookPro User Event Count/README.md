@@ -39,6 +39,7 @@ ORDER BY
 
 ```
 
-# EXPLICACION
+# 📊 Explicación
 
-La consulta cuenta cuantas veces aparecen eventos vinculados a usuarios de MacBookPro o a un tipo de dispositivo especifico. Primero se filtra el evento o producto correcto y luego se agrupa por usuario para obtener su total. Asi se responde cuantas interacciones tuvo cada usuario con ese equipo.
+Para contar los eventos realizados específicamente por usuarios de MacBook Pro, primero aplicamos un filtro en la cláusula `WHERE` usando una expresión regular (`~ '^macbook\s?pro'`) sobre la columna `device` (convertida a minúsculas con `LOWER`). Luego, agrupamos los resultados por `event_name` y usamos `COUNT(*)` para obtener el total de ocurrencias por cada tipo de evento, ordenando finalmente de forma descendente.
+
