@@ -70,6 +70,7 @@ WHERE fs.flight_id = 101;
 
 ```
 
-# EXPLICACION
+# 📊 Explicación
 
-Primero se compara la duracion de las peliculas contra el valor que indica el enunciado para identificar las que coinciden exactamente. Luego se devuelven solo los titulos que cumplen esa condicion. Asi la consulta responde con las peliculas que tienen la duracion solicitada.
+Para encontrar las películas que se ajustan a la duración del vuelo 101, realizamos un `JOIN` entre las tablas `flight_schedule` y `entertainment_catalog`. La condición de unión no es una igualdad, sino una desigualdad: `ec.duration <= fs.flight_duration`, lo que nos permite vincular cada vuelo con todas las películas que duran lo mismo o menos que el trayecto. Finalmente, filtramos por el `flight_id = 101` para obtener las sugerencias específicas.
+
