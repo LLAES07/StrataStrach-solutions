@@ -37,8 +37,10 @@ WHERE
     yearly_salary > 70000;
 ```
 
-# EXPLICACION
+# 📊 Explicación
 
-El enunciado pide recuperar todos los registros cuyo `yearly_salary` este fuera del rango intermedio. Por eso el `WHERE` usa dos condiciones unidas con `OR`: una para salarios menores o iguales a `30000` y otra para salarios mayores a `70000`.
+La consulta filtra a los conductores de Lyft basándose en sus ingresos anuales (`yearly_salary`). Utilizamos la cláusula `WHERE` para encontrar a aquellos que ganan 30,000 USD o menos, **o** 70,000 USD o más. El operador `OR` nos permite capturar ambos extremos de la escala salarial solicitada en una sola lista de resultados.
 
-Como la salida debe mostrar todos los detalles del conductor, se utiliza `SELECT *` en lugar de elegir columnas puntuales. Asi la consulta devuelve exactamente los registros extremos de salario junto con toda su informacion disponible.
+El enunciado pide recuperar todos los registros cuyo yearly_salary este fuera del rango intermedio. Por eso el WHERE usa dos condiciones unidas con OR: una para salarios menores o iguales a 30000 y otra para salarios mayores a 70000.
+
+Como la salida debe mostrar todos los detalles del conductor, se utiliza SELECT * en lugar de elegir columnas puntuales. Asi la consulta devuelve exactamente los registros extremos de salario junto con toda su informacion disponible.
