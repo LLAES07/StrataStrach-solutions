@@ -48,4 +48,4 @@ ORDER BY id ASC;
 
 # 📊 Explicación
 
-La consulta tiene como objetivo identificar los registros que han sido actualizados en la tabla. Esto se logra mediante el uso de la columna `last_updated` para comparar los registros y determinar cuáles han cambiado desde una fecha específica o desde el último registro. La consulta utiliza `SELECT` para recuperar los registros que cumplen con ciertas condiciones de actualización, lo que permite identificar los cambios realizados en la base de datos.
+El objetivo es obtener el salario más reciente de cada empleado, asumiendo que este aumenta cada año. Para lograrlo, agrupamos los registros por los datos básicos del empleado (`id`, `first_name`, `last_name`, `department_id`) y utilizamos una subconsulta que selecciona el `MAX(salary)` para ese `id` específico. Esto nos asegura que, de todas las entradas históricas de un empleado, solo mostremos la que tiene el monto más alto (su salario actual).
