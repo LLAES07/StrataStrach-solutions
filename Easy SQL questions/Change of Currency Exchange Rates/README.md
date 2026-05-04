@@ -76,11 +76,6 @@ SELECT
 FROM sf_exchange_rate a1
 JOIN sf_exchange_rate a2 
     ON a1.source_currency = a2.source_currency
-WHERE a1.date = '2020-01-01' 
-  AND a2.date = '2020-07-01';
+# ?? Explicación
 
-```
-
-# EXPLICACION
-
-La consulta compara cada moneda consigo misma en dos fechas distintas, por eso se hace un auto `JOIN` usando `source_currency` como punto de union. Una fila representa el valor del 1 de enero de 2020 y la otra el valor del 1 de julio de 2020 para esa misma moneda. Luego se resta la tasa inicial a la tasa final para obtener el cambio acumulado durante la primera mitad del aÃ±o.
+Para calcular la diferencia en la tasa de cambio, unimos la tabla sf_exchange_rate consigo misma (JOIN). La primera instancia (1) filtra los datos del 1 de enero de 2020, mientras que la segunda (2) filtra los del 1 de julio de 2020. Al unir ambas por el código de moneda (source_currency), podemos restar directamente el valor inicial del valor final para obtener la variación exacta en la primera mitad del año.
