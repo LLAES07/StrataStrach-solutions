@@ -35,8 +35,10 @@ WHERE
     EXTRACT(YEAR FROM order_date)= '2021'
 ```
 
-# EXPLICACION
+# 📊 Explicación
 
-Para resolverlo solo hace falta sumar el valor de los pedidos que pertenecen al ano 2021. El filtro `EXTRACT(YEAR FROM order_date) = '2021'` deja fuera cualquier orden de 2020 u otros anos, de manera que la suma trabaje unicamente con el periodo solicitado.
+Para obtener el ingreso total del año 2021, utilizamos la función `SUM(order_total)`. El filtro clave se aplica en la cláusula `WHERE`, donde usamos `EXTRACT(YEAR FROM order_date)` para asegurarnos de que solo se sumen las órdenes cuya fecha corresponda al año 2021.
 
-Una vez filtradas esas filas, `SUM(order_total)` acumula el importe de cada pedido y devuelve un solo resultado llamado `revenue_2021`. No se necesita `GROUP BY` porque el ejercicio pide el total general del ano, no un desglose por mes o por cliente.
+Para resolverlo solo hace falta sumar el valor de los pedidos que pertenecen al ano 2021. El filtro EXTRACT(YEAR FROM order_date) = '2021' deja fuera cualquier orden de 2020 u otros anos, de manera que la suma trabaje unicamente con el periodo solicitado.
+
+Una vez filtradas esas filas, SUM(order_total) acumula el importe de cada pedido y devuelve un solo resultado llamado evenue_2021. No se necesita GROUP BY porque el ejercicio pide el total general del ano, no un desglose por mes o por cliente.
