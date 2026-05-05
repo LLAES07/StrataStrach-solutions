@@ -1,4 +1,4 @@
-# Total Shipment Weight
+﻿# Total Shipment Weight
 
 **[ENG]**
 
@@ -37,4 +37,4 @@ FROM amazon_shipment;
 
 Aqui no basta con agrupar y devolver un solo registro por envio, porque el resultado debe conservar todas las filas originales. Por eso se usa una funcion de ventana: `SUM(weight) OVER (PARTITION BY shipment_id)` suma el peso de todas las filas que pertenecen al mismo `shipment_id`, pero mantiene cada registro individual en la salida.
 
-El efecto practico es que cada fila sigue mostrando su `sub_id`, `weight` y `shipment_date`, y ademas recibe una columna nueva con el peso total del envio completo. Esa es justamente la ventaja de usar una ventana en lugar de un `GROUP BY`.
+El efecto practico es que cada fila sigue mostrando su `sub_id`, `weight` y `shipment_date`, y ademas recibe una columna nueva con el peso total del envio completo. Esa es justamente la ventaja de usar una ventana en lugar de un `GROUP BY`, porque permite enriquecer cada fila sin perder detalle.
