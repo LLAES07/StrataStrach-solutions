@@ -1,4 +1,4 @@
-# Last Record Without LIMIT or ORDER BY
+﻿# Last Record Without LIMIT or ORDER BY
 
 
 ---
@@ -53,4 +53,6 @@ WHERE joining_date = (SELECT MAX(joining_date) FROM worker)
 
 # 🧠 EXPLICACIÓN
 
-Debemos encontrar el ultimo registro con las restricciones mencionadas. Considerando que podemos utilizar subquery, realizamos subquery para encontrar la fecha más proxima que por ende es la mas nueva. Una vez realizado igualamos la fecha a este subquery para pdoer filtrar la tabla principal y nos devuelve el registro más nuevo.
+Debemos encontrar el ultimo registro con las restricciones mencionadas. Para lograrlo, usamos una subconsulta que obtiene la fecha de ingreso mas reciente con `MAX(joining_date)`. Esa subconsulta funciona como referencia para filtrar la tabla principal y devolver solo la fila cuyo `joining_date` coincide con la fecha mas nueva.
+
+De esta forma evitamos usar `ORDER BY` con `LIMIT`, y aun asi obtenemos exactamente el ultimo trabajador ingresado. Como la consulta devuelve `*`, se conserva toda la informacion del registro encontrado.
