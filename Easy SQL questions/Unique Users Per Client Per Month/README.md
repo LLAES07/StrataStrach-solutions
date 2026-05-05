@@ -1,4 +1,4 @@
-# Unique Users Per Client Per Month
+﻿# Unique Users Per Client Per Month
 
 **[ENG]**
 
@@ -100,4 +100,6 @@ GROUP BY
 
 # EXPLICACION
 
-La consulta busca saber cuantos usuarios distintos tuvo cada cliente en cada mes, por eso primero extrae el mes desde `time_id`. Luego agrupa por ese mes y por `client_id` para separar correctamente cada combinacion cliente-mes. Finalmente `COUNT(DISTINCT user_id)` evita contar varias veces al mismo usuario dentro del mismo grupo y devuelve el total unico pedido.
+La consulta busca saber cuantos usuarios distintos tuvo cada cliente en cada mes, por eso primero extrae el mes desde `time_id`. Luego agrupa por ese mes y por `client_id` para separar correctamente cada combinacion cliente-mes.
+
+Finalmente `COUNT(DISTINCT user_id)` evita contar varias veces al mismo usuario dentro del mismo grupo y devuelve el total unico pedido. Con ese enfoque obtenemos una fila por cada cliente y mes, con el conteo real de usuarios sin duplicados.
