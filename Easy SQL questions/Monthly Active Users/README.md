@@ -1,4 +1,4 @@
-# Monthly Active Users
+﻿# Monthly Active Users
 
 **[ENG]**
 Find the monthly active users for January 2021 for each account. Your output should have account_id and the monthly count for that account.
@@ -52,6 +52,8 @@ GROUP BY account_id;
 
 # EXPLICACION
 
-El primer paso es filtrar la tabla para conservar solamente los eventos de enero de 2021. Eso se logra con `EXTRACT(YEAR FROM record_date)` y `EXTRACT(MONTH FROM record_date)`, que separan el ano y el mes de cada fecha y permiten quedarnos exactamente con el periodo solicitado.
+El primer paso es filtrar la tabla para conservar solamente los eventos de enero de 2021. Eso se logra con EXTRACT(YEAR FROM record_date) y EXTRACT(MONTH FROM record_date), que separan el ano y el mes de cada fecha y permiten quedarnos exactamente con el periodo solicitado.
 
-Despues la consulta agrupa por `account_id` porque el resultado debe mostrarse por cuenta. Dentro de cada grupo se usa `COUNT(DISTINCT user_id)` para contar usuarios activos sin duplicar a quienes hayan tenido varios eventos durante el mismo mes. Asi se obtiene el numero real de usuarios activos mensuales por cuenta.
+Despues la consulta agrupa por ccount_id porque el resultado debe mostrarse por cuenta. Dentro de cada grupo se usa COUNT(DISTINCT user_id) para contar usuarios activos sin duplicar a quienes hayan tenido varios eventos durante el mismo mes.
+
+Asi se obtiene el numero real de usuarios activos mensuales por cuenta y se evita inflar el total con acciones repetidas del mismo usuario.
