@@ -1,4 +1,4 @@
-# Number of violations
+﻿# Number of violations
 
 
 **[ENG]**
@@ -9,9 +9,9 @@ Count the total number of violations that occurred at **'Roxanne Cafe'** for eac
 
 **[ES]**
 
-Te proporcionamos un conjunto de datos de inspecciones de salud que incluye detalles sobre las violaciones. Cada fila representa una inspección, y si una inspección resultó en una violacion, la columna `violation_id` tendrá un valor.
+Te proporcionamos un conjunto de datos de inspecciones de salud que incluye detalles sobre las violaciones. Cada fila representa una inspecciÃ³n, y si una inspecciÃ³n resultÃ³ en una violacion, la columna `violation_id` tendrÃ¡ un valor.
 
-Cuenta el total de violaciones ocurrida en el  **'Roxanne Cafe'** para cada año, basado en la fecha de inpección. Muestra el año y el numero correspondientes de violaciones en orden ascendente del año.
+Cuenta el total de violaciones ocurrida en el  **'Roxanne Cafe'** para cada aÃ±o, basado en la fecha de inpecciÃ³n. Muestra el aÃ±o y el numero correspondientes de violaciones en orden ascendente del aÃ±o.
 
 
 
@@ -41,7 +41,7 @@ WHERE
     -- Filtrando para tener los casos de roxanne cafe
     business_name = 'Roxanne Cafe'
 GROUP BY
-    -- Agrupando por año
+    -- Agrupando por aÃ±o
     EXTRACT(YEAR FROM inspection_date)
 ORDER BY 1 ASC 
 
@@ -49,4 +49,6 @@ ORDER BY 1 ASC
 
 # EXPLICACION
 
-La consulta se enfoca solo en las inspecciones de `Roxanne Cafe`, por eso el primer filtro se hace con `business_name`. Luego se extrae el año desde `inspection_date` para poder resumir la informacion por periodo anual. Al agrupar por ese año y contar las inspecciones registradas, obtenemos cuantas violaciones quedaron asociadas al restaurante en cada año y finalmente se muestran en orden ascendente.
+La consulta se enfoca solo en las inspecciones de Roxanne Cafe, por eso el primer filtro se hace con usiness_name. Luego se extrae el aÃ±o desde inspection_date para poder resumir la informacion por periodo anual.
+
+Al agrupar por ese aÃ±o y contar las inspecciones registradas, obtenemos cuantas violaciones quedaron asociadas al restaurante en cada aÃ±o y finalmente se muestran en orden ascendente. El resultado deja ver la evolucion de las infracciones a lo largo del tiempo.
