@@ -1,8 +1,8 @@
-# Not Referred Employees
+﻿# Not Referred Employees
 
 
 
-## 📌 PROBLEMA
+## ðŸ“Œ PROBLEMA
 
 **[ENG]**
 
@@ -55,7 +55,7 @@ employee
 |3|Henry|Ted|31|M|Senior Sales|Sales|2000|200|150|Henry@company.com|California|1609 Ford Street|1|
 |4|Sam|Mark|25|M|Sales|Sales|1000|120|150|Sam@company.com|California|4869 Libby Street|1|
 
-#  💻 REPSUESTA
+#  ðŸ’» REPSUESTA
 
 ```sql
 
@@ -67,10 +67,12 @@ WHERE manager_id !=1 ;
 
 ```
 
-# 🧠 EXPLICACIÓN
+# ðŸ§  EXPLICACIÃ“N
 
 Para encontrar los usuarios que no tienen el manager_id = 1, utilizamos un filtro para filtrar los que no sean iguales a 1.
 
 ## EXPLICACION
 
 La consulta usa `manager_id != 1` para excluir a los empleados que si dependen del manager 1. Luego devuelve solo el nombre para cumplir con el enunciado.
+
+Con ese filtro obtenemos solo las personas que no reportan al manager principal. Es una condicion sencilla, pero suficiente para separar el grupo pedido del resto de empleados.
