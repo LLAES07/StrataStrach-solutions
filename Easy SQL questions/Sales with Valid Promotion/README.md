@@ -1,4 +1,4 @@
-# Sales with Valid Promotion
+﻿# Sales with Valid Promotion
 
 
 **[ENG]**
@@ -11,11 +11,11 @@ Calculate the percentage of orders in the `online_orders`table that used a promo
 
 **[ESP]**
 
-El gerente de marketing quiere que evalues que tan bien la campañas anteriores de publicidad funcionan.
+El gerente de marketing quiere que evalues que tan bien la campaÃ±as anteriores de publicidad funcionan.
 
 Particularmente, estan interesados en los id de las promociones de la tabla `online_promotions`.
 
-Calcula el porcentaje de ordenes en la tabla `online_orders` que usaron una promoción de la tabla `online_promotions`.
+Calcula el porcentaje de ordenes en la tabla `online_orders` que usaron una promociÃ³n de la tabla `online_promotions`.
 
 ---
 
@@ -74,3 +74,5 @@ LEFT JOIN online_promotions p
 ## EXPLICACION
 
 Las dos propuestas buscan medir el peso de las ventas con promocion valida. La primera calcula la proporcion sobre el total y la segunda usa un `LEFT JOIN` para promediar casos validos y no validos.
+
+Ambas formas apuntan a la misma meta: distinguir las ordenes con promocion real de las que no cumplen la condicion. Al hacerlo, el analisis de ventas se vuelve mas confiable porque solo se consideran descuentos realmente aplicables.
