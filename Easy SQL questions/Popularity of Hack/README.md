@@ -1,4 +1,4 @@
-# Popularity of Hack
+﻿# Popularity of Hack
 
 **[ENG]**
 
@@ -8,7 +8,7 @@ Output the location along with the average popularity.
 
 **[ESP]**
 
-Meta/Facebook ha desarrollado un nuevo lenguaje de programación llamado Hack. Para medir su popularidad, realizaron una encuesta entre sus empleados. La encuesta incluyó datos sobre familiaridad previa con lenguajes de programación, años de experiencia, edad, género y, lo más importante, su nivel de satisfacción con Hack. Debido a un error, no se recolectaron los datos de ubicación, pero tu supervisor exige un informe que muestre la popularidad promedio de Hack por oficina. Afortunadamente, se guardaron los IDs de usuario de los empleados que completaron las encuestas.
+Meta/Facebook ha desarrollado un nuevo lenguaje de programaciÃ³n llamado Hack. Para medir su popularidad, realizaron una encuesta entre sus empleados. La encuesta incluyÃ³ datos sobre familiaridad previa con lenguajes de programaciÃ³n, aÃ±os de experiencia, edad, gÃ©nero y, lo mÃ¡s importante, su nivel de satisfacciÃ³n con Hack. Debido a un error, no se recolectaron los datos de ubicaciÃ³n, pero tu supervisor exige un informe que muestre la popularidad promedio de Hack por oficina. Afortunadamente, se guardaron los IDs de usuario de los empleados que completaron las encuestas.
 
 # Tablas
 
@@ -57,3 +57,5 @@ GROUP BY
 ## EXPLICACION
 
 La solucion consiste en agrupar por `hack_id` y sumar los votos o comentarios relacionados. Asi obtenemos una medida simple de popularidad por hack.
+
+Agrupar primero evita mezclar un hack con otro y hace que cada valor calculado pertenezca a una sola idea o proyecto. Luego el promedio por ubicacion resume ese resultado en una vista comparativa entre empleados o sedes.
