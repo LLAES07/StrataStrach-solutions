@@ -1,4 +1,4 @@
-# Workers by Department Since April
+﻿# Workers by Department Since April
 
 **[ENG]**
 
@@ -13,7 +13,7 @@ Sort the results based on the number of workers in descending order.
 
 **[ESP]**
 
-Encuentra el numero de trabajdores por departamento que se unieron el 1 de abril de 2024 o después.
+Encuentra el numero de trabajdores por departamento que se unieron el 1 de abril de 2024 o despuÃ©s.
 
 Muestra el nombre del departamento con el correspondiente numero de trabajadores.
 
@@ -37,7 +37,7 @@ Ordena los resultados basado en el numero de trabajadores en orden descendente.
 
 ```sql
 
--- OBJ1: n° of workers
+-- OBJ1: nÂ° of workers
 -- FILTER1: workers by department
 -- FILTER: joined in or after april
 SELECT
@@ -55,4 +55,6 @@ ORDER BY total_workers DESC
 
 ## EXPLICACION
 
-La consulta filtra primero a los trabajadores con `joining_date >= '2014-04-01'`. Luego agrupa por `department`, cuenta los `worker_id` y ordena el resultado de mayor a menor.
+La consulta filtra primero a los trabajadores con `joining_date >= ''2014-04-01''`. Luego agrupa por `department`, cuenta los `worker_id` y ordena el resultado de mayor a menor.
+
+De esa manera solo se consideran los empleados incorporados desde abril en adelante. El `ORDER BY` final ayuda a ver rapidamente en que departamentos se concentran mas contrataciones en ese periodo.
