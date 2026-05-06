@@ -1,7 +1,7 @@
-# Total Cost Of Orders
+﻿# Total Cost Of Orders
 
 
-# 📌 PROBLEMA
+# ðŸ“Œ PROBLEMA
 
 **[ENG]**
 
@@ -9,7 +9,7 @@ Find the total cost of each customer's orders. Output customer's id, first name,
 
 **[ESP]**
 
-Encuentra el costo total de cada orden de los clientes. Muestra la id del cliente, el primer nombre, y el costo total de la orden. Ordena los registros según el nombre del cliente alfabéticamente.
+Encuentra el costo total de cada orden de los clientes. Muestra la id del cliente, el primer nombre, y el costo total de la orden. Ordena los registros segÃºn el nombre del cliente alfabÃ©ticamente.
 
 
 
@@ -72,7 +72,7 @@ Encuentra el costo total de cada orden de los clientes. Muestra la id del client
 | 30 | 1       | 2019-04-19 | Jacket        | 150              |
 | 31 | 1       | 2019-04-19 | Shoes         | 125              |
 
-# 💻 REPSUESTA
+# ðŸ’» REPSUESTA
 
 ```sql
 
@@ -91,9 +91,11 @@ ORDER BY 2 ASC;
 
 ```
 
-# 🧠 EXPLICACIÓN
+# ðŸ§  EXPLICACIÃ“N
 
-Necesitamos conocer el total de orden por ide cada usuario. Por esta razon generaremos un LEFT JOIN entre la tabla `customers` de esta manera tendrá todos los ususarios conectando esta con `orders` así traemos cada orden correspondiente a cada usuario. Posterior utilizamos GROUP BY para juntar todos los registros de cada usuario sumando la columna `total_order_cost` utilizanto `COALESCE` para incluir a los usuarios que no tengan ordenes.
+Necesitamos conocer el total de orden por ide cada usuario. Por esta razon generaremos un LEFT JOIN entre la tabla `customers` de esta manera tendrÃ¡ todos los ususarios conectando esta con `orders` asÃ­ traemos cada orden correspondiente a cada usuario. Posterior utilizamos GROUP BY para juntar todos los registros de cada usuario sumando la columna `total_order_cost` utilizanto `COALESCE` para incluir a los usuarios que no tengan ordenes.
 ## EXPLICACION
 
 `SUM(order_total)` agrega todos los valores de las ordenes en una sola cifra. Es la forma mas directa de obtener el costo total.
+
+Cuando se combina con el `JOIN`, cada cliente queda asociado a sus pedidos antes de sumar. Asi el resultado refleja el gasto acumulado por usuario y no solo el total general de la tabla.
