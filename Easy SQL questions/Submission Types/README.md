@@ -1,9 +1,9 @@
-# Submission Types
+﻿# Submission Types
 
 
 **[ENG]**
 
-Write a query that returns the user ID of all users that have created at least one ‘Refinance’ submission and at least one ‘InSchool’ submission.
+Write a query that returns the user ID of all users that have created at least one â€˜Refinanceâ€™ submission and at least one â€˜InSchoolâ€™ submission.
 
 **[ES]**
 
@@ -66,3 +66,4 @@ SELECT user_id FROM loans WHERE type = 'InSchool';
 # EXPLICACION
 
 La consulta agrupa las entregas o envios por tipo de submission para contar cuantos registros pertenecen a cada categoria. Luego se ordena el resultado para ver cual tipo aparece mas. Con eso se obtiene una vista clara de la distribucion por tipo de envio.
+
