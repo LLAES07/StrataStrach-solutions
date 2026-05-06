@@ -1,8 +1,8 @@
-# Total Employees in Each Department
+﻿# Total Employees in Each Department
 
 
 
-# 📌 PROBLEMA
+# ðŸ“Œ PROBLEMA
 
 **[ENG]**
 
@@ -40,7 +40,7 @@ Muestra el nombre del departamento junto con el numero de empleados.
 |12|Jai|Patel|85000|2014-03-21|HR|
 |13|Jura|Jomun|980000|2013-05-20|HR|
 
-# 💻 REPSUESTA
+# ðŸ’» REPSUESTA
 
 ```sql
 
@@ -52,10 +52,12 @@ GROUP BY department
 
 ```
 
-# 🧠 EXPLICACIÓN
+# ðŸ§  EXPLICACIÃ“N
 
 
 Nos solicitan por cada departamento el numero total de empleados. Primero agrupamos por departamento y sumamos todos los registros que cada departamento tenga.
 ## EXPLICACION
 
 `GROUP BY department` crea un grupo por cada departamento y `COUNT(employee_id)` devuelve cuantos empleados hay en cada uno.
+
+Con esto la consulta resume la tabla completa en una sola fila por area. Es una forma simple de obtener el tamanio de cada departamento sin perder la relacion entre empleado y departamento.
