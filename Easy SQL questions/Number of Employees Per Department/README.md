@@ -1,8 +1,8 @@
-# Number of Employees Per Department
+﻿# Number of Employees Per Department
 
 
 
-## 📌 PROBLEMA
+## ðŸ“Œ PROBLEMA
 
 **[ENG]**
 
@@ -12,9 +12,9 @@ Sort records based on the number of employees in descending order.
 
 **[ESP]**
 
-Encuentra el número de empleados en cada departamento.
-Muestra el nombre del departamento junto con el número de empleados correspondientes.
-Ordena los registros por el número de empleados en orden descendente.
+Encuentra el nÃºmero de empleados en cada departamento.
+Muestra el nombre del departamento junto con el nÃºmero de empleados correspondientes.
+Ordena los registros por el nÃºmero de empleados en orden descendente.
 
 
 
@@ -58,7 +58,7 @@ employee
 
 
 
-#  💻 REPSUESTA
+#  ðŸ’» REPSUESTA
 
 ```sql
 
@@ -71,10 +71,12 @@ ORDER BY 2 DESC;
 
 ```
 
-# 🧠 EXPLICACIÓN
+# ðŸ§  EXPLICACIÃ“N
 
 Para obtener el numero de empleados por cada departamento, agrupamos por departamento y contamos las id que hay en cada departamento. Posteriormente se ordena por el numero de empleados en orden descendente.
 
 ## EXPLICACION
 
 `GROUP BY department` agrupa los empleados por area y `COUNT(id)` cuenta cuantas filas hay en cada grupo. El `ORDER BY 2 DESC` deja primero los departamentos con mas empleados.
+
+La idea es convertir una lista de empleados en un resumen por departamento. Eso hace mas facil comparar la distribucion interna de la empresa y detectar de inmediato que areas concentran mas personal.
