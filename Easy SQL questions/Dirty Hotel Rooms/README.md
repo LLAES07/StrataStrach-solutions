@@ -1,4 +1,4 @@
-# Dirty Hotel Rooms
+﻿# Dirty Hotel Rooms
 
 
 **[ENG]**
@@ -41,10 +41,12 @@ WHERE
 
 
 
-# 📊 Explicación
+# ðŸ“Š ExplicaciÃ³n
 
 
 Nos solicitan todos los datos para la nacionalidad `Netherlands` y con una review negativa que contiene dirty. Para esto usamos `WHERE` y  `LIKE` para lograr lo solicitado.
 ## EXPLICACION
 
 La consulta solo necesita identificar las habitaciones marcadas como sucias. Por eso un filtro directo sobre la columna de estado resuelve el ejercicio.
+
+Al usar `LIKE ''%dirty%''` se capturan las filas cuyo texto de review menciona suciedad, incluso si la frase completa cambia un poco. Eso hace que el filtro sea practico y flexible para encontrar los casos relevantes.
