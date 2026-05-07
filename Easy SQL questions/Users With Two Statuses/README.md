@@ -1,20 +1,16 @@
-﻿# Users With Two Statuses
+# Users With Two Statuses
 
+## 📌 PROBLEMA
 
 **[ENG]**
-
 Find users who are both a viewer and streamer.
 
-
 **[ESP]**
-
-Encuentra los usuarios que son viewers y streamer.
-
+Encuentra los usuarios que son `viewer` y `streamer`.
 
 ### TABLA
 
 twitch_sessions
-
 
 |user_id|session_start|session_end|session_id|session_type|
 |---|---|---|---|---|
@@ -38,50 +34,19 @@ twitch_sessions
 |7|2020-08-14 05:50:45|2020-08-14 06:27:45|645|streamer|
 |7|2020-08-11 15:32:19|2020-08-11 16:22:19|817|viewer|
 
-# RESPUESTA
-
+# 💻 RESPUESTA
 
 ```sql
-
--- propuesta 1
-WITH ct1 AS (
-    SELECT 
-        user_id,
-        SUM(CASE WHEN session_type = 'streamer' THEN 1 ELSE 0 END) AS sesiones_como_streamer,
-        SUM(CASE WHEN session_type = 'viewer'  THEN 1 ELSE 0 END) AS sesiones_como_viewer
-    FROM twitch_sessions
-    GROUP BY user_id
-)
-
-SELECT
-    user_id
-FROM ct1
-WHERE
-    sesiones_como_streamer >= 1 AND
-    sesiones_como_viewer >= 1
-
-
--- Propuesta 2
-
 SELECT user_id
 FROM twitch_sessions
 GROUP BY user_id
 HAVING 
     MAX(CASE WHEN session_type = 'streamer' THEN 1 END) = 1
     AND MAX(CASE WHEN session_type = 'viewer' THEN 1 END) = 1;
-
-
--- Propuesta 3
-
-SELECT
-    user
-FROM twitch_sessions
-GROUP BY user
-HAVING COUNT(DISTINCT session_type) = 2;
 ```
 
-# EXPLICACION
+# 📊 Explicación
 
-La idea en las tres propuestas es comprobar que cada `user_id` tenga por lo menos una sesion como `streamer` y otra como `viewer`. En las primeras dos opciones se transforma cada tipo de sesion en un indicador y luego se agrupa por usuario para validar ambas condiciones.
+La idea es comprobar que cada `user_id` tenga por lo menos una sesion como `streamer` y otra como `viewer`. Para eso la consulta agrupa por usuario y transforma cada tipo de sesion en un indicador con `CASE`.
 
-En la tercera version se resume todavia mas el problema contando los tipos de sesion distintos por usuario, de modo que si el total es 2 significa que esa persona aparece en los dos roles pedidos. Asi se resuelve el ejercicio sin depender de valores adicionales y dejando clara la condicion exigida.
+Si ambos `MAX(...)` valen `1`, significa que esa persona aparece en los dos roles pedidos. Asi se filtran solo los usuarios con ambos estados.
