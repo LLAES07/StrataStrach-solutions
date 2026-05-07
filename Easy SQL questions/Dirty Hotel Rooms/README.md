@@ -1,18 +1,16 @@
-﻿# Dirty Hotel Rooms
+# Dirty Hotel Rooms
 
+## 📌 PROBLEMA
 
 **[ENG]**
+Find hotels in the Netherlands that got complaints from guests about room dirtiness (word "dirty" in its negative review). Output all the columns in your results.
 
-Find hotels in the Netherlands that got complaints from guests about room dirtiness (word "dirty" in its negative review). Output all the columns in your results
+**[ESP]**
+Encuentra los hoteles en Holanda que tengan quejas de los huespedes acerca de la suciedad en las habitaciones (`dirty` en su review negativa). Muestra todas las columnas en tus resultados.
 
-**[ES]**
-
-Encuentra los hoteles en holanda que tengan quejas de los huespedes acerca de la suciedad en las piezas ("dirty" en su review negativa). Muestra todas las columnas en tus resultados.
-
-### Table
+### TABLA
 
 hotel_reviews
-
 
 |hotel_address|additional_number_of_scoring|review_date|average_score|hotel_name|reviewer_nationality|negative_review|review_total_negative_word_counts|total_number_of_reviews|positive_review|review_total_positive_word_counts|total_number_of_reviews_reviewer_has_given|reviewer_score|tags|days_since_review|lat|lng|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -25,28 +23,19 @@ hotel_reviews
 |12 Folgate Street City of London London E1 6BX United Kingdom|197|2016-11-28|9.4|Batty Langley s|United Kingdom|Couldn t fault anything about this hotel|9|644|Plush luxurious room with excellent friendly staff|9|2|10|[' Leisure trip ', ' Couple ', ' Superior Double Room ', ' Stayed 1 night ', ' Submitted from a mobile device ']|248 day|51.52|-0.08|
 |252 High Holborn Holborn Camden London WC1V 7EN United Kingdom|256|2017-01-13|9.4|Rosewood London|Australia|Nothing|2|1008|Best bat in London|5|1|9.6|[' Leisure trip ', ' Family with young children ', ' Executive King Room ', ' Stayed 5 nights ', ' Submitted from a mobile device ']|202 day|51.52|-0.12|
 
-# REPSUESTA
+# 💻 RESPUESTA
 
 ```sql
-
-
 SELECT
     *
 FROM hotel_reviews
 WHERE
     reviewer_nationality = 'Netherlands'
-    AND
-    negative_review LIKE '%dirty%';
+    AND negative_review LIKE '%dirty%';
 ```
 
+# 📊 Explicación
 
+La consulta filtra primero por `reviewer_nationality = 'Netherlands'` para quedarse solo con las reseñas de huespedes de Holanda. Despues usa `LIKE '%dirty%'` sobre `negative_review` para detectar las quejas donde aparece la palabra `dirty`.
 
-# ðŸ“Š ExplicaciÃ³n
-
-
-Nos solicitan todos los datos para la nacionalidad `Netherlands` y con una review negativa que contiene dirty. Para esto usamos `WHERE` y  `LIKE` para lograr lo solicitado.
-## EXPLICACION
-
-La consulta solo necesita identificar las habitaciones marcadas como sucias. Por eso un filtro directo sobre la columna de estado resuelve el ejercicio.
-
-Al usar `LIKE ''%dirty%''` se capturan las filas cuyo texto de review menciona suciedad, incluso si la frase completa cambia un poco. Eso hace que el filtro sea practico y flexible para encontrar los casos relevantes.
+Como el ejercicio pide todas las columnas, se usa `SELECT *`. Asi el resultado muestra unicamente los hoteles que cumplen ambas condiciones.
