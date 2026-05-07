@@ -1,26 +1,18 @@
-﻿# Not Referred Employees
+# Not Referred Employees
 
-
-
-## ðŸ“Œ PROBLEMA
+## 📌 PROBLEMA
 
 **[ENG]**
-
-
 Find employees that are not referred by the manager id 1.
 Output the first name of the employee.
 
 **[ESP]**
-
-Encuentra los empleados que no estan supervisados por manager id 1.
+Encuentra los empleados que no estan supervisados por el manager con id `1`.
 Muestra el nombre del empleado.
-
-
 
 # TABLA
 
 employee
-
 
 |id|first_name|last_name|age|sex|employee_title|department|salary|target|bonus|email|city|address|manager_id|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -55,24 +47,15 @@ employee
 |3|Henry|Ted|31|M|Senior Sales|Sales|2000|200|150|Henry@company.com|California|1609 Ford Street|1|
 |4|Sam|Mark|25|M|Sales|Sales|1000|120|150|Sam@company.com|California|4869 Libby Street|1|
 
-#  ðŸ’» REPSUESTA
+# 💻 RESPUESTA
 
 ```sql
-
 SELECT 
     first_name
 FROM employee
-WHERE manager_id !=1 ;
-
-
+WHERE manager_id != 1;
 ```
 
-# ðŸ§  EXPLICACIÃ“N
+# 📊 Explicación
 
-Para encontrar los usuarios que no tienen el manager_id = 1, utilizamos un filtro para filtrar los que no sean iguales a 1.
-
-## EXPLICACION
-
-La consulta usa `manager_id != 1` para excluir a los empleados que si dependen del manager 1. Luego devuelve solo el nombre para cumplir con el enunciado.
-
-Con ese filtro obtenemos solo las personas que no reportan al manager principal. Es una condicion sencilla, pero suficiente para separar el grupo pedido del resto de empleados.
+La consulta usa `manager_id != 1` para excluir a los empleados que si dependen del manager `1`. Luego devuelve solo `first_name`, que es exactamente la columna solicitada por el ejercicio.
