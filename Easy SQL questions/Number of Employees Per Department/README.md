@@ -1,27 +1,20 @@
-﻿# Number of Employees Per Department
+# Number of Employees Per Department
 
-
-
-## ðŸ“Œ PROBLEMA
+## 📌 PROBLEMA
 
 **[ENG]**
-
 Find the number of employees in each department.
 Output the department name along with the corresponding number of employees.
 Sort records based on the number of employees in descending order.
 
 **[ESP]**
-
-Encuentra el nÃºmero de empleados en cada departamento.
-Muestra el nombre del departamento junto con el nÃºmero de empleados correspondientes.
-Ordena los registros por el nÃºmero de empleados en orden descendente.
-
-
+Encuentra el numero de empleados en cada departamento.
+Muestra el nombre del departamento junto con la cantidad correspondiente de empleados.
+Ordena los registros por el numero de empleados en orden descendente.
 
 # TABLA
 
 employee
-
 
 |id|first_name|last_name|age|sex|employee_title|department|salary|target|bonus|email|city|address|manager_id|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -56,27 +49,19 @@ employee
 |3|Henry|Ted|31|M|Senior Sales|Sales|2000|200|150|Henry@company.com|California|1609 Ford Street|1|
 |4|Sam|Mark|25|M|Sales|Sales|1000|120|150|Sam@company.com|California|4869 Libby Street|1|
 
-
-
-#  ðŸ’» REPSUESTA
+# 💻 RESPUESTA
 
 ```sql
-
 SELECT
     department,
     COUNT(id) AS total
 FROM employee
 GROUP BY department
-ORDER BY 2 DESC;
-
+ORDER BY total DESC;
 ```
 
-# ðŸ§  EXPLICACIÃ“N
+# 📊 Explicación
 
-Para obtener el numero de empleados por cada departamento, agrupamos por departamento y contamos las id que hay en cada departamento. Posteriormente se ordena por el numero de empleados en orden descendente.
+`GROUP BY department` agrupa los empleados por area y `COUNT(id)` cuenta cuantas filas hay en cada grupo. Eso produce un resumen con una sola fila por departamento.
 
-## EXPLICACION
-
-`GROUP BY department` agrupa los empleados por area y `COUNT(id)` cuenta cuantas filas hay en cada grupo. El `ORDER BY 2 DESC` deja primero los departamentos con mas empleados.
-
-La idea es convertir una lista de empleados en un resumen por departamento. Eso hace mas facil comparar la distribucion interna de la empresa y detectar de inmediato que areas concentran mas personal.
+Despues `ORDER BY total DESC` deja primero los departamentos con mas empleados, que es exactamente el orden pedido por el ejercicio.
