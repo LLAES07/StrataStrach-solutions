@@ -1,13 +1,12 @@
 # Low Fat and Recyclable
 
+## 📌 PROBLEMA
+
 **[ENG]**
 What percentage of all products are both low fat and recyclable?
 
 **[ESP]**
-
-Que porcentaje del total de productos son tanto bajo en grasa como reciclaje?
-
----
+Que porcentaje del total de productos son tanto bajos en grasa como reciclables?
 
 ### TABLA
 
@@ -28,18 +27,18 @@ facebook_products
 |11|FURNITURE|American Home|N|Y|3|GADGET|
 |12|ELECTRONICS|American Home|N|Y|3|ACCESSORY|
 
-# REPSUESTA 
+# 💻 RESPUESTA
 
 ```sql
 SELECT
-    COUNT(*)*100.0 / (SELECT COUNT(*) FROM facebook_products) as pct_total
+    COUNT(*) * 100.0 / (SELECT COUNT(*) FROM facebook_products) AS pct_total
 FROM facebook_products
-WHERE is_low_fat LIKE'Y' AND
-      is_recyclable LIKE 'Y'
+WHERE is_low_fat = 'Y'
+  AND is_recyclable = 'Y';
 ```
 
-## EXPLICACION
+# 📊 Explicación
 
-La consulta compara dos cantidades: el numero de productos que cumplen ambas condiciones y el total de productos de la tabla. El `WHERE` deja solo las filas donde `is_low_fat = 'Y'` y `is_recyclable = 'Y'`, es decir, los productos que son bajos en grasa y reciclables al mismo tiempo.
+La consulta compara dos cantidades: el numero de productos que cumplen ambas condiciones y el total de productos de la tabla. El `WHERE` deja solo las filas donde `is_low_fat = 'Y'` y `is_recyclable = 'Y'`.
 
-Despues, `COUNT(*)` cuenta esas filas filtradas y lo divide entre otro `COUNT(*)` calculado sobre toda la tabla mediante la subconsulta. Multiplicar por `100.0` convierte el resultado en porcentaje y evita una division entera, por lo que la salida final expresa correctamente la proporcion del total.
+Despues, `COUNT(*)` cuenta esas filas filtradas y las divide por otro `COUNT(*)` calculado sobre toda la tabla mediante la subconsulta. Multiplicar por `100.0` convierte el resultado en porcentaje y evita una division entera.

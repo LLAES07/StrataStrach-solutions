@@ -1,11 +1,12 @@
 # Latest Login Date
 
+## 📌 PROBLEMA
+
 **[ENG]**
 For each video game player, find the latest date when they logged in.
 
 **[ESP]**
-
-Para cada jugador de video juegos, encuentra la ultima fecha que logearon.
+Para cada jugador de videojuegos, encuentra la ultima fecha en la que inicio sesion.
 
 ### TABLA
 
@@ -35,22 +36,18 @@ players_logins
 |106|2022-01-26|
 |106|2022-01-26|
 
-### RESPUESTA
+# 💻 RESPUESTA
 
 ```sql
 SELECT
     player_id,
     MAX(login_date) AS fecha_ultimo_log
 FROM players_logins
-GROUP BY player_id
+GROUP BY player_id;
 ```
 
-# EXPLICACION
+# 📊 Explicación
 
 Como el objetivo es encontrar la fecha mas reciente de login para cada jugador, la consulta agrupa primero por `player_id`. De esa forma cada grupo contiene todas las fechas registradas para un mismo usuario y puede resumirse en una sola fila.
 
 Dentro de cada grupo, `MAX(login_date)` selecciona la fecha mayor, que coincide con el ultimo acceso cronologico. Este enfoque tambien maneja sin problema los duplicados, ya que aunque un jugador tenga varias filas con la misma fecha final, el maximo sigue siendo ese ultimo dia.
-
-## EXPLICACION ADICIONAL
-
-El `GROUP BY player_id` arma un grupo por jugador y permite que `MAX(login_date)` encuentre la fecha mayor dentro de cada conjunto. Eso evita revisar manualmente cada fila y resume la informacion en una sola salida por usuario. Asi la respuesta final conserva exactamente el ultimo acceso registrado para cada jugador.
