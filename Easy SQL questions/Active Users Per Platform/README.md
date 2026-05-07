@@ -3,19 +3,14 @@
 ## 📌 PROBLEMA
 
 **[ENG]**
-
 For each platform (e.g. Windows, iPhone, iPad etc.), calculate the number of users. Count the number of distinct users per platform, regardless of whether they used other platforms. Output the name of the platform with the corresponding number of users.
 
-
 **[ESP]**
+Para cada plataforma (por ejemplo Windows, iPhone o iPad), calcula el numero de usuarios. Cuenta los usuarios distintos por plataforma aunque tambien hayan usado otras. Muestra el nombre de la plataforma con su numero correspondiente de usuarios.
 
-Para cada plataforma (e.g. Windows, iPhone, iPad etc.), calcula el número de usuarios. Cuenta el numero de usuarios distintos por plataforma, ya sea que usen otras plataformas. Muestra el nombre de la plataforma con el numero correspondiente de usuarios
-
-
-### Tabla
+### TABLA
 
 user_sessions
-
 
 |session_id|user_id|session_starttime|session_endtime|platform|
 |---|---|---|---|---|
@@ -33,23 +28,16 @@ user_sessions
 
 # 💻 RESPUESTA
 
-
-
 ```sql
-
 SELECT 
-    -- Muestra la plataforma y los usuarios unicos por plataforma
-    platform, 
+    platform,
     COUNT(DISTINCT user_id) AS total_users
 FROM user_sessions
--- Agrupa por plataforma
 GROUP BY platform;
-
 ```
 
 # 📊 Explicación
 
-La pregunta nos solicita contar agrupado por plataforma. Una vez agrupados contamos por los usuarios distintos en cada plataforma.
+La consulta agrupa primero por `platform`, de manera que cada grupo representa una plataforma distinta. Luego `COUNT(DISTINCT user_id)` cuenta cuantas personas unicas usaron cada una.
 
-
-
+El uso de `DISTINCT` es importante porque un mismo usuario puede tener varias sesiones en la misma plataforma. Asi se evita contarlo mas de una vez y el resultado refleja usuarios unicos por plataforma.
