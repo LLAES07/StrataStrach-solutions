@@ -60,3 +60,5 @@ GROUP BY account_id;
 # EXPLICACION
 
 Para calcular la tasa de crecimiento por cuenta, la consulta separa las filas de enero de 2021 y diciembre de 2020 con expresiones `CASE`. Cada suma cuenta los registros de usuarios activos en ese mes para el mismo `account_id`, y luego se divide enero por diciembre para obtener el `growth_rate`.
+
+De esa manera cada cuenta queda comparada contra si misma en dos momentos distintos. El calculo final resume el cambio entre meses sin necesidad de crear tablas intermedias.
