@@ -56,3 +56,5 @@ INNER JOIN db_dept d
 # EXPLICACION
 
 Primero se unen empleados y departamentos para poder identificar a que departamento pertenece cada salario. Luego se usa agregacion condicional con `MAX(CASE WHEN ...)` para obtener el salario mas alto de marketing y el salario mas alto de engineering en la misma fila, y finalmente se resta un valor contra el otro para devolver la diferencia.
+
+El truco esta en convertir dos grupos distintos en columnas comparables dentro de un mismo resultado. Asi la consulta entrega directamente la diferencia salarial entre ambos departamentos.
