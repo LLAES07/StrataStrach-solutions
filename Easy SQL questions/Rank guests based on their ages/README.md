@@ -1,6 +1,6 @@
-# Rank guests based on their ages
+﻿# Rank guests based on their ages
 
-## 📌 PROBLEMA
+## ðŸ“Œ PROBLEMA
 
 **[ENG]**
 Rank guests based on their ages.
@@ -31,7 +31,7 @@ airbnb_guests
 |10|Luxembourg|F|28|
 |11|Brazil|F|24|
 
-# 💻 RESPUESTA
+# ðŸ’» RESPUESTA
 
 ```sql
 SELECT 
@@ -41,8 +41,9 @@ FROM airbnb_guests
 ORDER BY age DESC;
 ```
 
-# 📊 Explicación
+## EXPLICACION
 
 Para construir el ranking se usa `ROW_NUMBER()`, una funcion de ventana que asigna un numero consecutivo a cada fila segun el orden definido dentro de `OVER (...)`. Como el enunciado pide ordenar por edad de mayor a menor, el criterio utilizado es `ORDER BY age DESC`.
 
 El resultado es que el huesped con mayor edad recibe el rango `1`, el siguiente recibe `2`, y asi sucesivamente. Luego se repite ese mismo orden en la consulta principal para que las filas salgan mostradas exactamente en el mismo orden del ranking generado.
+
