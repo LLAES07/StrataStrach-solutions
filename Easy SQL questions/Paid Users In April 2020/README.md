@@ -101,4 +101,6 @@ WHERE u.status = 'paid'
 
 # EXPLICACION
 
-Primero se cruzan las llamadas con la tabla de usuarios para quedarnos solo con los usuarios con estado `paid`. Luego se filtran las llamadas de abril de 2020 y se cuentan los usuarios distintos que realizaron actividad en ese mes. Asi se obtiene el total de usuarios pagados que tuvieron llamadas en ese periodo.
+Primero se cruzan las llamadas con la tabla de usuarios para quedarnos solo con los usuarios con estado `paid`. Luego se filtran las llamadas de abril de 2020 y se cuentan los usuarios distintos que realizaron actividad en ese mes.
+
+Asi se obtiene el total de usuarios pagados que tuvieron llamadas en ese periodo, sin inflar el conteo por usuarios repetidos o llamadas multiples.
