@@ -46,4 +46,6 @@ WHERE EXTRACT(QUARTER FROM date) = 2 -- Filtra por el segundo cuarto del año
 
 # EXPLICACION
 
-La clave es limitar los registros al segundo trimestre del año, que corresponde a los meses 4, 5 y 6. Una vez aplicado ese filtro, se agrupan o cuentan los elementos que cumplen la condicion del periodo pedido. Asi la consulta responde solo por las preguntas ubicadas en el segundo cuarto del año.
+La clave es limitar los registros al segundo trimestre del año, que corresponde a los meses 4, 5 y 6. Una vez aplicado ese filtro, se agrupan o cuentan los elementos que cumplen la condicion del periodo pedido.
+
+Asi la consulta responde solo por las preguntas ubicadas en el segundo cuarto del año y evita incluir registros de otros periodos.
