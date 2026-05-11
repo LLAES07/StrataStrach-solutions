@@ -1,25 +1,22 @@
 # Customer Revenue In March
 
+## PROBLEMA
 
 **[ENG]**
-
 Calculate the total revenue from each customer in March 2019. Include only customers who were active in March 2019. An active user is a customer who made at least one transaction in March 2019.
 
 Output the revenue along with the customer id and sort the results based on the revenue in descending order.
 
-
 **[ESP]**
+Calcula el ingreso total de cada cliente en marzo de 2019. Incluye solamente a los clientes que estuvieron activos en marzo de 2019. Un usuario activo es un cliente que hizo al menos una transaccion en marzo de 2019.
 
-Calcula el total de ingresos de cada cliente para marzo de 2019. Incluye solamente clientes que fueron activos en marzo de 2019. Un usuario activo es un cliente que hizo al menos una transacción en marzo de 2019.
+Muestra el ingreso total junto con el id del cliente y ordena los resultados segun el ingreso en orden descendente.
 
-Muestra el ingreso total junto al id del cliente y ordena los resultados según el ingreso en orden descendente.
+---
 
+### TABLA
 
-
-### Table
-
-orders
-
+`orders`
 
 |id|cust_id|order_date|order_details|total_order_cost|
 |---|---|---|---|---|
@@ -55,28 +52,25 @@ orders
 |30|1|2019-04-19|Jacket|150|
 |31|1|2019-04-19|Shoes|125|
 
+---
 
-# RESPUESTA
+## RESPUESTA
 
 ```sql
-
-SELECT 
+SELECT
     cust_id,
-    -- Suma el total de la orden para cada cliente
     SUM(total_order_cost) AS total_revenue
 FROM orders
-WHERE
-    -- Filtra por año y por mes
-    EXTRACT(YEAR FROM order_date) = '2019' AND
-    EXTRACT(MONTH FROM order_date) = 03
-GROUP BY
-    -- Agrupa por cliente
-    cust_id
+WHERE EXTRACT(YEAR FROM order_date) = '2019'
+  AND EXTRACT(MONTH FROM order_date) = 03
+GROUP BY cust_id
 ORDER BY total_revenue DESC;
-
-
 ```
 
-# EXPLICACION
+---
 
-Primero filtramos las ordenes de marzo de 2019 para quedarnos solo con los clientes activos en ese mes. Despues agrupamos por `cust_id` para sumar el costo total de todas sus compras y obtener el ingreso total por cliente. Al final ordenamos de mayor a menor para ver primero a los clientes que mas revenue generaron.
+## EXPLICACION
+
+Primero se filtran las ordenes de marzo de 2019, que son justamente las que identifican a los clientes activos en ese mes.
+
+Despues la consulta agrupa por `cust_id` y suma `total_order_cost` para obtener el ingreso total por cliente. Finalmente ordena de mayor a menor con `ORDER BY total_revenue DESC`.
