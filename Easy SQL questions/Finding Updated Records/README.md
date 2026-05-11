@@ -1,51 +1,56 @@
 # Finding Updated Records
 
-**[ENG]**
+## PROBLEMA
 
+**[ENG]**
 We have a table with employees and their salaries, however, some of the records are old and contain outdated salary information. Find the current salary of each employee assuming that salaries increase each year. Output their id, first name, last name, department ID, and current salary. Order your list by employee ID in ascending order.
 
-**[ES]**
+**[ESP]**
+Tenemos una tabla con empleados y sus salarios, pero algunos registros son antiguos y contienen informacion salarial desactualizada. Encuentra el salario actual de cada empleado asumiendo que el salario aumenta cada ano. Muestra su id, `first_name`, `last_name`, `department_id` y salario actual. Ordena la lista por `id` en orden ascendente.
 
-Tenemos una tabla con empleados y sus salarios, sin embargo, algunos de los registros son viejos y contienen información sobre el salario desactualizado. Encuentra el salario actual de cada empleado asumiendo que los salarios aumentan cada año. Muestra su id, first name, last name, department ID, and current salary. Ordena la lista por el ID en orden ascendente.
+---
 
+### TABLA
 
-# TABLA
+`ms_employee_salary`
 
-### ms_employee_salary
+|id|first_name|last_name|salary|department_id|
+|---|---|---|---|---|
+|1|Todd|Wilson|110000|1006|
+|1|Todd|Wilson|106119|1006|
+|2|Justin|Simon|128922|1005|
+|2|Justin|Simon|130000|1005|
+|3|Kelly|Rosario|42689|1002|
+|4|Patricia|Powell|162825|1004|
+|4|Patricia|Powell|170000|1004|
+|5|Sherry|Golden|44101|1002|
+|6|Natasha|Swanson|79632|1005|
+|6|Natasha|Swanson|90000|1005|
 
-| id  | first_name | last_name | salary | department_id |
-| --- | ---------- | --------- | ------ | ------------- |
-| 1   | Todd       | Wilson    | 110000 | 1006          |
-| 1   | Todd       | Wilson    | 106119 | 1006          |
-| 2   | Justin     | Simon     | 128922 | 1005          |
-| 2   | Justin     | Simon     | 130000 | 1005          |
-| 3   | Kelly      | Rosario   | 42689  | 1002          |
-| 4   | Patricia   | Powell    | 162825 | 1004          |
-| 4   | Patricia   | Powell    | 170000 | 1004          |
-| 5   | Sherry     | Golden    | 44101  | 1002          |
-| 6   | Natasha    | Swanson   | 79632  | 1005          |
-| 6   | Natasha    | Swanson   | 90000  | 1005          |
+---
 
-# RESPUESTA
+## RESPUESTA
 
-```SQL
-
+```sql
 SELECT
     a.id,
     a.first_name,
     a.last_name,
     a.department_id,
-    (SELECT MAX(b.salary) FROM ms_employee_salary b WHERE a.id = b.id )
-
-FROM 
-    ms_employee_salary a
-GROUP BY a.id, a.first_name, a.last_name,a.department_id
+    (
+        SELECT MAX(b.salary)
+        FROM ms_employee_salary b
+        WHERE a.id = b.id
+    ) AS current_salary
+FROM ms_employee_salary a
+GROUP BY a.id, a.first_name, a.last_name, a.department_id
 ORDER BY id ASC;
-
-
 ```
+
 ---
 
-# 📊 Explicación
+## EXPLICACION
 
-El objetivo es obtener el salario más reciente de cada empleado, asumiendo que este aumenta cada año. Para lograrlo, agrupamos los registros por los datos básicos del empleado (`id`, `first_name`, `last_name`, `department_id`) y utilizamos una subconsulta que selecciona el `MAX(salary)` para ese `id` específico. Esto nos asegura que, de todas las entradas históricas de un empleado, solo mostremos la que tiene el monto más alto (su salario actual).
+La consulta agrupa los registros por empleado usando sus datos identificatorios. Asi se obtiene una sola fila por cada persona.
+
+Dentro del `SELECT`, una subconsulta busca el `MAX(salary)` para el mismo `id`. Como el enunciado indica que el salario aumenta con el tiempo, el valor maximo representa el salario actual del empleado.
