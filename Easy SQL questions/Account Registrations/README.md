@@ -1,19 +1,18 @@
 # Account Registrations
 
-## 📌 PROBLEMA
+## PROBLEMA
 
 **[ENG]**
-
-Find the number of account registrations according to the signup date. Output the year months (YYYY-MM) and their corresponding number of registrations.
-
+Find the number of account registrations according to the signup date. Output the year-months (`YYYY-MM`) and their corresponding number of registrations.
 
 **[ESP]**
+Encuentra el numero de cuentas registradas segun la fecha de registro. Muestra el ano-mes en formato `YYYY-MM` y su correspondiente numero de registros.
 
-Encuentra el numero de cuentas registradas según la fecha de registro. Muestra el año en formato yyyy-mm y su correpsondiente numero de registro.
+---
 
 ### TABLA
 
-#### noom_signups
+`noom_signups`
 
 |signup_id|started_at|plan_id|
 |---|---|---|
@@ -43,18 +42,23 @@ Encuentra el numero de cuentas registradas según la fecha de registro. Muestra 
 |S024|2019-12-10|101|
 |S025|2020-01-02|101|
 
+---
 
-# 💻 RESPUESTA
+## RESPUESTA
 
 ```sql
 SELECT
-    CONCAT(EXTRACT(YEAR FROM started_at), '-', EXTRACT(MONTH FROM started_at)) AS mes_año,
+    CONCAT(EXTRACT(YEAR FROM started_at), '-', EXTRACT(MONTH FROM started_at)) AS mes_ano,
     COUNT(*) AS total
 FROM noom_signups
-GROUP BY 1 
+GROUP BY 1
 ORDER BY 1;
 ```
 
-# 📊 Explicación
+---
 
-Cada fila de la tabla corresponde a un registro correspondiente a un registro con su fecha y plan. Con esto en mente vemos que tenemos una fecha en formato yyyy-mm-dd por lo que necesitamos extraer tanto el año como el mes. Esto lo logramos utilizando extract en la columna `started_at`, envueltas en la funcion `CONCAT` para poder unir estas y ser la nueva columna por donde generar un group by y un order by. Con esto ya podemos contar los registros, otorgandonos lo solicitado
+## EXPLICACION
+
+Cada fila representa un registro de cuenta con una fecha en `started_at`. Por eso primero se extraen el ano y el mes de esa columna con `EXTRACT`.
+
+Luego `CONCAT` une ambos valores para formar la etiqueta `YYYY-MM`, y finalmente `COUNT(*)` cuenta cuantos registros hubo en cada mes. `GROUP BY 1` y `ORDER BY 1` agrupan y ordenan usando esa misma columna calculada.
