@@ -1,20 +1,18 @@
 # Number of Employees Per Department
 
-## 📌 PROBLEMA
+## PROBLEMA
 
 **[ENG]**
-Find the number of employees in each department.
-Output the department name along with the corresponding number of employees.
-Sort records based on the number of employees in descending order.
+Find the number of employees in each department. Output the department name along with the corresponding number of employees. Sort records based on the number of employees in descending order.
 
 **[ESP]**
-Encuentra el numero de empleados en cada departamento.
-Muestra el nombre del departamento junto con la cantidad correspondiente de empleados.
-Ordena los registros por el numero de empleados en orden descendente.
+Encuentra el numero de empleados en cada departamento. Muestra el nombre del departamento junto con la cantidad correspondiente de empleados. Ordena los registros por el numero de empleados en orden descendente.
 
-# TABLA
+---
 
-employee
+### TABLA
+
+`employee`
 
 |id|first_name|last_name|age|sex|employee_title|department|salary|target|bonus|email|city|address|manager_id|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -49,7 +47,9 @@ employee
 |3|Henry|Ted|31|M|Senior Sales|Sales|2000|200|150|Henry@company.com|California|1609 Ford Street|1|
 |4|Sam|Mark|25|M|Sales|Sales|1000|120|150|Sam@company.com|California|4869 Libby Street|1|
 
-# 💻 RESPUESTA
+---
+
+## RESPUESTA
 
 ```sql
 SELECT
@@ -60,8 +60,10 @@ GROUP BY department
 ORDER BY total DESC;
 ```
 
-# 📊 Explicación
+---
 
-`GROUP BY department` agrupa los empleados por area y `COUNT(id)` cuenta cuantas filas hay en cada grupo. Eso produce un resumen con una sola fila por departamento.
+## EXPLICACION
 
-Despues `ORDER BY total DESC` deja primero los departamentos con mas empleados, que es exactamente el orden pedido por el ejercicio.
+`GROUP BY department` agrupa a los empleados por area y `COUNT(id)` cuenta cuantas filas hay en cada grupo. Eso genera una fila resumen por departamento.
+
+Luego `ORDER BY total DESC` ordena los resultados de mayor a menor cantidad de empleados, tal como pide el enunciado.
