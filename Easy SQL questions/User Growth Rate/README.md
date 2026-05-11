@@ -1,21 +1,18 @@
 # User Growth Rate
 
+## PROBLEMA
 
 **[ENG]**
-
-Find the growth rate of active users for Dec 2020 to Jan 2021 for each account. The growth rate is defined as the number of users in January 2021 divided by the number of users in Dec 2020. Output the account_id and growth rate.
+Find the growth rate of active users from Dec 2020 to Jan 2021 for each account. The growth rate is defined as the number of users in January 2021 divided by the number of users in Dec 2020. Output the `account_id` and growth rate.
 
 **[ESP]**
+Encuentra la tasa de crecimiento de usuarios activos de diciembre de 2020 a enero de 2021 para cada cuenta. La tasa de crecimiento se define como el numero de usuarios de enero de 2021 dividido por el numero de usuarios de diciembre de 2020. Muestra el `account_id` y la tasa de crecimiento.
 
-Encuentra la tasa de crecimiento de usuarios activos para Dec 2020 a Jan 2021 para cada cuenta. La tasa de crecimiento se define como el número de usuarios en enero de 2021 dividido el numero de usarios en diciembre 2020. Muestra el account_id y el growth rate.
-
-
+---
 
 ### TABLA
 
-sf_events
-
-
+`sf_events`
 
 |record_date|account_id|user_id|
 |---|---|---|
@@ -43,22 +40,23 @@ sf_events
 |2021-02-01|A2|U5|
 |2020-12-05|A1|U8|
 
+---
 
-# RESPUESTA
+## RESPUESTA
 
 ```sql
-
-
 SELECT
     account_id,
-    SUM(CASE WHEN record_date >= '2021-01-01' AND record_date <= '2021-01-31' THEN 1 ELSE 0 END)*1.0 /
-    SUM(CASE WHEN record_date >= '2020-12-01' AND record_date <= '2020-12-31' THEN 1 ELSE 0 END) AS growth_rate 
+    SUM(CASE WHEN record_date >= '2021-01-01' AND record_date <= '2021-01-31' THEN 1 ELSE 0 END) * 1.0 /
+    SUM(CASE WHEN record_date >= '2020-12-01' AND record_date <= '2020-12-31' THEN 1 ELSE 0 END) AS growth_rate
 FROM sf_events
 GROUP BY account_id;
 ```
 
-# EXPLICACION
+---
 
-Para calcular la tasa de crecimiento por cuenta, la consulta separa las filas de enero de 2021 y diciembre de 2020 con expresiones `CASE`. Cada suma cuenta los registros de usuarios activos en ese mes para el mismo `account_id`, y luego se divide enero por diciembre para obtener el `growth_rate`.
+## EXPLICACION
 
-De esa manera cada cuenta queda comparada contra si misma en dos momentos distintos. El calculo final resume el cambio entre meses sin necesidad de crear tablas intermedias.
+La consulta separa los registros de enero de 2021 y diciembre de 2020 mediante expresiones `CASE`. Cada suma cuenta cuantas filas caen dentro de cada periodo para una misma cuenta.
+
+Despues divide el total de enero entre el total de diciembre para obtener `growth_rate`. El resultado final se muestra por `account_id`.
