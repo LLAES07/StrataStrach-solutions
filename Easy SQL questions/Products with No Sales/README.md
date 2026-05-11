@@ -1,17 +1,19 @@
 # Products with No Sales
 
-**[ENG]**
+## PROBLEMA
 
+**[ENG]**
 Write a query to get a list of products that have not had any sales. Output the ID and market name of these products.
 
 **[ESP]**
+Escribe una consulta para obtener la lista de productos que no han tenido ventas. Muestra el ID y el nombre comercial de esos productos.
 
-Escribe una consulta para obtener la lista de producto que no tiene alguna benta. Muestra la ID y el nombre del mercado de estos productos.
+---
 
+### TABLA
 
+`fct_customer_sales`
 
-### Tables
-fct_customer_sales
 |cust_id|prod_sku_id|order_date|order_value|order_id|
 |---|---|---|---|---|
 |C274|P474|2021-06-28|1500|O110|
@@ -29,52 +31,48 @@ fct_customer_sales
 |C287|P482|2021-07-27|725|O186|
 |C280|P482|2021-07-30|725|O190|
 
-dim_product
+`dim_product`
 
+|prod_sku_id|prod_sku_name|prod_brand|market_name|
+|---|---|---|---|
+|P472|iphone-13|Apple|Apple IPhone 13|
+|P473|iphone-13-promax|Apple|Apply IPhone 13 Pro Max|
+|P474|macbook-pro-13|Apple|Apple Macbook Pro 13''|
+|P475|macbook-air-13|Apple|Apple Makbook Air 13''|
+|P476|ipad|Apple|Apple IPad|
+|P477|ipad-pro|Apple|Apple IPad Pro|
+|P478|galaxy-s21|Samsung|Samsung Galaxy S21|
+|P479|galaxy-s22plus|Samsung|Samsung Galaxy S22+|
+|P480|galaxy-watch4|Samsung|Samsung Galaxy Watch4|
+|P481|galaxy-tab-a|Samsung|Samsung Galaxy Tab A|
+|P482|galaxy-tab-s8|Samsung|Samsung Galaxy Tab 8|
+|P483|xps-13|Dell|Dell XPS13|
+|P484|inspiron-13|Dell|Dell Inspiron 13|
+|P485|powershot-g7|Canon|Canon PowerShot G7 X Mark III|
+|P486|hero-10|GoPro|GoPro Hero 10|
+|P487|max|GoPro|GoPro Max|
+|P488|charge-5|JBL|JBL Charge 5|
+|P489|tuner-xl|JBL|JBL Tuner XL|
 
-| prod_sku_id | prod_sku_name    | prod_brand | market_name                   |
-| ----------- | ---------------- | ---------- | ----------------------------- |
-| P472        | iphone-13        | Apple      | Apple IPhone 13               |
-| P473        | iphone-13-promax | Apple      | Apply IPhone 13 Pro Max       |
-| P474        | macbook-pro-13   | Apple      | Apple Macbook Pro 13''        |
-| P475        | macbook-air-13   | Apple      | Apple Makbook Air 13''        |
-| P476        | ipad             | Apple      | Apple IPad                    |
-| P477        | ipad-pro         | Apple      | Apple IPad Pro                |
-| P478        | galaxy-s21       | Samsung    | Samsung Galaxy S21            |
-| P479        | galaxy-s22plus   | Samsung    | Samsung Galaxy S22+           |
-| P480        | galaxy-watch4    | Samsung    | Samsung Galaxy Watch4         |
-| P481        | galaxy-tab-a     | Samsung    | Samsung Galaxy Tab A          |
-| P482        | galaxy-tab-s8    | Samsung    | Samsung Galaxy Tab 8          |
-| P483        | xps-13           | Dell       | Dell XPS13                    |
-| P484        | inspiron-13      | Dell       | Dell Inspiron 13              |
-| P485        | powershot-g7     | Canon      | Canon PowerShot G7 X Mark III |
-| P486        | hero-10          | GoPro      | GoPro Hero 10                 |
-| P487        | max              | GoPro      | GoPro Max                     |
-| P488        | charge-5         | JBL        | JBL Charge 5                  |
-| P489        | tuner-xl         | JBL        | JBL Tuner XL                  |
+---
 
-# RESPUESTA
+## RESPUESTA
 
 ```sql
-
-
-
 SELECT
     prod_sku_id,
     prod_sku_name
 FROM dim_product
-
 WHERE prod_sku_id NOT IN (
-    -- Subquery genera las id de los productos vendidos
-    select
-        DISTINCT prod_sku_id
-    from fct_customer_sales
-)
-
-
-
+    SELECT DISTINCT prod_sku_id
+    FROM fct_customer_sales
+);
 ```
 
-# EXPLICACION
+---
 
-La solucion consiste en comparar la tabla de productos con la de ventas para detectar cuales productos nunca aparecen vendidos. Normalmente esto se hace con un `LEFT JOIN` y un filtro sobre los registros que quedan sin coincidencia. Al final solo permanecen los productos que no tienen ventas asociadas.
+## EXPLICACION
+
+La idea es comparar la lista completa de productos con los identificadores que si aparecen en ventas. La subconsulta obtiene los `prod_sku_id` vendidos en `fct_customer_sales`.
+
+Luego `NOT IN` deja solamente los productos de `dim_product` que nunca fueron vendidos. Asi obtenemos el listado de productos sin ventas registradas.
