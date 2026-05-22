@@ -1,16 +1,18 @@
-
 # Bikes Last Used
 
+## PROBLEMA
+
 **[ENG]**
-Find the last time each bike was in use. Output both the bike number and the date-timestamp of the bike's last use (i.e., the date-time the bike was returned). Order the results by bikes that were most recently used.
+Find the last time each bike was in use. Output both the bike number and the date-timestamp of the bike's last use, that is, the date-time the bike was returned. Order the results by bikes that were most recently used.
 
 **[ESP]**
+Encuentra la ultima vez que cada bicicleta estuvo en uso. Muestra el numero de la bicicleta y la fecha-hora de su ultimo uso, es decir, el momento en que fue devuelta. Ordena desde las bicicletas usadas mas recientemente.
 
-Encuentra la ultima vez que cada bicileta estuvo en uso. Muestra tanto el número de la bicicleta como la fecha-hora del ultimo uso.
-
+---
 
 ### TABLA
-### dc_bikeshare_q1_2012
+
+`dc_bikeshare_q1_2012`
 
 |duration|duration_seconds|start_time|start_station|start_terminal|end_time|end_station|end_terminal|bike_number|rider_type|id|
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -22,31 +24,23 @@ Encuentra la ultima vez que cada bicileta estuvo en uso. Muestra tanto el númer
 |0h 24m 59sec.|1499|2012-03-30 19:35:00|Eastern Market Metro / Pennsylvania Ave & 7th St SE|31613|2012-03-30 20:00:00|Massachusetts Ave & Dupont Circle NW|31200|W01352|Registered|357661|
 |0h 13m 45sec.|825|2012-03-10 16:44:00|North Capitol St & F St NW|31624|2012-03-10 16:58:00|Thomas Circle|31241|W00089|Registered|240483|
 
+---
 
+## RESPUESTA
 
 ```sql
-
-
--- FILTER: LAST TIME EACH BIKE WAS USE IT 
--- SELECT bike_number, and date time last use
--- ORDER bt bikes last used
-
---1. Encontrar la ultima vez que cada bicicleta fue usada
-
 SELECT
     bike_number,
     MAX(end_time) AS last_time_used
 FROM dc_bikeshare_q1_2012
-
-GROUP BY
-    bike_number
-ORDER BY
-    last_time_used DESC;
-    
-
+GROUP BY bike_number
+ORDER BY last_time_used DESC;
 ```
 
-# 🧠 EXPLICACIÓN
+---
 
-Para encontrar la última vez que cada bicicleta fue usada, agrupamos los registros por el número de la bicicleta (`bike_number`). Luego, utilizamos la función de agregación `MAX()` sobre la columna `end_time` para obtener la fecha y hora más reciente de uso para cada grupo. Finalmente, ordenamos los resultados de manera descendente para mostrar las bicicletas usadas más recientemente primero.
+## EXPLICACION
 
+La consulta agrupa por `bike_number` para reunir todos los usos de una misma bicicleta.
+
+Luego `MAX(end_time)` toma la fecha y hora mas reciente de devolucion en cada grupo. Finalmente se ordena en forma descendente para mostrar primero las bicicletas usadas mas recientemente.
