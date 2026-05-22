@@ -1,18 +1,18 @@
 # Gender With Most Doctor Appointments
 
-## 📌 PROBLEMA
+## PROBLEMA
 
 **[ENG]**
-Find the gender that has made the most number of doctor appointments.
-Output the gender along with the corresponding number of appointments.
+Find the gender that has made the most number of doctor appointments. Output the gender along with the corresponding number of appointments.
 
 **[ESP]**
-Encuentra el genero que ha hecho el mayor numero de citas al doctor.
-Muestra el genero junto con el numero de citas correspondientes.
+Encuentra el genero que ha realizado la mayor cantidad de citas medicas. Muestra el genero junto con el numero de citas correspondiente.
 
-# TABLA
+---
 
-medical_appointments
+### TABLA
+
+`medical_appointments`
 
 |patientid|appointmentid|gender|scheduledday|appointmentday|age|neighbourhood|scholarship|hipertension|diabetes|alcoholism|handcap|sms_received|no_show|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -21,7 +21,9 @@ medical_appointments
 |52587225747632|5649314|F|2016-05-02 19:01:13|2016-05-12|66|SANTOS DUMONT|0|0|0|0|0|1|Yes|
 |6769994598599|5663542|M|2016-05-05 10:12:16|2016-05-05|21|TABUAZEIRO|0|0|0|0|0|0|No|
 
-# 💻 RESPUESTA
+---
+
+## RESPUESTA
 
 ```sql
 SELECT
@@ -32,8 +34,10 @@ GROUP BY gender
 ORDER BY total_appointments DESC;
 ```
 
-# 📊 Explicación
+---
 
-Para saber que genero tiene mas citas, la consulta agrupa los registros por `gender`. Luego `COUNT(appointmentid)` cuenta cuantas citas hay en cada grupo.
+## EXPLICACION
 
-Finalmente, `ORDER BY total_appointments DESC` ordena el resultado de mayor a menor para dejar primero el genero con mas appointments.
+La consulta agrupa las filas por `gender`, de modo que cada grupo represente un genero distinto.
+
+Luego `COUNT(appointmentid)` cuenta cuantas citas hay en cada grupo. Finalmente `ORDER BY total_appointments DESC` deja primero el genero con mayor cantidad de citas.
