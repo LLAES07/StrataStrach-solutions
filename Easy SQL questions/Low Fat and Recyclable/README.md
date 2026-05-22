@@ -1,16 +1,18 @@
 # Low Fat and Recyclable
 
-## 📌 PROBLEMA
+## PROBLEMA
 
 **[ENG]**
 What percentage of all products are both low fat and recyclable?
 
 **[ESP]**
-Que porcentaje del total de productos son tanto bajos en grasa como reciclables?
+Que porcentaje del total de productos es a la vez bajo en grasa y reciclable.
+
+---
 
 ### TABLA
 
-facebook_products
+`facebook_products`
 
 |product_id|product_class|brand_name|is_low_fat|is_recyclable|product_category|product_family|
 |---|---|---|---|---|---|---|
@@ -27,7 +29,9 @@ facebook_products
 |11|FURNITURE|American Home|N|Y|3|GADGET|
 |12|ELECTRONICS|American Home|N|Y|3|ACCESSORY|
 
-# 💻 RESPUESTA
+---
+
+## RESPUESTA
 
 ```sql
 SELECT
@@ -37,8 +41,10 @@ WHERE is_low_fat = 'Y'
   AND is_recyclable = 'Y';
 ```
 
-# 📊 Explicación
+---
 
-La consulta compara dos cantidades: el numero de productos que cumplen ambas condiciones y el total de productos de la tabla. El `WHERE` deja solo las filas donde `is_low_fat = 'Y'` y `is_recyclable = 'Y'`.
+## EXPLICACION
 
-Despues, `COUNT(*)` cuenta esas filas filtradas y las divide por otro `COUNT(*)` calculado sobre toda la tabla mediante la subconsulta. Multiplicar por `100.0` convierte el resultado en porcentaje y evita una division entera.
+La consulta cuenta primero cuantas filas cumplen simultaneamente `is_low_fat = 'Y'` e `is_recyclable = 'Y'`.
+
+Despues divide ese total por la cantidad completa de productos obtenida en la subconsulta. Multiplicar por `100.0` convierte el valor en porcentaje.
