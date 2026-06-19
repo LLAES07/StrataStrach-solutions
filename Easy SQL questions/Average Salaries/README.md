@@ -1,6 +1,6 @@
 # Average Salaries
 
-## 📌 PROBLEMA
+## PROBLEMA
 
 **[ENG]**
 Compare each employee's salary with the average salary of the corresponding department.
@@ -9,7 +9,7 @@ Output the department, first name, and salary of employees along with the averag
 **[ESP]**
 Compara el salario de cada empleado con el salario promedio correspondiente a su departamento. Muestra el departamento, el nombre del empleado y el salario junto con el salario promedio de cada departamento.
 
-# TABLA
+### TABLA
 
 ### employee
 
@@ -23,7 +23,7 @@ Compara el salario de cada empleado con el salario promedio correspondiente a su
 | 18  | Laila      | Mark      | 26  | F   | Sales          | Sales      | 1000   | 200    | 150   | Laila@company.com    | Florida    | 3655 Spirit Drive    | 11         |
 | 20  | Sarrah     | Bicky     | 31  | F   | Senior Sales   | Sales      | 2000   | 200    | 150   | Sarrah@company.com   | Florida    | 1176 Tyler Avenue    | 19         |
 
-# 💻 RESPUESTA
+## RESPUESTA
 
 ```sql
 SELECT
@@ -34,7 +34,7 @@ SELECT
 FROM employee;
 ```
 
-# 📊 Explicación
+## EXPLICACION
 
 Para comparar cada salario individual con el promedio de su departamento, la consulta conserva cada fila del empleado y agrega una columna calculada con `AVG(salary) OVER (PARTITION BY department)`. Esa window function calcula el promedio dentro de cada departamento sin perder el detalle de cada persona.
 
