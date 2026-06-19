@@ -1,6 +1,6 @@
 # BAKERY' Owned Facilities
 
-## 📌 PROBLEMA
+## PROBLEMA
 
 
 
@@ -326,7 +326,7 @@ los_angeles_restaurant_health_inspections
 |DAL6AQGIQ|2018-01-05|ROBEKS JUICE|95|A|1|ROUTINE INSPECTION|EE0000846|1915 N HILLHURST AVE|LOS ANGELES|FA0046628|CA|90027|OW0000118|110 SUNSHINE SMOOTHIES, INC.|RESTAURANT (0-30) SEATS MODERATE RISK|1631|ROBEKS JUICE|ACTIVE|PR0012195|
 
 
-#  💻 RESPUESTA
+## RESPUESTA
 
 ```sql
 SELECT DISTINCT 
@@ -339,7 +339,7 @@ WHERE owner_name ILIKE '%bakery%'
 ```
 
 
-# 🧠 EXPLICACIÓN
+## EXPLICACION
 
 Lo primero es que de la tabla que tenemos nos piden 2 condiciones en especifico que sean de propiedad `Bakery` y que ademas sean de bajo riesgo por lo que generamos primero un `WHERE` filtrando por ambas condiciones. Realizado esto seleccionamos las columnas `owner_name` y `pe_description`
 
