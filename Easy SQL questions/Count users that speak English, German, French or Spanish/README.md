@@ -1,6 +1,6 @@
 # Count users that speak English, German, French or Spanish
 
-## 📌 PROBLEMA
+## PROBLEMA
 
 
 **[ENG]**
@@ -256,7 +256,7 @@ playbook_users
 
 
 
-# 💻 RESPUESTA
+## RESPUESTA
 
 ```sql
 
@@ -294,7 +294,7 @@ Cuantos usuarios hablan inglés, alemán, francés o español?
 
 Nota: Usuarios que hablan más de un idioma sólo se cuentan una vez.
 
-# 📊 Explicación
+## EXPLICACION
 
 Necesitamos encontrar los usuarios que hablen alguno de estos idiomas. Debido a que el problema solo especifica que necesita hablar al menos 1, entonces usamos la clausula `IN` con un `WHERE` para poder tomar todos aquellos usuarios que hablan al menos 1 de los idiomas solicitados. Por ultimo con este filtro aplicado contamos los usuarios unicos para el total.
 
