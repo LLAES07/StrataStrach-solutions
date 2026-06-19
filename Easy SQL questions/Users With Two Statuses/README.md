@@ -1,6 +1,6 @@
 # Users With Two Statuses
 
-## 📌 PROBLEMA
+## PROBLEMA
 
 **[ENG]**
 Find users who are both a viewer and streamer.
@@ -34,7 +34,7 @@ twitch_sessions
 |7|2020-08-14 05:50:45|2020-08-14 06:27:45|645|streamer|
 |7|2020-08-11 15:32:19|2020-08-11 16:22:19|817|viewer|
 
-# 💻 RESPUESTA
+## RESPUESTA
 
 ```sql
 SELECT user_id
@@ -45,7 +45,7 @@ HAVING
     AND MAX(CASE WHEN session_type = 'viewer' THEN 1 END) = 1;
 ```
 
-# 📊 Explicación
+## EXPLICACION
 
 La idea es comprobar que cada `user_id` tenga por lo menos una sesion como `streamer` y otra como `viewer`. Para eso la consulta agrupa por usuario y transforma cada tipo de sesion en un indicador con `CASE`.
 
