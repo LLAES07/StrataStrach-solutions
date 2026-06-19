@@ -2,7 +2,7 @@
 
 
 
-## 📌 PROBLEMA
+## PROBLEMA
 
 
 **[ENG]**
@@ -28,7 +28,7 @@ el número de atletas jóvenes
 
 
 
-###  TABLA
+### TABLA
 
 olympics_athletes_events
 
@@ -91,7 +91,7 @@ olympics_athletes_events
 |85860|George Nicol|M|21|||Great Britain|GBR|1908 Summer|1908|Summer|London|Athletics|Athletics Men's 400 metres||
 
 
-# 💻 RESPUESTA
+## RESPUESTA
 
 ```sql
 
@@ -107,7 +107,7 @@ ORDER BY games;
 
 ```
 
-# 📊 Explicación
+## EXPLICACION
 
 Primero agrupamos por `games` así utilizaremos esta para agrupar todo lo demás y sacar el ratio.  
 Luego contamos los atletas de **50 años o más** (old) y los de **25 años o menos** (young) utilizando agregaciones condicionales.
