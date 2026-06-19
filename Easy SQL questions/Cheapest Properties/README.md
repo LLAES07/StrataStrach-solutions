@@ -1,7 +1,7 @@
 ﻿# Cheapest Properties
 
 
-## ðŸ“Œ PROBLEMA
+## PROBLEMA
 
 **[ENG]**
 
@@ -193,7 +193,7 @@ airbnb_search_details
 |9470528|477.91|Apartment|Entire home/apt|{TV,"Cable TV",Internet,"Wireless Internet","Air conditioning",Kitchen,Heating,"Smoke detector",Essentials}|2|1|Real Bed|moderate|TRUE|NYC|t|100%|2015-10-02|Harlem|5|88|10027|0|2|
 
 
-# ðŸ’» RESPUESTA
+## RESPUESTA
 
 ```sql
 
@@ -204,7 +204,7 @@ FROM airbnb_search_details
 GROUP BY city
 ```
 
-# EXPLICACION
+## EXPLICACION
 
 Primero se identifica el precio minimo dentro del conjunto de propiedades. Luego se filtran los registros que coinciden con ese valor para devolver solo las opciones mas baratas. Si hay varias propiedades con el mismo precio, todas permanecen en el resultado.
 
