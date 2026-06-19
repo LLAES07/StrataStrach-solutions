@@ -1,6 +1,6 @@
 # April & May Sign Up's
 
-## 📌 PROBLEMA
+## PROBLEMA
 
 
 **[ENG]**
@@ -18,7 +18,7 @@ Dado que un mismo ID de registro puede utilizarse para múltiples transacciones,
 
 Tu resultado debe contener una lista de IDs de registro sin duplicados.
 
-### Table
+### TABLA
 
 transactions
 
@@ -44,7 +44,7 @@ transactions
 | 18             | 109       | 2020-04-18             | 24.9  |
 | 19             | 109       | 2020-07-17             | 24.9  |
 
-# 💻 RESPUESTA
+## RESPUESTA
 
 ```sql
 select 
@@ -57,7 +57,7 @@ WHERE
     EXTRACT(MONTH FROM transaction_start_date) IN (4,5)
 
 ```
-# 📊 Explicación
+## EXPLICACION
 
 El primer paso es filtrar nuestra tabla por abril y mayo paraa que solo tengamos como target estos registros. Una vez realizado el filtro dejamos solo las `singup_id` únicas.
 
