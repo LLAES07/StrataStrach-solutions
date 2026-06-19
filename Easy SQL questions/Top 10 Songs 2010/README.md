@@ -1,6 +1,6 @@
 # Top 10 Songs 2010
 
-## 📌 PROBLEMA
+## PROBLEMA
 
 **[ENG]**
 Find the top 10 ranked songs in 2010. Output the rank, group name, and song name, but do not show the same song twice. Sort the result based on the rank in ascending order.
@@ -22,7 +22,7 @@ billboard_top_100_year_end
 | 1956 | 6         | Les Baxter    | Les Baxter    | The Poor People Of Paris                 | 6   |
 | 1956 | 7         | Doris Day     | Doris Day     | Whatever Will Be Will Be (Que Sera Sera) | 7   |
 
-# 💻 RESPUESTA
+## RESPUESTA
 
 ```sql
 SELECT
@@ -35,7 +35,7 @@ ORDER BY year_rank ASC
 LIMIT 10;
 ```
 
-# 📊 Explicación
+## EXPLICACION
 
 Primero se filtran los registros del anio `2010` con `WHERE year = 2010`. Luego `DISTINCT` evita repetir la misma combinacion de cancion, ranking y grupo.
 
